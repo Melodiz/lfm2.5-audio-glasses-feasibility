@@ -1,0 +1,11 @@
+artifacts/
+tmp/
+reports/local_q4_matrix/raw/
+*.log
+*.onnx
+*.pte
+*.pt
+*.bin
+*.safetensors
+__pycache__/
+.DS_Store
