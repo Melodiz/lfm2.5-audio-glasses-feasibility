@@ -1,0 +1,19 @@
+{
+  "name": "LFM2.5 Audio On-device Demo",
+  "short_name": "LFM Audio",
+  "description": "Push-to-talk LFM2.5-Audio demo running on an attached Snapdragon phone.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0e1014",
+  "theme_color": "#5a48e8",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

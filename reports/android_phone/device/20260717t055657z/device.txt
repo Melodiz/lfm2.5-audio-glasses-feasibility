@@ -1,0 +1,138 @@
+manufacturer=nubia
+model=NX809J
+device=NX809J
+product=NX809J
+soc_model=SM8850
+soc_manufacturer=QTI
+hardware=qcom
+board_platform=canoe
+android_release=16
+sdk=36
+abi=arm64-v8a
+abilist=arm64-v8a
+build_fingerprint=REDMAGIC/NX809J/NX809J:16/BQ2A.250705.001-BP2A.250605.031.A3/20260608.161518:user/release-keys
+ram_kib=15600544
+cpu_present=0-7
+cpu_possible=0-7
+cpu_online=0-7
+cpu_count=8
+cpu_policy_configuration:
+policy=policy0 cpus=0 1 2 3 4 5 min_khz=384000 max_khz=3628800 governor=walt
+policy=policy6 cpus=6 7 min_khz=768000 max_khz=4742400 governor=walt
+cpu_capacity:
+cpu0 capacity=741 max_khz=3628800
+cpu1 capacity=741 max_khz=3628800
+cpu2 capacity=741 max_khz=3628800
+cpu3 capacity=741 max_khz=3628800
+cpu4 capacity=741 max_khz=3628800
+cpu5 capacity=741 max_khz=3628800
+cpu6 capacity=1024 max_khz=4742400
+cpu7 capacity=1024 max_khz=4742400
+cpuinfo:
+processor	: 0
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm ssbs sb paca pacg dcpodp sve2 sveaes svepmull svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 rng bti ecv afp rpres sme smei8i32 smef16f32 smeb16f32 smef32f32 lrcpc3
+CPU implementer	: 0x51
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0x002
+CPU revision	: 1
+
+processor	: 1
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm ssbs sb paca pacg dcpodp sve2 sveaes svepmull svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 rng bti ecv afp rpres sme smei8i32 smef16f32 smeb16f32 smef32f32 lrcpc3
+CPU implementer	: 0x51
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0x002
+CPU revision	: 1
+
+processor	: 2
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm ssbs sb paca pacg dcpodp sve2 sveaes svepmull svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 rng bti ecv afp rpres sme smei8i32 smef16f32 smeb16f32 smef32f32 lrcpc3
+CPU implementer	: 0x51
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0x002
+CPU revision	: 1
+
+processor	: 3
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm ssbs sb paca pacg dcpodp sve2 sveaes svepmull svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 rng bti ecv afp rpres sme smei8i32 smef16f32 smeb16f32 smef32f32 lrcpc3
+CPU implementer	: 0x51
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0x002
+CPU revision	: 1
+
+processor	: 4
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm ssbs sb paca pacg dcpodp sve2 sveaes svepmull svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 rng bti ecv afp rpres sme smei8i32 smef16f32 smeb16f32 smef32f32 lrcpc3
+CPU implementer	: 0x51
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0x002
+CPU revision	: 1
+
+processor	: 5
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm ssbs sb paca pacg dcpodp sve2 sveaes svepmull svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 rng bti ecv afp rpres sme smei8i32 smef16f32 smeb16f32 smef32f32 lrcpc3
+CPU implementer	: 0x51
+CPU architecture: 8
+CPU variant	: 0x2
+CPU part	: 0x002
+CPU revision	: 1
+
+processor	: 6
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm ssbs sb paca pacg dcpodp sve2 sveaes svepmull svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 rng bti ecv afp rpres sme smei8i32 smef16f32 smeb16f32 smef32f32 lrcpc3
+CPU implementer	: 0x51
+CPU architecture: 8
+CPU variant	: 0x3
+CPU part	: 0x002
+CPU revision	: 1
+
+processor	: 7
+BogoMIPS	: 38.40
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 sm3 sm4 asimddp sha512 sve asimdfhm dit uscat ilrcpc flagm ssbs sb paca pacg dcpodp sve2 sveaes svepmull svesha3 svesm4 flagm2 frint svei8mm svebf16 i8mm bf16 rng bti ecv afp rpres sme smei8i32 smef16f32 smeb16f32 smef32f32 lrcpc3
+CPU implementer	: 0x51
+CPU architecture: 8
+CPU variant	: 0x3
+CPU part	: 0x002
+CPU revision	: 1
+
+thermal_zones=95
+soc_dsp_properties:
+[ro.board.api_frozen]: [true]
+[ro.board.api_level]: [202504]
+[ro.board.first_api_level]: [202504]
+[ro.board.platform]: [canoe]
+[ro.hardware]: [qcom]
+[ro.hardware.consumerir]: [zte]
+[ro.hardware.egl]: [adreno]
+[ro.hardware.keystore_desede]: [true]
+[ro.hardware.vulkan]: [adreno]
+[ro.soc.manufacturer]: [QTI]
+[ro.soc.model]: [SM8850]
+[ro.vendor.feature.dsp_device_type]: [4]
+[ro.vendor.feature.soc_vendor]: [qcom]
+[ro.vendor.feature.zte_feature_audio_cast_socket]: [true]
+[ro.vendor.feature.zte_feature_charger_adsp]: [true]
+qnn_libraries:
+/system/app/NBBrowser/lib/arm64/libhexagonAlg.so
+/system/etc/custom_config/app/systemUI/depth/libQnnHtp.so
+/system/etc/custom_config/app/systemUI/depth/libQnnHtpV81.so
+/system/etc/custom_config/app/systemUI/depth/libQnnHtpV81Skel.so
+/system/etc/custom_config/app/systemUI/depth/libQnnHtpV81Stub.so
+/system/etc/custom_config/app/systemUI/depth/libQnnSystem.so
+htp_architecture_candidates:
+/system/etc/custom_config/app/systemUI/depth/libQnnHtpV81Skel.so
+/system/etc/custom_config/app/systemUI/depth/libQnnHtpV81Stub.so
+dsp_firmware_and_config:
+/vendor/etc/acdbdata/ffv_models/hk01b_relu_eAI_5.6_eNPU_V6_adsp_i.pmd
+/vendor/etc/camera/qnn_deblur_model_denoised_192_192Binary.bin
+/vendor/etc/camera/qnn_deblur_model_denoised_528_528Binary.bin
+/vendor/etc/camera/qnn_model_denoised_192_192Binary.bin
+/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
+/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
+/vendor/etc/init/vendor.qti.cdsprpc-service.rc

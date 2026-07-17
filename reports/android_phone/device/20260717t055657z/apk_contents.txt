@@ -1,0 +1,26 @@
+Archive:  lfm-audio-demo-0.1.0-debug.apk
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+       56  01-01-1981 01:01   META-INF/com/android/build/gradle/app-metadata.properties
+   944920  01-01-1981 01:01   lib/arm64-v8a/libggml-base.so
+   694512  01-01-1981 01:01   lib/arm64-v8a/libggml-cpu-android_armv8.0_1.so
+   699800  01-01-1981 01:01   lib/arm64-v8a/libggml-cpu-android_armv8.2_1.so
+   699880  01-01-1981 01:01   lib/arm64-v8a/libggml-cpu-android_armv8.2_2.so
+   707200  01-01-1981 01:01   lib/arm64-v8a/libggml-cpu-android_armv8.6_1.so
+   666376  01-01-1981 01:01   lib/arm64-v8a/libggml.so
+  1267792  01-01-1981 01:01   lib/arm64-v8a/liblfmserver.so
+  2480056  01-01-1981 01:01   lib/arm64-v8a/libliquid-audio.so
+  2121248  01-01-1981 01:01   lib/arm64-v8a/libllama.so
+   692416  01-01-1981 01:01   lib/arm64-v8a/libmtmd.so
+      362  01-01-1981 01:01   assets/demo-ui/icon.svg
+      466  01-01-1981 01:01   assets/demo-ui/manifest.webmanifest
+      913  01-01-1981 01:01   assets/demo-ui/service-worker.js
+    23260  01-01-1981 01:01   classes2.dex
+    25270  01-01-1981 01:01   assets/demo-ui/index.html
+     1804  01-01-1981 01:01   classes.dex
+     3384  01-01-1981 01:01   AndroidManifest.xml
+      592  01-01-1981 01:01   res/drawable/ic_launcher_foreground.xml
+      448  01-01-1981 01:01   res/mipmap-anydpi-v26/ic_launcher.xml
+     1220  01-01-1981 01:01   resources.arsc
+---------                     -------
+ 11031975                     21 files

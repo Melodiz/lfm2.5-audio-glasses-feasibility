@@ -1,0 +1,16 @@
+/data/app/~~ppbPeKlvw9FBr_55y5_9tg==/ai.liquid.lfmdemo-2tGJnsuxs4jNR_9jXBtjbw==/lib/arm64/liblfmserver.so
+-m
+/data/user/0/ai.liquid.lfmdemo/files/models/LFM2.5-Audio-1.5B-Q4_0.gguf
+-mm
+/data/user/0/ai.liquid.lfmdemo/files/models/mmproj-LFM2.5-Audio-1.5B-Q4_0.gguf
+-mv
+/data/user/0/ai.liquid.lfmdemo/files/models/vocoder-LFM2.5-Audio-1.5B-Q4_0.gguf
+--tts-speaker-file
+/data/user/0/ai.liquid.lfmdemo/files/models/tokenizer-LFM2.5-Audio-1.5B-Q4_0.gguf
+--log-colors
+off
+--perf
+--host
+127.0.0.1
+--port
+8080

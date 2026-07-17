@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5a48e8">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <title>LFM2.5 Audio · On-device demo</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f5f7;
+      --surface: rgba(255, 255, 255, 0.86);
+      --surface-strong: #ffffff;
+      --text: #13161a;
+      --muted: #69717c;
+      --line: rgba(19, 22, 26, 0.12);
+      --accent: #5a48e8;
+      --accent-soft: rgba(90, 72, 232, 0.11);
+      --accent-text: #ffffff;
+      --success: #16875d;
+      --danger: #c33b50;
+      --shadow: 0 24px 70px rgba(30, 34, 44, 0.13);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e1014;
+        --surface: rgba(25, 28, 34, 0.88);
+        --surface-strong: #1a1d23;
+        --text: #f3f4f6;
+        --muted: #9ba3ae;
+        --line: rgba(255, 255, 255, 0.12);
+        --accent: #8c7cff;
+        --accent-soft: rgba(140, 124, 255, 0.14);
+        --accent-text: #111219;
+        --success: #5dd2a5;
+        --danger: #ff8496;
+        --shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 28px 18px;
+      background:
+        radial-gradient(circle at 15% 10%, var(--accent-soft), transparent 34%),
+        radial-gradient(circle at 90% 85%, var(--accent-soft), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    button, input { font: inherit; }
+
+    .shell {
+      width: min(920px, 100%);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(22px);
+      overflow: hidden;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 26px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand { display: flex; align-items: center; gap: 12px; }
+
+    .mark {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--accent);
+      color: var(--accent-text);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
+    .brand strong { display: block; font-size: 15px; font-weight: 650; }
+    .brand span { display: block; color: var(--muted); font-size: 12px; margin-top: 2px; }
+
+    .device-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 0 5px color-mix(in srgb, var(--success) 15%, transparent);
+    }
+
+    main { padding: 40px 26px 28px; }
+
+    .intro { text-align: center; max-width: 640px; margin: 0 auto; }
+    h1 { margin: 0; font-size: clamp(30px, 6vw, 54px); line-height: 1.02; letter-spacing: -0.055em; font-weight: 650; }
+    .intro p { margin: 16px auto 0; color: var(--muted); line-height: 1.55; max-width: 530px; }
+
+    .mode-switch {
+      width: fit-content;
+      display: flex;
+      gap: 4px;
+      margin: 26px auto 0;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--surface-strong) 65%, transparent);
+    }
+
+    .mode-switch button {
+      border: 0;
+      border-radius: 999px;
+      padding: 9px 15px;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+    }
+
+    .mode-switch button[aria-pressed="true"] {
+      background: var(--text);
+      color: var(--bg);
+    }
+
+    .stage {
+      position: relative;
+      min-height: 270px;
+      display: grid;
+      place-items: center;
+      margin-top: 24px;
+    }
+
+    canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.65;
+      pointer-events: none;
+    }
+
+    .record-wrap { position: relative; z-index: 1; text-align: center; }
+
+    .record-button {
+      width: 142px;
+      height: 142px;
+      border: 0;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--accent);
+      color: var(--accent-text);
+      box-shadow: 0 18px 44px color-mix(in srgb, var(--accent) 34%, transparent);
+      cursor: pointer;
+      transition: transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .record-button:hover { transform: translateY(-2px) scale(1.015); }
+    .record-button:active { transform: scale(0.98); }
+    .record-button:disabled { cursor: wait; opacity: 0.72; }
+    .record-button.recording { animation: pulse 1.5s ease-in-out infinite; }
+
+    @keyframes pulse {
+      50% { box-shadow: 0 0 0 20px color-mix(in srgb, var(--accent) 10%, transparent), 0 18px 44px color-mix(in srgb, var(--accent) 34%, transparent); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .record-button { transition: none; }
+      .record-button.recording { animation: none; }
+    }
+
+    .mic-icon { width: 35px; height: 35px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .record-label { margin-top: 14px; font-size: 14px; font-weight: 600; }
+    .timer { margin-top: 5px; color: var(--muted); font-variant-numeric: tabular-nums; font-size: 13px; min-height: 19px; }
+
+    .result {
+      display: none;
+      max-width: 700px;
+      margin: 4px auto 0;
+      padding: 22px;
+      border-top: 1px solid var(--line);
+    }
+
+    .result.visible { display: block; }
+    .result-label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.09em; }
+    .response { margin: 10px 0 0; font-size: 20px; line-height: 1.55; min-height: 31px; }
+    .response:empty::after { content: "Waiting for the first token…"; color: var(--muted); }
+    audio { width: 100%; margin-top: 18px; display: none; }
+    audio.visible { display: block; }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 22px;
+      flex-wrap: wrap;
+    }
+
+    .file-button {
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    .file-button:hover { background: var(--accent-soft); }
+    input[type="file"] { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+    .error {
+      display: none;
+      max-width: 660px;
+      margin: 18px auto 0;
+      color: var(--danger);
+      text-align: center;
+      line-height: 1.45;
+      font-size: 14px;
+    }
+
+    .error.visible { display: block; }
+
+    footer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid var(--line);
+    }
+
+    .fact { padding: 17px 20px; text-align: center; }
+    .fact + .fact { border-left: 1px solid var(--line); }
+    .fact strong { display: block; font-size: 13px; font-weight: 650; }
+    .fact span { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
+
+    @media (max-width: 600px) {
+      header { padding: 18px; }
+      .device-status span { display: none; }
+      main { padding: 30px 18px 22px; }
+      .stage { min-height: 240px; }
+      .record-button { width: 126px; height: 126px; }
+      footer { grid-template-columns: 1fr; }
+      .fact + .fact { border-left: 0; border-top: 1px solid var(--line); }
+    }
+  </style>
+</head>
+<body>
+  <section class="shell" aria-labelledby="page-title">
+    <header>
+      <div class="brand">
+        <div class="mark" aria-hidden="true">L</div>
+        <div>
+          <strong>LFM2.5 Audio</strong>
+          <span>On-device feasibility demo</span>
+        </div>
+      </div>
+      <div class="device-status" id="device-status">
+        <span class="dot" aria-hidden="true"></span>
+        <span id="device-status-text">Starting model</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="intro">
+        <h1 id="page-title">Speak naturally.<br>The phone answers.</h1>
+        <p>Audio stays local: your microphone is processed by LFM2.5-Audio running directly on this Snapdragon phone.</p>
+      </div>
+
+      <div class="mode-switch" aria-label="Interaction mode">
+        <button type="button" id="mode-chat" aria-pressed="true">Voice response</button>
+        <button type="button" id="mode-asr" aria-pressed="false">Transcription</button>
+      </div>
+
+      <div class="stage">
+        <canvas id="waveform" aria-hidden="true"></canvas>
+        <div class="record-wrap">
+          <button type="button" class="record-button" id="record" aria-label="Start recording" disabled>
+            <svg class="mic-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="9" y="2" width="6" height="12" rx="3"></rect>
+              <path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"></path>
+            </svg>
+          </button>
+          <div class="record-label" id="record-label">Starting model</div>
+          <div class="timer" id="timer">Loading…</div>
+        </div>
+      </div>
+
+      <div class="result" id="result" aria-live="polite">
+        <div class="result-label" id="result-label">Phone response</div>
+        <p class="response" id="response"></p>
+        <audio id="audio" controls></audio>
+      </div>
+
+      <p class="error" id="error" role="alert"></p>
+
+      <div class="actions">
+        <label class="file-button" for="audio-file">Use an audio file</label>
+        <input id="audio-file" type="file" accept="audio/*">
+      </div>
+    </main>
+
+    <footer aria-label="Execution details">
+      <div class="fact"><strong>Nubia NX809J</strong><span>Physical target</span></div>
+      <div class="fact"><strong>Snapdragon SM8850</strong><span>Hexagon v81 available</span></div>
+      <div class="fact"><strong>Q4 CPU baseline</strong><span>Offline inference</span></div>
+    </footer>
+  </section>
+
+  <script>
+    const API_URL = "http://127.0.0.1:8080/v1/chat/completions";
+    const recordButton = document.getElementById("record");
+    const recordLabel = document.getElementById("record-label");
+    const timer = document.getElementById("timer");
+    const responseEl = document.getElementById("response");
+    const resultEl = document.getElementById("result");
+    const resultLabel = document.getElementById("result-label");
+    const audioEl = document.getElementById("audio");
+    const errorEl = document.getElementById("error");
+    const fileInput = document.getElementById("audio-file");
+    const chatButton = document.getElementById("mode-chat");
+    const asrButton = document.getElementById("mode-asr");
+    const canvas = document.getElementById("waveform");
+    const ctx = canvas.getContext("2d");
+    const deviceStatusText = document.getElementById("device-status-text");
+
+    let mode = "chat";
+    let mediaRecorder = null;
+    let mediaStream = null;
+    let recordingChunks = [];
+    let startedAt = 0;
+    let timerId = null;
+    let audioContext = null;
+    let analyser = null;
+    let animationId = null;
+    let nativeRecording = false;
+
+    function setMode(nextMode) {
+      if (mediaRecorder?.state === "recording") return;
+      mode = nextMode;
+      chatButton.setAttribute("aria-pressed", String(mode === "chat"));
+      asrButton.setAttribute("aria-pressed", String(mode === "asr"));
+      resultLabel.textContent = mode === "chat" ? "Phone response" : "Transcription";
+    }
+
+    chatButton.addEventListener("click", () => setMode("chat"));
+    asrButton.addEventListener("click", () => setMode("asr"));
+
+    function formatTime(seconds) {
+      const whole = Math.floor(seconds);
+      return `${String(Math.floor(whole / 60)).padStart(2, "0")}:${String(whole % 60).padStart(2, "0")}`;
+    }
+
+    function resizeCanvas() {
+      const ratio = window.devicePixelRatio || 1;
+      const bounds = canvas.getBoundingClientRect();
+      canvas.width = Math.max(1, Math.floor(bounds.width * ratio));
+      canvas.height = Math.max(1, Math.floor(bounds.height * ratio));
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    }
+
+    function drawIdleWave() {
+      resizeCanvas();
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      ctx.clearRect(0, 0, w, h);
+      ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue("--line");
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(w * 0.08, h / 2);
+      ctx.lineTo(w * 0.92, h / 2);
+      ctx.stroke();
+    }
+
+    function drawLiveWave() {
+      if (!analyser) return;
+      const w = canvas.clientWidth;
+      const h = canvas.clientHeight;
+      const data = new Uint8Array(analyser.frequencyBinCount);
+      analyser.getByteTimeDomainData(data);
+      ctx.clearRect(0, 0, w, h);
+      ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue("--accent");
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      for (let i = 0; i < data.length; i++) {
+        const x = (i / (data.length - 1)) * w;
+        const y = (data[i] / 255) * h;
+        if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+      animationId = requestAnimationFrame(drawLiveWave);
+    }
+
+    function resetOutput() {
+      responseEl.textContent = "";
+      audioEl.pause();
+      if (audioEl.src) URL.revokeObjectURL(audioEl.src);
+      audioEl.removeAttribute("src");
+      audioEl.classList.remove("visible");
+      resultEl.classList.remove("visible");
+      errorEl.textContent = "";
+      errorEl.classList.remove("visible");
+    }
+
+    function showError(message) {
+      errorEl.textContent = message;
+      errorEl.classList.add("visible");
+      timer.textContent = "Not ready";
+      recordLabel.textContent = "Try again";
+    }
+
+    async function startRecording() {
+      resetOutput();
+      if (window.NativeAudio) {
+        try {
+          if (!window.NativeAudio.startRecording()) throw new Error("Native microphone could not start");
+          nativeRecording = true;
+          startedAt = performance.now();
+          timer.textContent = "00:00";
+          timerId = setInterval(() => timer.textContent = formatTime((performance.now() - startedAt) / 1000), 200);
+          recordButton.classList.add("recording");
+          recordButton.setAttribute("aria-label", "Stop recording");
+          recordLabel.textContent = "Tap when finished";
+          return;
+        } catch (error) {
+          showError(`Microphone failed: ${error.message || error}`);
+          return;
+        }
+      }
+      try {
+        mediaStream = await navigator.mediaDevices.getUserMedia({
+          audio: { channelCount: 1, echoCancellation: true, noiseSuppression: true, autoGainControl: true }
+        });
+        recordingChunks = [];
+        mediaRecorder = new MediaRecorder(mediaStream);
+        mediaRecorder.addEventListener("dataavailable", event => {
+          if (event.data.size) recordingChunks.push(event.data);
+        });
+        mediaRecorder.addEventListener("stop", handleRecordingStop, { once: true });
+        mediaRecorder.start();
+
+        audioContext = new AudioContext();
+        analyser = audioContext.createAnalyser();
+        analyser.fftSize = 512;
+        audioContext.createMediaStreamSource(mediaStream).connect(analyser);
+
+        startedAt = performance.now();
+        timer.textContent = "00:00";
+        timerId = setInterval(() => timer.textContent = formatTime((performance.now() - startedAt) / 1000), 200);
+        recordButton.classList.add("recording");
+        recordButton.setAttribute("aria-label", "Stop recording");
+        recordLabel.textContent = "Tap when finished";
+        drawLiveWave();
+      } catch (error) {
+        showError(`Microphone access failed: ${error.name || "Error"}: ${error.message || error}`);
+      }
+    }
+
+    function stopRecording() {
+      if (nativeRecording) {
+        nativeRecording = false;
+        clearInterval(timerId);
+        recordButton.classList.remove("recording");
+        recordButton.disabled = true;
+        recordButton.setAttribute("aria-label", "Processing audio");
+        recordLabel.textContent = "Preparing audio";
+        timer.textContent = "Please wait…";
+        window.NativeAudio.stopRecording();
+        return;
+      }
+      if (mediaRecorder?.state !== "recording") return;
+      mediaRecorder.stop();
+      clearInterval(timerId);
+      cancelAnimationFrame(animationId);
+      mediaStream?.getTracks().forEach(track => track.stop());
+      audioContext?.close();
+      analyser = null;
+      recordButton.classList.remove("recording");
+      recordButton.disabled = true;
+      recordButton.setAttribute("aria-label", "Processing audio");
+      recordLabel.textContent = "Preparing audio";
+      timer.textContent = "Please wait…";
+      drawIdleWave();
+    }
+
+    recordButton.addEventListener("click", () => {
+      if (nativeRecording || mediaRecorder?.state === "recording") stopRecording();
+      else if (!recordButton.disabled) startRecording();
+    });
+
+    window.onNativeRecording = async encoded => {
+      try {
+        const binary = atob(encoded);
+        const wav = new Uint8Array(binary.length);
+        for (let i = 0; i < binary.length; i++) wav[i] = binary.charCodeAt(i);
+        await sendToPhone(wav);
+      } catch (error) {
+        showError(error.message || String(error));
+      } finally {
+        recordButton.disabled = false;
+        recordButton.setAttribute("aria-label", "Start recording");
+      }
+    };
+
+    window.onNativeRecordingError = message => {
+      nativeRecording = false;
+      clearInterval(timerId);
+      recordButton.classList.remove("recording");
+      recordButton.disabled = false;
+      showError(message);
+    };
+
+    window.stopNativeRecordingFromLimit = () => {
+      if (nativeRecording) stopRecording();
+    };
+
+    async function handleRecordingStop() {
+      try {
+        const blob = new Blob(recordingChunks, { type: mediaRecorder.mimeType });
+        const wav = await audioBlobToWav(blob);
+        await sendToPhone(wav);
+      } catch (error) {
+        showError(error.message || String(error));
+      } finally {
+        recordButton.disabled = false;
+        recordButton.setAttribute("aria-label", "Start recording");
+      }
+    }
+
+    fileInput.addEventListener("change", async () => {
+      const file = fileInput.files?.[0];
+      if (!file) return;
+      resetOutput();
+      recordButton.disabled = true;
+      recordLabel.textContent = "Preparing audio";
+      timer.textContent = file.name;
+      try {
+        const wav = await audioBlobToWav(file);
+        await sendToPhone(wav);
+      } catch (error) {
+        showError(error.message || String(error));
+      } finally {
+        recordButton.disabled = false;
+        fileInput.value = "";
+      }
+    });
+
+    async function audioBlobToWav(blob) {
+      const context = new AudioContext();
+      const decoded = await context.decodeAudioData(await blob.arrayBuffer());
+      const length = Math.ceil(decoded.duration * 16000);
+      const offline = new OfflineAudioContext(1, length, 16000);
+      const source = offline.createBufferSource();
+      source.buffer = decoded;
+      source.connect(offline.destination);
+      source.start();
+      const rendered = await offline.startRendering();
+      await context.close();
+      return encodeWav16(rendered.getChannelData(0), 16000);
+    }
+
+    function encodeWav16(samples, sampleRate) {
+      const buffer = new ArrayBuffer(44 + samples.length * 2);
+      const view = new DataView(buffer);
+      const writeString = (offset, text) => {
+        for (let i = 0; i < text.length; i++) view.setUint8(offset + i, text.charCodeAt(i));
+      };
+      writeString(0, "RIFF");
+      view.setUint32(4, 36 + samples.length * 2, true);
+      writeString(8, "WAVE");
+      writeString(12, "fmt ");
+      view.setUint32(16, 16, true);
+      view.setUint16(20, 1, true);
+      view.setUint16(22, 1, true);
+      view.setUint32(24, sampleRate, true);
+      view.setUint32(28, sampleRate * 2, true);
+      view.setUint16(32, 2, true);
+      view.setUint16(34, 16, true);
+      writeString(36, "data");
+      view.setUint32(40, samples.length * 2, true);
+      for (let i = 0; i < samples.length; i++) {
+        const sample = Math.max(-1, Math.min(1, samples[i]));
+        view.setInt16(44 + i * 2, sample < 0 ? sample * 32768 : sample * 32767, true);
+      }
+      return new Uint8Array(buffer);
+    }
+
+    function bytesToBase64(bytes) {
+      let binary = "";
+      const chunk = 0x8000;
+      for (let i = 0; i < bytes.length; i += chunk) {
+        binary += String.fromCharCode(...bytes.subarray(i, i + chunk));
+      }
+      return btoa(binary);
+    }
+
+    function base64ToFloat32(data) {
+      const binary = atob(data);
+      const buffer = new ArrayBuffer(binary.length);
+      const bytes = new Uint8Array(buffer);
+      for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+      const view = new DataView(buffer);
+      const samples = new Float32Array(Math.floor(binary.length / 4));
+      for (let i = 0; i < samples.length; i++) samples[i] = view.getFloat32(i * 4, true);
+      return samples;
+    }
+
+    async function sendToPhone(wavBytes) {
+      recordLabel.textContent = "Phone is thinking";
+      timer.textContent = "Streaming over USB…";
+      resultEl.classList.add("visible");
+      responseEl.textContent = "";
+      const audioChunks = [];
+      let sampleRate = 24000;
+
+      const payload = {
+        model: "LFM2.5-Audio-1.5B",
+        stream: true,
+        temperature: 0,
+        max_tokens: mode === "chat" ? 192 : 96,
+        messages: [
+          { role: "system", content: mode === "chat" ? "Respond with interleaved text and audio." : "Perform ASR." },
+          { role: "user", content: [{ type: "input_audio", input_audio: { data: bytesToBase64(wavBytes), format: "wav" } }] }
+        ]
+      };
+
+      let networkResponse;
+      try {
+        networkResponse = await fetch(API_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "text/event-stream" },
+          body: JSON.stringify(payload)
+        });
+      } catch (error) {
+        throw new Error("Cannot reach the phone. Keep USB connected and make sure the LFM phone server is running.");
+      }
+      if (!networkResponse.ok || !networkResponse.body) {
+        throw new Error(`Phone API error (${networkResponse.status}).`);
+      }
+
+      const reader = networkResponse.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      let firstToken = true;
+
+      while (true) {
+        const { value, done } = await reader.read();
+        buffer += decoder.decode(value || new Uint8Array(), { stream: !done });
+        const events = buffer.split("\n\n");
+        buffer = events.pop() || "";
+        for (const eventBlock of events) {
+          const dataLine = eventBlock.split("\n").find(line => line.startsWith("data: "));
+          if (!dataLine || dataLine === "data: [DONE]") continue;
+          const event = JSON.parse(dataLine.slice(6));
+          const delta = event.choices?.[0]?.delta || {};
+          if (delta.content) {
+            if (firstToken) {
+              firstToken = false;
+              timer.textContent = "First token received";
+            }
+            responseEl.textContent += delta.content;
+          }
+          if (delta.audio_chunk?.data) {
+            sampleRate = delta.audio_chunk.sample_rate || sampleRate;
+            audioChunks.push(base64ToFloat32(delta.audio_chunk.data));
+          }
+        }
+        if (done) break;
+      }
+
+      if (audioChunks.length) {
+        const total = audioChunks.reduce((sum, chunk) => sum + chunk.length, 0);
+        const joined = new Float32Array(total);
+        let offset = 0;
+        for (const chunk of audioChunks) { joined.set(chunk, offset); offset += chunk.length; }
+        const wav = encodeWav16(joined, sampleRate);
+        audioEl.src = URL.createObjectURL(new Blob([wav], { type: "audio/wav" }));
+        audioEl.classList.add("visible");
+        await audioEl.play().catch(() => {});
+      }
+
+      recordLabel.textContent = "Tap to speak again";
+      timer.textContent = "Completed on phone";
+    }
+
+    async function waitForModel() {
+      try {
+        await fetch("http://127.0.0.1:8080/", { method: "GET", cache: "no-store" });
+        deviceStatusText.textContent = "Model ready";
+        recordButton.disabled = false;
+        recordLabel.textContent = "Tap to speak";
+        timer.textContent = "Ready";
+      } catch (error) {
+        deviceStatusText.textContent = "Starting model";
+        setTimeout(waitForModel, 700);
+      }
+    }
+
+    window.addEventListener("resize", drawIdleWave);
+    drawIdleWave();
+    waitForModel();
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js").catch(() => {});
+    }
+  </script>
+</body>
+</html>

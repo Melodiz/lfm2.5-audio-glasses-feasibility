@@ -1,0 +1,173 @@
+capture,category,detail,mapping_count,Size,Rss,Pss,Shared_Clean,Shared_Dirty,Private_Clean,Private_Dirty,Anonymous,Swap
+idle,anonymous,[anon:scudo:secondary],75,1971264,944816,944816,0,0,0,944816,944816,0
+idle,gguf_weights,LFM2.5-Audio-1.5B-Q4_0.gguf,2,667908,667908,667908,0,0,667908,0,0,0
+idle,gguf_weights,tokenizer-LFM2.5-Audio-1.5B-Q4_0.gguf,2,46472,46472,46472,0,0,46472,0,0,0
+idle,anonymous,[anon:scudo:primary],33,29952,23348,23348,0,0,0,23348,23348,0
+idle,shared_libraries,libliquid-audio.so,3,2428,1916,1916,0,0,1868,48,48,0
+idle,shared_libraries,libllama.so,3,2080,1696,1696,0,0,1648,48,48,0
+idle,shared_libraries,liblfmserver.so,3,1248,1056,1056,0,0,1028,28,28,0
+idle,other_file_backed,/apex/com.android.runtime/bin/linker64,4,1492,916,50,872,0,0,44,44,0
+idle,shared_libraries,libc.so,4,960,828,22,808,0,0,20,20,0
+idle,shared_libraries,libggml-base.so,3,932,804,804,0,0,768,36,36,0
+idle,shared_libraries,libc++.so,4,1028,784,38,748,0,0,36,36,0
+idle,anonymous,[anon:.bss],16,944,712,712,0,0,0,712,712,0
+idle,shared_libraries,libggml-cpu-android_armv8.6_1.so,3,700,644,644,0,0,628,16,16,0
+idle,shared_libraries,libggml.so,3,660,596,596,0,0,568,28,28,0
+idle,shared_libraries,libmtmd.so,3,684,428,428,0,0,412,16,16,0
+idle,device_mappings,/dev/__properties__/property_info,2,280,268,0,0,268,0,0,0,0
+idle,shared_libraries,libm.so,4,228,172,11,164,0,0,8,8,0
+idle,anonymous,[anon:bionic_alloc_small_objects],15,116,116,116,0,0,0,116,116,0
+idle,anonymous,[stack],1,136,92,92,0,0,0,92,92,0
+idle,anonymous,[anon:System property context nodes],2,48,48,48,0,0,0,48,48,0
+idle,shared_libraries,libnetd_client.so,4,40,40,8,32,0,0,8,8,0
+idle,anonymous,[anon:linker_alloc],4,1920,28,28,0,0,0,28,28,0
+idle,anonymous,[anon:stack_and_tls:28632],1,1008,20,20,0,0,0,20,20,0
+idle,anonymous,[anon:cfi shadow],9,2097152,16,16,0,0,0,16,16,0
+idle,device_mappings,/dev/__properties__/u:object_r:build_prop:s0,1,128,16,0,0,16,0,0,0,0
+idle,device_mappings,/dev/__properties__/u:object_r:debug_prop:s0,2,256,16,0,0,16,0,0,0,0
+idle,anonymous,[anon:stack_and_tls:28635],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28634],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28633],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28631],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28630],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28629],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28628],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28627],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28626],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28625],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28624],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28623],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28622],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28621],1,1008,12,12,0,0,0,12,12,0
+idle,anonymous,[anon:stack_and_tls:28572],1,1008,12,12,0,0,0,12,12,0
+idle,shared_libraries,libdl.so,3,12,12,4,8,0,0,4,4,0
+idle,anonymous,[anon:stack_and_tls:main],1,16,12,12,0,0,0,12,12,0
+idle,device_mappings,/dev/__properties__/properties_serial,2,256,8,0,0,8,0,0,0,0
+idle,anonymous,[anon:atexit handlers],2,8,8,8,0,0,0,8,8,0
+idle,anonymous,[anon:arc4random data],2,8,8,8,0,0,0,8,8,0
+idle,device_mappings,/dev/__properties__/u:object_r:heapprofd_prop:s0,1,128,4,0,0,4,0,0,0,0
+idle,device_mappings,/dev/__properties__/u:object_r:libc_debug_prop:s0,1,128,4,0,0,4,0,0,0,0
+idle,device_mappings,/dev/__properties__/u:object_r:gwp_asan_prop:s0,1,128,4,0,0,4,0,0,0,0
+idle,device_mappings,/dev/__properties__/u:object_r:vendor_socket_hook_prop:s0,1,128,4,0,0,4,0,0,0,0
+idle,device_mappings,/dev/__properties__/u:object_r:vndk_prop:s0,1,128,4,0,0,4,0,0,0,0
+idle,special_mappings,[vdso],1,8,4,0,4,0,0,0,0,0
+idle,anonymous,<anonymous>,199,368264,0,0,0,0,0,0,0,0
+idle,anonymous,[anon:thread signal stack],17,544,0,0,0,0,0,0,0,0
+idle,anonymous,[anon:scudo:primary_reserve],34,8620800,0,0,0,0,0,0,0,0
+idle,special_mappings,[page size compat],6,48,0,0,0,0,0,0,0,0
+idle,special_mappings,[vvar],1,8,0,0,0,0,0,0,0,0
+active_peak,anonymous,[anon:scudo:secondary],91,1991596,1000048,1000048,0,0,0,1000048,1000048,0
+active_peak,gguf_weights,LFM2.5-Audio-1.5B-Q4_0.gguf,2,667908,667908,667908,0,0,667908,0,0,0
+active_peak,gguf_weights,tokenizer-LFM2.5-Audio-1.5B-Q4_0.gguf,2,46472,46472,46472,0,0,46472,0,0,0
+active_peak,anonymous,[anon:scudo:primary],33,29952,23612,23612,0,0,0,23612,23612,0
+active_peak,shared_libraries,libliquid-audio.so,3,2428,1916,1916,0,0,1868,48,48,0
+active_peak,shared_libraries,libllama.so,3,2080,1696,1696,0,0,1648,48,48,0
+active_peak,shared_libraries,liblfmserver.so,3,1248,1056,1056,0,0,1028,28,28,0
+active_peak,other_file_backed,/apex/com.android.runtime/bin/linker64,4,1492,916,51,872,0,0,44,44,0
+active_peak,shared_libraries,libc.so,4,960,828,22,808,0,0,20,20,0
+active_peak,shared_libraries,libggml-base.so,3,932,804,804,0,0,768,36,36,0
+active_peak,shared_libraries,libc++.so,4,1028,784,38,748,0,0,36,36,0
+active_peak,anonymous,[anon:.bss],16,944,712,712,0,0,0,712,712,0
+active_peak,shared_libraries,libggml-cpu-android_armv8.6_1.so,3,700,700,700,0,0,684,16,16,0
+active_peak,shared_libraries,libmtmd.so,3,684,684,684,0,0,668,16,16,0
+active_peak,shared_libraries,libggml.so,3,660,596,596,0,0,568,28,28,0
+active_peak,device_mappings,/dev/__properties__/property_info,2,280,268,0,0,268,0,0,0,0
+active_peak,shared_libraries,libm.so,4,228,172,11,164,0,0,8,8,0
+active_peak,anonymous,[anon:bionic_alloc_small_objects],15,116,116,116,0,0,0,116,116,0
+active_peak,anonymous,[stack],1,136,92,92,0,0,0,92,92,0
+active_peak,anonymous,[anon:stack_and_tls:28653],1,1008,52,52,0,0,0,52,52,0
+active_peak,anonymous,[anon:System property context nodes],2,48,48,48,0,0,0,48,48,0
+active_peak,shared_libraries,libnetd_client.so,4,40,40,8,32,0,0,8,8,0
+active_peak,anonymous,[anon:stack_and_tls:28630],1,1008,36,36,0,0,0,36,36,0
+active_peak,anonymous,[anon:linker_alloc],4,1920,28,28,0,0,0,28,28,0
+active_peak,anonymous,[anon:stack_and_tls:28632],1,1008,20,20,0,0,0,20,20,0
+active_peak,anonymous,[anon:cfi shadow],9,2097152,16,16,0,0,0,16,16,0
+active_peak,device_mappings,/dev/__properties__/u:object_r:build_prop:s0,1,128,16,0,0,16,0,0,0,0
+active_peak,device_mappings,/dev/__properties__/u:object_r:debug_prop:s0,2,256,16,0,0,16,0,0,0,0
+active_peak,anonymous,[anon:stack_and_tls:28635],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28634],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28633],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28631],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28629],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28628],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28627],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28626],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28625],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28624],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28623],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28622],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28621],1,1008,12,12,0,0,0,12,12,0
+active_peak,anonymous,[anon:stack_and_tls:28572],1,1008,12,12,0,0,0,12,12,0
+active_peak,shared_libraries,libdl.so,3,12,12,4,8,0,0,4,4,0
+active_peak,anonymous,[anon:stack_and_tls:main],1,16,12,12,0,0,0,12,12,0
+active_peak,device_mappings,/dev/__properties__/properties_serial,2,256,8,0,0,8,0,0,0,0
+active_peak,anonymous,[anon:atexit handlers],2,8,8,8,0,0,0,8,8,0
+active_peak,anonymous,[anon:arc4random data],2,8,8,8,0,0,0,8,8,0
+active_peak,device_mappings,/dev/__properties__/u:object_r:heapprofd_prop:s0,1,128,4,0,0,4,0,0,0,0
+active_peak,device_mappings,/dev/__properties__/u:object_r:libc_debug_prop:s0,1,128,4,0,0,4,0,0,0,0
+active_peak,device_mappings,/dev/__properties__/u:object_r:gwp_asan_prop:s0,1,128,4,0,0,4,0,0,0,0
+active_peak,device_mappings,/dev/__properties__/u:object_r:vendor_socket_hook_prop:s0,1,128,4,0,0,4,0,0,0,0
+active_peak,device_mappings,/dev/__properties__/u:object_r:vndk_prop:s0,1,128,4,0,0,4,0,0,0,0
+active_peak,special_mappings,[vdso],1,8,4,0,4,0,0,0,0,0
+active_peak,anonymous,<anonymous>,219,384824,0,0,0,0,0,0,0,0
+active_peak,anonymous,[anon:thread signal stack],18,576,0,0,0,0,0,0,0,0
+active_peak,anonymous,[anon:scudo:primary_reserve],34,8620800,0,0,0,0,0,0,0,0
+active_peak,special_mappings,[page size compat],6,48,0,0,0,0,0,0,0,0
+active_peak,special_mappings,[vvar],1,8,0,0,0,0,0,0,0,0
+after,anonymous,[anon:scudo:secondary],91,1991596,1000048,1000048,0,0,0,1000048,1000048,0
+after,gguf_weights,LFM2.5-Audio-1.5B-Q4_0.gguf,2,667908,667908,667908,0,0,667908,0,0,0
+after,gguf_weights,tokenizer-LFM2.5-Audio-1.5B-Q4_0.gguf,2,46472,46472,46472,0,0,46472,0,0,0
+after,anonymous,[anon:scudo:primary],33,29952,23612,23612,0,0,0,23612,23612,0
+after,shared_libraries,libliquid-audio.so,3,2428,1916,1916,0,0,1868,48,48,0
+after,shared_libraries,libllama.so,3,2080,1696,1696,0,0,1648,48,48,0
+after,shared_libraries,liblfmserver.so,3,1248,1056,1056,0,0,1028,28,28,0
+after,other_file_backed,/apex/com.android.runtime/bin/linker64,4,1492,916,51,872,0,0,44,44,0
+after,shared_libraries,libc.so,4,960,828,22,808,0,0,20,20,0
+after,shared_libraries,libggml-base.so,3,932,804,804,0,0,768,36,36,0
+after,shared_libraries,libc++.so,4,1028,784,38,748,0,0,36,36,0
+after,anonymous,[anon:.bss],16,944,712,712,0,0,0,712,712,0
+after,shared_libraries,libggml-cpu-android_armv8.6_1.so,3,700,700,700,0,0,684,16,16,0
+after,shared_libraries,libmtmd.so,3,684,684,684,0,0,668,16,16,0
+after,shared_libraries,libggml.so,3,660,596,596,0,0,568,28,28,0
+after,device_mappings,/dev/__properties__/property_info,2,280,268,0,0,268,0,0,0,0
+after,shared_libraries,libm.so,4,228,172,11,164,0,0,8,8,0
+after,anonymous,[anon:bionic_alloc_small_objects],15,116,116,116,0,0,0,116,116,0
+after,anonymous,[stack],1,136,92,92,0,0,0,92,92,0
+after,anonymous,[anon:System property context nodes],2,48,48,48,0,0,0,48,48,0
+after,shared_libraries,libnetd_client.so,4,40,40,8,32,0,0,8,8,0
+after,anonymous,[anon:stack_and_tls:28630],1,1008,36,36,0,0,0,36,36,0
+after,anonymous,[anon:linker_alloc],4,1920,28,28,0,0,0,28,28,0
+after,anonymous,[anon:stack_and_tls:28632],1,1008,20,20,0,0,0,20,20,0
+after,anonymous,[anon:cfi shadow],9,2097152,16,16,0,0,0,16,16,0
+after,device_mappings,/dev/__properties__/u:object_r:build_prop:s0,1,128,16,0,0,16,0,0,0,0
+after,device_mappings,/dev/__properties__/u:object_r:debug_prop:s0,2,256,16,0,0,16,0,0,0,0
+after,anonymous,[anon:stack_and_tls:28635],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28634],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28633],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28631],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28629],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28628],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28627],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28626],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28625],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28624],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28623],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28622],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28621],1,1008,12,12,0,0,0,12,12,0
+after,anonymous,[anon:stack_and_tls:28572],1,1008,12,12,0,0,0,12,12,0
+after,shared_libraries,libdl.so,3,12,12,4,8,0,0,4,4,0
+after,anonymous,[anon:stack_and_tls:main],1,16,12,12,0,0,0,12,12,0
+after,device_mappings,/dev/__properties__/properties_serial,2,256,8,0,0,8,0,0,0,0
+after,anonymous,[anon:atexit handlers],2,8,8,8,0,0,0,8,8,0
+after,anonymous,[anon:arc4random data],2,8,8,8,0,0,0,8,8,0
+after,device_mappings,/dev/__properties__/u:object_r:heapprofd_prop:s0,1,128,4,0,0,4,0,0,0,0
+after,device_mappings,/dev/__properties__/u:object_r:libc_debug_prop:s0,1,128,4,0,0,4,0,0,0,0
+after,device_mappings,/dev/__properties__/u:object_r:gwp_asan_prop:s0,1,128,4,0,0,4,0,0,0,0
+after,device_mappings,/dev/__properties__/u:object_r:vendor_socket_hook_prop:s0,1,128,4,0,0,4,0,0,0,0
+after,device_mappings,/dev/__properties__/u:object_r:vndk_prop:s0,1,128,4,0,0,4,0,0,0,0
+after,special_mappings,[vdso],1,8,4,0,4,0,0,0,0,0
+after,anonymous,<anonymous>,216,368392,0,0,0,0,0,0,0,0
+after,anonymous,[anon:thread signal stack],17,544,0,0,0,0,0,0,0,0
+after,anonymous,[anon:scudo:primary_reserve],34,8620800,0,0,0,0,0,0,0,0
+after,special_mappings,[page size compat],6,48,0,0,0,0,0,0,0,0
+after,special_mappings,[vvar],1,8,0,0,0,0,0,0,0,0

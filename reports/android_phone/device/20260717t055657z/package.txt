@@ -1,0 +1,146 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        5e48d75 ai.liquid.lfmdemo/.MainActivity filter 2e8110a
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Domain verification status:
+
+Key Set Manager:
+  [ai.liquid.lfmdemo]
+      Signing KeySets: 82
+
+Packages:
+  Package [ai.liquid.lfmdemo] (33bf7c1):
+    appId=10538
+    pkg=Package{d20d9a ai.liquid.lfmdemo}
+    codePath=/data/app/~~ppbPeKlvw9FBr_55y5_9tg==/ai.liquid.lfmdemo-2tGJnsuxs4jNR_9jXBtjbw==
+    resourcePath=/data/app/~~ppbPeKlvw9FBr_55y5_9tg==/ai.liquid.lfmdemo-2tGJnsuxs4jNR_9jXBtjbw==
+    legacyNativeLibraryDir=/data/app/~~ppbPeKlvw9FBr_55y5_9tg==/ai.liquid.lfmdemo-2tGJnsuxs4jNR_9jXBtjbw==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=2 minSdk=28 targetSdk=35
+    minExtensionVersions=[]
+    versionName=0.2.0-profile
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2026-07-17 13:20:29
+    lastUpdateTime=2026-07-17 13:20:29
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{ee3f8e version:2, signatures:[a85bb3d1], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ DEBUGGABLE HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    requested permissions:
+      android.permission.POST_NOTIFICATIONS
+      android.permission.FOREGROUND_SERVICE
+      android.permission.INTERNET
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC
+      android.permission.RECORD_AUDIO
+    install permissions:
+      android.permission.FOREGROUND_SERVICE: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.FOREGROUND_SERVICE_DATA_SYNC: granted=true
+    User 0: ceDataInode=66513 deDataInode=66711 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/ai.liquid.lfmdemo
+      firstInstallTime=2026-07-16 19:16:51
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGesturalIndicator/NavigationBarModeGesturalOverlayIndicator.apk
+        /data/resource-cache/com.android.systemui-neutral-H18y.frro
+        /data/resource-cache/com.android.systemui-accent-GneU.frro
+        /data/resource-cache/com.android.systemui-dynamic-1l24.frro
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGesturalIndicator/NavigationBarModeGesturalOverlayIndicator.apk
+      gids=[3003]
+      runtime permissions:
+        android.permission.POST_NOTIFICATIONS: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.RECORD_AUDIO: granted=true, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    [com.zte.dfs,com.zte.aiengine,com.zte.burntest.camera,com.zte.mifavor.launcher.adapter,com.zte.carmateservice,zte.com.cn.alarmclock,com.zte.fingerprints,com.zte.dbneopush,com.zte.fastpair,com.zte.floatassist,com.zte.powersavemode,com.zte.distservice.relayservice,cn.nubia.gamepi,com.android.aftersaleservice,com.zte.analytics,com.android.server.telecom,com.android.localtransport,com.zte.zgesture,com.fingerprint.sensorservice,com.zte.distservice.servicemanager,android,com.android.ztescreenshot,com.android.providers.settings,com.qualcomm.qti.services.systemhelper,com.zte.linkspeedup,com.zte.zsound,com.zte.multscr,androidzte,com.android.keychain,com.zte.emode,com.zte.zdmdaemon,com.qti.snapdragon.qdcm_ff,cn.nubia.gpu.drivers,com.zte.wlansniffertool,com.qualcomm.qti.xrvd.service,com.android.inputdevices,cn.nubia.healthy,com.westalgo.aftersalecamera,com.zte.vendor.ifaa,com.android.dynsystem,com.android.subsys,com.tencent.soter.soterserver,com.wapi.wapicertmanage,cn.nubia.gif,vendor.qti.frameworks.utils,com.zte.thermald,com.ztefingerprint.service,com.android.settings,com.android.location.fused,com.zte.intellitext,com.android.DeviceAsWebcam,com.zte.zbackup.platservice,zpub.res,com.zte.neopush]:
+      ai.liquid.lfmdemo
+    com.baidu.input_oem:
+      ai.liquid.lfmdemo
+    cn.nubia.gamelauncher:
+      ai.liquid.lfmdemo
+    cn.nubia.neogamecenter:
+      ai.liquid.lfmdemo
+    cn.nubia.neostore:
+      ai.liquid.lfmdemo
+    com.android.packageinstaller:
+      ai.liquid.lfmdemo
+    cn.nubia.gamehelperline:
+      ai.liquid.lfmdemo
+    cn.zte.gamefloat:
+      ai.liquid.lfmdemo
+    cn.nubia.browser:
+      ai.liquid.lfmdemo
+    com.zte.pcgame:
+      ai.liquid.lfmdemo
+    com.xiaoji.egggame.redmagic:
+      ai.liquid.lfmdemo
+    com.android.settings.intelligence:
+      ai.liquid.lfmdemo
+    com.zte.vlm_agent:
+      ai.liquid.lfmdemo
+    cn.nubia.externdevice:
+      ai.liquid.lfmdemo
+    com.autonavi.minimap:
+      ai.liquid.lfmdemo
+    com.aliyun.tongyi:
+      ai.liquid.lfmdemo
+    com.tencent.mm:
+      ai.liquid.lfmdemo
+  queryable via interaction:
+    User 0:
+      [com.zte.dfs,com.zte.aiengine,com.zte.burntest.camera,com.zte.mifavor.launcher.adapter,com.zte.carmateservice,zte.com.cn.alarmclock,com.zte.fingerprints,com.zte.dbneopush,com.zte.fastpair,com.zte.floatassist,com.zte.powersavemode,com.zte.distservice.relayservice,cn.nubia.gamepi,com.android.aftersaleservice,com.zte.analytics,com.android.server.telecom,com.android.localtransport,com.zte.zgesture,com.fingerprint.sensorservice,com.zte.distservice.servicemanager,android,com.android.ztescreenshot,com.android.providers.settings,com.qualcomm.qti.services.systemhelper,com.zte.linkspeedup,com.zte.zsound,com.zte.multscr,androidzte,com.android.keychain,com.zte.emode,com.zte.zdmdaemon,com.qti.snapdragon.qdcm_ff,cn.nubia.gpu.drivers,com.zte.wlansniffertool,com.qualcomm.qti.xrvd.service,com.android.inputdevices,cn.nubia.healthy,com.westalgo.aftersalecamera,com.zte.vendor.ifaa,com.android.dynsystem,com.android.subsys,com.tencent.soter.soterserver,com.wapi.wapicertmanage,cn.nubia.gif,vendor.qti.frameworks.utils,com.zte.thermald,com.ztefingerprint.service,com.android.settings,com.android.location.fused,com.zte.intellitext,com.android.DeviceAsWebcam,com.zte.zbackup.platservice,zpub.res,com.zte.neopush]:
+        ai.liquid.lfmdemo
+      com.baidu.input_oem:
+        ai.liquid.lfmdemo
+      cn.nubia.gamelauncher:
+        ai.liquid.lfmdemo
+      [com.zte.cn.zteshare,com.android.systemui]:
+        ai.liquid.lfmdemo
+      com.google.android.webview:
+        ai.liquid.lfmdemo
+      com.zte.mifavor.launcher:
+        ai.liquid.lfmdemo
+      android.ext.services:
+        ai.liquid.lfmdemo
+      ai.liquid.lfmdemo:
+        com.google.android.webview
+  queryable via uses-library:
+
+Dexopt state:
+  [ai.liquid.lfmdemo]
+    path: /data/app/~~ppbPeKlvw9FBr_55y5_9tg==/ai.liquid.lfmdemo-2tGJnsuxs4jNR_9jXBtjbw==/base.apk
+      arm64: [status=run-from-apk] [reason=unknown] [primary-abi]
+        [location is error]
+
+Compiler stats:
+  [ai.liquid.lfmdemo]
+    (No recorded stats)

@@ -9,3 +9,9 @@ reports/local_q4_matrix/raw/
 *.safetensors
 __pycache__/
 .DS_Store
+android-app/.gradle/
+android-app/**/build/
+android-app/local.properties
+work/models/
+work/downloads/
+*.gguf

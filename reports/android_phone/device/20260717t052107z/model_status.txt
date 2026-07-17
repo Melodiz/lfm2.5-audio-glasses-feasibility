@@ -1,0 +1,54 @@
+Name:	liblfmserver.so
+Umask:	0077
+State:	S (sleeping)
+Tgid:	27569
+Ngid:	0
+Pid:	27569
+PPid:	27471
+TracerPid:	0
+Uid:	10538	10538	10538	10538
+Gid:	10538	10538	10538	10538
+FDSize:	256
+Groups:	3003 9997 20538 50538 99909997 
+Kthread:	0
+VmPeak:	13950752 kB
+VmSize:	13950752 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	 1730580 kB
+VmRSS:	 1730580 kB
+RssAnon:	 1006452 kB
+RssFile:	  723984 kB
+RssShmem:	     144 kB
+VmData:	 2050700 kB
+VmStk:	     136 kB
+VmExe:	    1220 kB
+VmLib:	    9744 kB
+VmPTE:	    3764 kB
+VmSwap:	       0 kB
+CoreDumping:	0
+THP_enabled:	1
+untag_mask:	0xffffffffffffff
+Threads:	17
+SigQ:	0/57649
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000080001204
+SigIgn:	0000002000001001
+SigCgt:	0000004c400084fa
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000000000000000
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	2
+Seccomp_filters:	1
+Speculation_Store_Bypass:	thread vulnerable
+SpeculationIndirectBranch:	unknown
+Cpus_allowed:	ff
+Cpus_allowed_list:	0-7
+Mems_allowed:	1
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	226
+nonvoluntary_ctxt_switches:	43
