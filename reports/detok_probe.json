@@ -45,7 +45,7 @@
     "device": "cpu"
   },
   "load": {
-    "config_path": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/cache/huggingface/hub/models--LiquidAI--LFM2.5-Audio-1.5B/snapshots/c362a0625dfe45aa588dce5f0ada28a7e5707628/audio_detokenizer/config.json",
+    "config_path": "<workspace>/work/cache/huggingface/hub/models--LiquidAI--LFM2.5-Audio-1.5B/snapshots/c362a0625dfe45aa588dce5f0ada28a7e5707628/audio_detokenizer/config.json",
     "original_layer_types": [
       "conv",
       "conv",
@@ -66,7 +66,7 @@
       "full_attention",
       "conv"
     ],
-    "checkpoint": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/cache/huggingface/hub/models--LiquidAI--LFM2.5-Audio-1.5B/snapshots/c362a0625dfe45aa588dce5f0ada28a7e5707628/audio_detokenizer/model.safetensors",
+    "checkpoint": "<workspace>/work/cache/huggingface/hub/models--LiquidAI--LFM2.5-Audio-1.5B/snapshots/c362a0625dfe45aa588dce5f0ada28a7e5707628/audio_detokenizer/model.safetensors",
     "checkpoint_bytes": 314137512,
     "checkpoint_tensor_count": 79,
     "selected_tensor_count": 78,
@@ -89,7 +89,7 @@
     "t4": {
       "capture": {
         "length": 4,
-        "artifact_dir": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/artifacts/detok-neural-probe-t4",
+        "artifact_dir": "<workspace>/work/lfm-feasibility/artifacts/detok-neural-probe-t4",
         "input": {
           "shape": [
             1,
@@ -159,7 +159,7 @@
       },
       "export": {
         "status": "success",
-        "pt2_path": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/detok_neural_probe_codes_t4.pt2",
+        "pt2_path": "<workspace>/work/lfm-feasibility/exports/detok_neural_probe_codes_t4.pt2",
         "pt2_bytes": 315538773,
         "export_seconds": 1.1765165419783443,
         "rss_before_export_bytes": 764493824,
@@ -231,7 +231,7 @@
     "t8": {
       "capture": {
         "length": 8,
-        "artifact_dir": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/artifacts/detok-neural-probe-t8",
+        "artifact_dir": "<workspace>/work/lfm-feasibility/artifacts/detok-neural-probe-t8",
         "input": {
           "shape": [
             1,
@@ -301,7 +301,7 @@
       },
       "export": {
         "status": "success",
-        "pt2_path": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/detok_neural_probe_codes_t8.pt2",
+        "pt2_path": "<workspace>/work/lfm-feasibility/exports/detok_neural_probe_codes_t8.pt2",
         "pt2_bytes": 315539221,
         "export_seconds": 0.7922825000714511,
         "rss_before_export_bytes": 1409007616,

@@ -6,7 +6,7 @@
     {
       "name": "fastconformer",
       "status": "passed",
-      "model": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/fastconformer_adapter_mel80.pt2",
+      "model": "<workspace>/work/lfm-feasibility/exports/fastconformer_adapter_mel80.pt2",
       "model_bytes": 483240917,
       "input_shapes": [
         [
@@ -31,7 +31,7 @@
     {
       "name": "backbone_conv",
       "status": "passed",
-      "model": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/lfm2_layer0_conv_seq16.pt2",
+      "model": "<workspace>/work/lfm-feasibility/exports/lfm2_layer0_conv_seq16.pt2",
       "model_bytes": 268688488,
       "input_shapes": [
         [
@@ -56,7 +56,7 @@
     {
       "name": "backbone_attention",
       "status": "passed",
-      "model": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/lfm2_layer2_attention_seq16.pt2",
+      "model": "<workspace>/work/lfm-feasibility/exports/lfm2_layer2_attention_seq16.pt2",
       "model_bytes": 243608981,
       "input_shapes": [
         [
@@ -81,7 +81,7 @@
     {
       "name": "backbone_conv_cached_decode",
       "status": "passed",
-      "model": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/lfm2_layer0_conv_decode_cache.pt2",
+      "model": "<workspace>/work/lfm-feasibility/exports/lfm2_layer0_conv_decode_cache.pt2",
       "model_bytes": 268572583,
       "input_shapes": [
         [
@@ -117,7 +117,7 @@
     {
       "name": "backbone_attention_cached_decode",
       "status": "passed",
-      "model": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/lfm2_layer2_attention_decode_kv16_past8.pt2",
+      "model": "<workspace>/work/lfm-feasibility/exports/lfm2_layer2_attention_decode_kv16_past8.pt2",
       "model_bytes": 243507905,
       "input_shapes": [
         [
@@ -166,7 +166,7 @@
     {
       "name": "depth_decoder",
       "status": "passed",
-      "model": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/depth_decoder_hidden1x2048.pt2",
+      "model": "<workspace>/work/lfm-feasibility/exports/depth_decoder_hidden1x2048.pt2",
       "model_bytes": 776869068,
       "input_shapes": [
         [
@@ -196,7 +196,7 @@
     {
       "name": "detokenizer_t4",
       "status": "passed",
-      "model": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/detok_neural_probe_codes_t4.pt2",
+      "model": "<workspace>/work/lfm-feasibility/exports/detok_neural_probe_codes_t4.pt2",
       "model_bytes": 315538773,
       "input_shapes": [
         [
@@ -227,7 +227,7 @@
     {
       "name": "detokenizer_t8",
       "status": "passed",
-      "model": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/detok_neural_probe_codes_t8.pt2",
+      "model": "<workspace>/work/lfm-feasibility/exports/detok_neural_probe_codes_t8.pt2",
       "model_bytes": 315539221,
       "input_shapes": [
         [

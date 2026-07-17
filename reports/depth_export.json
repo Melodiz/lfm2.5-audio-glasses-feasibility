@@ -1,7 +1,7 @@
 {
   "component": "LFM2.5-Audio real-weight RQ/depth decoder",
   "model_revision": "c362a0625dfe45aa588dce5f0ada28a7e5707628",
-  "checkpoint": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/cache/huggingface/hub/models--LiquidAI--LFM2.5-Audio-1.5B/snapshots/c362a0625dfe45aa588dce5f0ada28a7e5707628/model.safetensors",
+  "checkpoint": "<workspace>/work/cache/huggingface/hub/models--LiquidAI--LFM2.5-Audio-1.5B/snapshots/c362a0625dfe45aa588dce5f0ada28a7e5707628/model.safetensors",
   "dtype": "float32",
   "fixed_input_shapes": {
     "hidden": [
@@ -20,7 +20,7 @@
     ]
   },
   "golden": {
-    "artifact_dir": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/artifacts/depth-probe-golden",
+    "artifact_dir": "<workspace>/work/lfm-feasibility/artifacts/depth-probe-golden",
     "tokens": [
       [
         199,
@@ -59,7 +59,7 @@
   "export": {
     "status": "passed",
     "format": "torch.export pt2",
-    "artifact": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/depth_decoder_hidden1x2048.pt2",
+    "artifact": "<workspace>/work/lfm-feasibility/exports/depth_decoder_hidden1x2048.pt2",
     "artifact_bytes": 776869068,
     "export_seconds": 2.2677576660644263,
     "exported_vs_eager": {

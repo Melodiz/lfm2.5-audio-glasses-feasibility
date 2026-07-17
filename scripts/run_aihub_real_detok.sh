@@ -30,5 +30,4 @@ for frames in 4 8; do
     --runtime strict-npu \
     --output-dir "$OUTPUT_DIR" || status=$?
 done
-printf '%s\n' "$OUTPUT_DIR" >"$PROJECT_DIR/reports/aihub_real_detok_latest.txt"
 exit "$status"

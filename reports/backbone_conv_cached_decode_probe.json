@@ -68,9 +68,9 @@
   },
   "export": {
     "format": "torch.export pt2",
-    "artifact": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/lfm2_layer0_conv_decode_cache.pt2",
+    "artifact": "<workspace>/work/lfm-feasibility/exports/lfm2_layer0_conv_decode_cache.pt2",
     "artifact_bytes": 268572583,
-    "numpy_io": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/lfm2_layer0_conv_decode_cache.npz",
+    "numpy_io": "<workspace>/work/lfm-feasibility/exports/lfm2_layer0_conv_decode_cache.npz",
     "export_seconds": 0.4188548750244081,
     "operator_counts": {
       "<built-in function getitem>": 3,

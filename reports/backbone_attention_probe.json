@@ -7,7 +7,7 @@
   "transformers_layer_class": "Lfm2DecoderLayer",
   "layer_idx": 2,
   "layer_type": "full_attention",
-  "checkpoint": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/cache/huggingface/hub/models--LiquidAI--LFM2.5-Audio-1.5B/snapshots/c362a0625dfe45aa588dce5f0ada28a7e5707628/model.safetensors",
+  "checkpoint": "<workspace>/work/cache/huggingface/hub/models--LiquidAI--LFM2.5-Audio-1.5B/snapshots/c362a0625dfe45aa588dce5f0ada28a7e5707628/model.safetensors",
   "selective_checkpoint_key_count": 11,
   "selective_checkpoint_keys": [
     "lfm.layers.2.feed_forward.w1.weight",
@@ -61,10 +61,10 @@
   },
   "export": {
     "format": "torch.export pt2",
-    "artifact": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/lfm2_layer2_attention_seq16.pt2",
+    "artifact": "<workspace>/work/lfm-feasibility/exports/lfm2_layer2_attention_seq16.pt2",
     "artifact_bytes": 243608981,
-    "numpy_io": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/lfm2_layer2_attention_seq16.npz",
-    "golden": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/artifacts/backbone-probes/attention/golden.pt"
+    "numpy_io": "<workspace>/work/lfm-feasibility/exports/lfm2_layer2_attention_seq16.npz",
+    "golden": "<workspace>/work/lfm-feasibility/artifacts/backbone-probes/attention/golden.pt"
   },
   "exported_vs_local_golden": {
     "max_abs": 0.0,

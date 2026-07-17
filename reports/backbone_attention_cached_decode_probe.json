@@ -93,9 +93,9 @@
   },
   "export": {
     "format": "torch.export pt2",
-    "artifact": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/lfm2_layer2_attention_decode_kv16_past8.pt2",
+    "artifact": "<workspace>/work/lfm-feasibility/exports/lfm2_layer2_attention_decode_kv16_past8.pt2",
     "artifact_bytes": 243507905,
-    "numpy_io": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/lfm2_layer2_attention_decode_kv16_past8.npz",
+    "numpy_io": "<workspace>/work/lfm-feasibility/exports/lfm2_layer2_attention_decode_kv16_past8.npz",
     "export_seconds": 0.314580834005028,
     "operator_counts": {
       "aten._assert_tensor_metadata.default": 9,

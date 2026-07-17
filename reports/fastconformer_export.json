@@ -15,9 +15,9 @@
     ]
   },
   "export_seconds": 1.3630548331420869,
-  "artifact": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/fastconformer_adapter_mel80.pt2",
+  "artifact": "<workspace>/work/lfm-feasibility/exports/fastconformer_adapter_mel80.pt2",
   "artifact_bytes": 483240917,
-  "numpy_io": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/exports/fastconformer_adapter_mel80.npz",
+  "numpy_io": "<workspace>/work/lfm-feasibility/exports/fastconformer_adapter_mel80.npz",
   "eager_vs_component_golden": {
     "adapted": {
       "max_abs": 0.0,

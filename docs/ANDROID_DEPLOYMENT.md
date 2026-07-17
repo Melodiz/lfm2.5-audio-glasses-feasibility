@@ -25,6 +25,18 @@ runner libraries. The four model files are installed separately and occupy
 approximately 1.0 GiB. Keep at least 3 GiB of free phone storage during
 installation because the transfer temporarily creates a second copy.
 
+## NPU status
+
+The packaged Android demo is CPU-only; it does not execute a QNN context
+binary. The HTP v81 toolchain gate has passed; see
+[QAIRT/HTP v81 support](../reports/android_phone/npu/qairt_v81_support.md).
+The current AI Hub experiments are documented in the
+[FP16 transfer report](../reports/android_phone/npu/v81_fp16_transfer/REPORT.md)
+and [W8A16 smoke report](../reports/android_phone/npu/w8a16_smoke/REPORT.md).
+They target the Snapdragon 8 Elite Gen 5 QRD, a reference device, not the Nubia
+retail phone. A full NPU deployment guide will follow the first working QNN
+build integrated into this application.
+
 ## Prerequisites
 
 1. An ARM64 Android phone with USB debugging enabled.

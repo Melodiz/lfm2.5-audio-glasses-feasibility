@@ -67,6 +67,5 @@ HOME="$COLAB_HOME" "$COLAB_CLI" "${COLAB_ARGS[@]}" stop --session "$SESSION"
 SESSION_CREATED=0
 trap - EXIT INT TERM HUP
 
-printf '%s\n' "$LOCAL_ZIP" >"$PROJECT_DIR/reports/colab_candidate_quality_latest.txt"
 printf 'Candidate quality archive: %s\n' "$LOCAL_ZIP"
 exit "$REMOTE_RC"

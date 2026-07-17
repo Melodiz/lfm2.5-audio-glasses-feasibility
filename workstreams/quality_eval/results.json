@@ -2,10 +2,10 @@
   "status": "passed",
   "scope": "Local audit of existing pinned artifacts; no cloud submission.",
   "sources": {
-    "fastconformer_outputs": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/lfm-feasibility/aihub/fastconformer-first-pass-20260715t091744z/fastconformer/outputs-strict-npu.npz",
-    "component_results": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/outputs/lfm-feasibility/reports/aihub_component_results.json",
-    "colab_summary": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/outputs/lfm-feasibility/reports/colab_bf16/summary.json",
-    "colab_tokens": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/outputs/lfm-feasibility/reports/colab_bf16/golden_tokens.npz"
+    "fastconformer_outputs": "<workspace>/work/lfm-feasibility/aihub/fastconformer-first-pass-20260715t091744z/fastconformer/outputs-strict-npu.npz",
+    "component_results": "<workspace>/outputs/lfm-feasibility/reports/aihub_component_results.json",
+    "colab_summary": "<workspace>/outputs/lfm-feasibility/reports/colab_bf16/summary.json",
+    "colab_tokens": "<workspace>/outputs/lfm-feasibility/reports/colab_bf16/golden_tokens.npz"
   },
   "fastconformer_features": {
     "shape": [
@@ -54,7 +54,7 @@
     }
   },
   "full_bf16_asr": {
-    "reference_source": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/work/vendor/liquid-audio/README.md",
+    "reference_source": "<workspace>/work/vendor/liquid-audio/README.md",
     "reference_text": "The stale smell of old beer lingers. It takes heat to bring out the odor. A cold dip restores health and zest. A salt pickle tastes fine with ham. Tacos al pastor are my favorite. A zestful food is the hot cross bun.",
     "decoded_text_raw": "The stale smell of old beer lingers. It takes heat to bring out the odor. A cold dip restores health and zest. A salt pickle tastes fine with ham. Tacos al pastor are my favorite. A zestful food is the hot cross bun.<|im_end|>",
     "decoded_control_suffix_present": true,
@@ -135,7 +135,7 @@
   },
   "generated_audio_integrity": {
     "turn1": {
-      "path": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/outputs/lfm-feasibility/reports/colab_bf16/interleaved_turn1.wav",
+      "path": "<workspace>/outputs/lfm-feasibility/reports/colab_bf16/interleaved_turn1.wav",
       "sample_rate_hz": 24000,
       "channels": 1,
       "samples": 284160,
@@ -155,7 +155,7 @@
       "text_characters_per_audio_second": 12.58445945945946
     },
     "turn2": {
-      "path": "/Users/melodiz/Documents/Codex/2026-07-15/i-w/outputs/lfm-feasibility/reports/colab_bf16/interleaved_turn2.wav",
+      "path": "<workspace>/outputs/lfm-feasibility/reports/colab_bf16/interleaved_turn2.wav",
       "sample_rate_hz": 24000,
       "channels": 1,
       "samples": 215040,
