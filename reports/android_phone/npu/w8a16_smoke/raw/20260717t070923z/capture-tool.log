@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "<repo>/scripts/capture_depth_calibration.py", line 202, in <module>
+    main()
+    ~~~~^^
+  File "<repo>/scripts/capture_depth_calibration.py", line 71, in main
+    processor = LFM2AudioProcessor.from_pretrained(str(snapshot), device="cpu").eval()
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<repo>/vendor/liquid-audio/src/liquid_audio/processor.py", line 63, in from_pretrained
+    cache_path = get_model_dir(repo_id, revision=revision)
+  File "<repo>/vendor/liquid-audio/src/liquid_audio/utils.py", line 48, in get_model_dir
+    cache_path = Path(snapshot_download(repo_id, revision=revision))
+                      ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>/work/venvs/lfm/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "<workspace>/work/venvs/lfm/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+    ...<2 lines>...
+    )
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '<workspace>/work/cache/huggingface/hub/models--LiquidAI--LFM2.5-Audio-1.5B/snapshots/c362a0625dfe45aa588dce5f0ada28a7e5707628'. Use `repo_type` argument if needed.

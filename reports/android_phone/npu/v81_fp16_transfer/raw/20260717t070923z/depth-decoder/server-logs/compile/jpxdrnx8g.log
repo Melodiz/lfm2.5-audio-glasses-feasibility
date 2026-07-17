@@ -1,0 +1,14 @@
+[2026-07-17T07:30:42.533+00:00] [INFO] Compiling model ID mqkxyyzxn
+[2026-07-17T07:30:42.533+00:00] [INFO] [compile-pre-compile] Memory: 1.5GiB / 40.0GiB (4%) | working_set: 648.5MiB | peak: 1.5GiB
+[2026-07-17T07:31:02.100+00:00] [INFO] 
+| /usr/lib/python3.12/copyreg.py:99: FutureWarning: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+|   return cls.__new__(cls, *args)
+| [torch.onnx] Run decompositions...
+| [torch.onnx] Run decompositions... ✅
+| [torch.onnx] Translate the graph into ONNX...
+| [torch.onnx] Translate the graph into ONNX... ✅
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:07:31:01.492886 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "No unused functions to remove"}
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:07:31:01.638174 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "Removed 443 unused nodes"}
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:07:31:01.646899 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "No unused functions to remove"}
+
+[2026-07-17T07:31:02.685+00:00] [INFO] Must use --truncate_64bit_io when output tensors have type int64.

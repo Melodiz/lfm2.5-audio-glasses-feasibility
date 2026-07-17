@@ -1,0 +1,186 @@
+{
+  "plan": {
+    "source_model_id": "mqkxyyzxn",
+    "source_compile_job_id": "jp49ek2q5",
+    "input_dataset_id": "d9emwmov2",
+    "source_inference_job_id": "jpxd06k1g",
+    "io": "<workspace>/work/lfm-feasibility/exports/depth_decoder_hidden1x2048.npz",
+    "input_mapping": {
+      "hidden": "hidden"
+    },
+    "output_mapping": [
+      [
+        "#0",
+        "tokens"
+      ],
+      [
+        "#1",
+        "next_audio_embedding"
+      ]
+    ],
+    "input_specs": {
+      "hidden": [
+        [
+          1,
+          2048
+        ],
+        "float32"
+      ]
+    },
+    "compile_options": "--target_runtime qnn_context_binary --qnn_options default_graph_htp_precision=FLOAT16",
+    "result": {
+      "status": "unsupported_or_compile_failure",
+      "error_verbatim": "Must use --truncate_64bit_io when output tensors have type int64."
+    },
+    "server_logs": {
+      "compile": {
+        "status": "downloaded",
+        "files": [
+          "<repo>/reports/android_phone/npu/v81_fp16_transfer/raw/20260717t070923z/depth-decoder/server-logs/compile/jpxdrnx8g.log"
+        ]
+      }
+    }
+  },
+  "jobs": {
+    "compile": {
+      "fastconformer": {
+        "job_id": "jgz4yon4p",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jgz4yon4p/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "backbone-conv-prefill": {
+        "job_id": "j5w1z244g",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/j5w1z244g/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "backbone-attention-prefill": {
+        "job_id": "jg9x2jdmg",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jg9x2jdmg/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "backbone-conv-cached-decode": {
+        "job_id": "jp1v1y6np",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jp1v1y6np/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "backbone-attention-cached-decode": {
+        "job_id": "j577n09n5",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/j577n09n5/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "depth-decoder": {
+        "job_id": "jpxdrnx8g",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jpxdrnx8g/",
+        "status": "FAILED",
+        "message": "Must use --truncate_64bit_io when output tensors have type int64."
+      },
+      "detokenizer-t4": {
+        "job_id": "j5mdkq875",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/j5mdkq875/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "detokenizer-t8": {
+        "job_id": "jgn7qlkjp",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jgn7qlkjp/",
+        "status": "SUCCESS",
+        "message": ""
+      }
+    },
+    "profile": {
+      "fastconformer": {
+        "job_id": "jp84r0jz5",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jp84r0jz5/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "backbone-conv-prefill": {
+        "job_id": "jgo4wkd45",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jgo4wkd45/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "backbone-attention-prefill": {
+        "job_id": "j5w1z2yzg",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/j5w1z2yzg/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "backbone-conv-cached-decode": {
+        "job_id": "j5mdkq9y5",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/j5mdkq9y5/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "backbone-attention-cached-decode": {
+        "job_id": "jgn7qlqvp",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jgn7qlqvp/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "detokenizer-t4": {
+        "job_id": "jp2vd0dx5",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jp2vd0dx5/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "detokenizer-t8": {
+        "job_id": "jp0v9392g",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jp0v9392g/",
+        "status": "SUCCESS",
+        "message": ""
+      }
+    },
+    "inference": {
+      "fastconformer": {
+        "job_id": "jp84r0rz5",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jp84r0rz5/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "backbone-conv-prefill": {
+        "job_id": "j5qm1e17g",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/j5qm1e17g/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "backbone-attention-prefill": {
+        "job_id": "jgl1868e5",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jgl1868e5/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "backbone-conv-cached-decode": {
+        "job_id": "j56dmemvp",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/j56dmemvp/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "backbone-attention-cached-decode": {
+        "job_id": "jp3w7v7x5",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jp3w7v7x5/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "detokenizer-t4": {
+        "job_id": "jgo4wkw45",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jgo4wkw45/",
+        "status": "SUCCESS",
+        "message": ""
+      },
+      "detokenizer-t8": {
+        "job_id": "jpv9m0m75",
+        "url": "https://workbench.aihub.qualcomm.com/jobs/jpv9m0m75/",
+        "status": "SUCCESS",
+        "message": ""
+      }
+    }
+  },
+  "status": "unsupported_or_compile_failure",
+  "error_verbatim": "Must use --truncate_64bit_io when output tensors have type int64."
+}

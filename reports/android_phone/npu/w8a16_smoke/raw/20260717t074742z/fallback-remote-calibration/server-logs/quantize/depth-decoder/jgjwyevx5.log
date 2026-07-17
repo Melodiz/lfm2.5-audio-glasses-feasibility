@@ -1,0 +1,51 @@
+[2026-07-17T08:10:12.018+00:00] [INFO] [quantize-post-download] Memory: 5.1GiB | working_set: 5.0GiB | peak: 7.3GiB
+[2026-07-17T08:10:14.520+00:00] [INFO] AIMET version: 2.34.0
+[2026-07-17T08:10:14.560+00:00] [INFO] Using quant scheme: QuantScheme.post_training_tf_enhanced
+[2026-07-17T08:10:16.216+00:00] [INFO] Creating Quantization Simulator...
+[2026-07-17T08:10:18.103+00:00] [ERROR] Quantization error
+| Traceback (most recent call last):
+|   File "/tetra/tetracode/src/www/python/tetrai/tasks/quantizer.py", line 112, in quantize
+|     output_onnx_file, psnr, aimet_version = quantize_model(
+|                                             ^^^^^^^^^^^^^^^
+|   File "/tetra/tetracode/src/www/python/tetrai/compilers/aimet_quantizer.py", line 267, in quantize_model
+|     sim: QuantizationSimModel = call_with_io_redirect(
+|                                 ^^^^^^^^^^^^^^^^^^^^^^
+|   File "/tetra/tetracode/src/www/python/tetrai/logging/io_redirect.py", line 54, in call_with_io_redirect
+|     return func(*args, **kwargs)
+|            ^^^^^^^^^^^^^^^^^^^^^
+|   File "/tetra/tetra_env/lib/python3.12/site-packages/aimet_onnx/quantsim.py", line 194, in init_wrapper
+|     return func(self, model, **kwargs)
+|            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+|   File "/tetra/tetra_env/lib/python3.12/site-packages/aimet_onnx/quantsim.py", line 487, in __init__
+|     self.connected_graph = ConnectedGraph(self.model)
+|                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+|   File "/tetra/tetra_env/lib/python3.12/site-packages/aimet_onnx/meta/connectedgraph.py", line 74, in __init__
+|     self._assert_no_conflicting_shared_parameters()
+|   File "/tetra/tetra_env/lib/python3.12/site-packages/aimet_onnx/meta/connectedgraph.py", line 138, in _assert_no_conflicting_shared_parameters
+|     raise RuntimeError("\n".join(msg))
+| RuntimeError: Found shared parameter(s) with conflicting consumer types:
+| 
+|   - input name: depth_embeddings.0.to_logits.weight
+|     - consumer 0: node_linear_31 (Gemm)
+|     - consumer 1: node_embedding (Gather)
+|   - input name: depth_embeddings.1.to_logits.weight
+|     - consumer 0: node_linear_62 (Gemm)
+|     - consumer 1: node_embedding_1 (Gather)
+|   - input name: depth_embeddings.2.to_logits.weight
+|     - consumer 0: node_linear_93 (Gemm)
+|     - consumer 1: node_embedding_2 (Gather)
+|   - input name: depth_embeddings.3.to_logits.weight
+|     - consumer 0: node_linear_124 (Gemm)
+|     - consumer 1: node_embedding_3 (Gather)
+|   - input name: depth_embeddings.4.to_logits.weight
+|     - consumer 0: node_linear_155 (Gemm)
+|     - consumer 1: node_embedding_4 (Gather)
+|   - input name: depth_embeddings.5.to_logits.weight
+|     - consumer 0: node_linear_186 (Gemm)
+|     - consumer 1: node_embedding_5 (Gather)
+|   - input name: depth_embeddings.6.to_logits.weight
+|     - consumer 0: node_linear_217 (Gemm)
+|     - consumer 1: node_embedding_6 (Gather)
+| 
+| Please call ``aimet_onnx.utils.duplicate_shared_initializers(onnx_model.graph)`` before creating QuantizationSimModel to ensure each consumer takes a unique copy of the initializer as input.
+

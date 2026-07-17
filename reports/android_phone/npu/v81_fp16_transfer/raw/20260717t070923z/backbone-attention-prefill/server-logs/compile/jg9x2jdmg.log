@@ -1,0 +1,179 @@
+[2026-07-17T07:29:30.231+00:00] [INFO] Compiling model ID mnjk65y9m
+[2026-07-17T07:29:30.231+00:00] [INFO] [compile-pre-compile] Memory: 1013.3MiB / 40.0GiB (2%) | working_set: 632.4MiB | peak: 1013.5MiB
+[2026-07-17T07:29:33.393+00:00] [INFO] 
+| /usr/lib/python3.12/copyreg.py:99: FutureWarning: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+|   return cls.__new__(cls, *args)
+| [torch.onnx] Run decompositions...
+| [torch.onnx] Run decompositions... ✅
+| [torch.onnx] Translate the graph into ONNX...
+| [torch.onnx] Translate the graph into ONNX... ✅
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:07:29:33.288157 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "No unused functions to remove"}
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:07:29:33.294028 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "Removed 10 unused nodes"}
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:07:29:33.294541 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "No unused functions to remove"}
+
+[2026-07-17T07:29:34.480+00:00] [INFO] -=- Converting ONNX graph: decompose GeLU layers -=-
+[2026-07-17T07:29:34.489+00:00] [INFO] Applying ONNX IR shape inference
+[2026-07-17T07:29:34.633+00:00] [INFO] Applying ONNX IR rewriter with rules
+[2026-07-17T07:29:35.086+00:00] [INFO] Ran 40 passes, 9 triggered
+[2026-07-17T07:29:35.086+00:00] [INFO] Passes triggered:
+[2026-07-17T07:29:35.128+00:00] [INFO] +---------------------------------+----------+
+[2026-07-17T07:29:35.128+00:00] [INFO] | Pass Name                       | Triggers |
+[2026-07-17T07:29:35.128+00:00] [INFO] +---------------------------------+----------+
+[2026-07-17T07:29:35.128+00:00] [INFO] | OverrideFoldConstantsPass       |        2 |
+[2026-07-17T07:29:35.128+00:00] [INFO] | RewriteRule                     |        2 |
+[2026-07-17T07:29:35.128+00:00] [INFO] | FuseSiblingSlicesToSplitPass    |        1 |
+[2026-07-17T07:29:35.128+00:00] [INFO] | RemoveUnusedNodesPass           |        1 |
+[2026-07-17T07:29:35.128+00:00] [INFO] | ShapeInferencePass              |        1 |
+[2026-07-17T07:29:35.128+00:00] [INFO] | LiftConstantsToInitializersPass |        1 |
+[2026-07-17T07:29:35.128+00:00] [INFO] | DeduplicateInitializersPass     |        1 |
+[2026-07-17T07:29:35.128+00:00] [INFO] +---------------------------------+----------+
+[2026-07-17T07:29:35.129+00:00] [INFO] Model metrics comparison:
+[2026-07-17T07:29:35.129+00:00] [INFO] +------------+----------+----------+----------+
+[2026-07-17T07:29:35.129+00:00] [INFO] | Metric     |   Before |    After |    Delta |
+[2026-07-17T07:29:35.129+00:00] [INFO] +------------+----------+----------+----------+
+[2026-07-17T07:29:35.129+00:00] [INFO] | Op count   |      312 |       72 |     -240 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Model size | 232.1MiB | 232.0MiB | -23.3KiB |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Add        |        9 |        9 |       +0 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Cast       |       42 |        0 |      -42 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Concat     |       10 |        2 |       -8 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Constant   |      118 |        0 |     -118 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Expand     |        2 |        2 |       +0 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Identity   |        4 |        0 |       -4 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | MatMul     |        9 |        9 |       +0 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Mul        |       15 |       19 |       +4 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Neg        |        2 |        2 |       +0 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Pow        |        4 |        0 |       -4 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Reciprocal |        4 |        4 |       +0 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | ReduceMean |        4 |        4 |       +0 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Reshape    |       51 |        6 |      -45 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Sigmoid    |        1 |        1 |       +0 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Slice      |       16 |        0 |      -16 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Softmax    |        1 |        1 |       +0 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Split      |        0 |        2 |       +2 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Sqrt       |        4 |        4 |       +0 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Transpose  |       12 |        5 |       -7 |
+[2026-07-17T07:29:35.130+00:00] [INFO] | Unsqueeze  |        4 |        2 |       -2 |
+[2026-07-17T07:29:35.130+00:00] [INFO] +------------+----------+----------+----------+
+[2026-07-17T07:29:35.130+00:00] [INFO] ONNX IR rewriter with rules applied
+[2026-07-17T07:29:42.079+00:00] [INFO] Saving model
+[2026-07-17T07:29:42.326+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3.amazonaws.com/models/mqep08oym_afoUDgBNvPqzQYGO.onnx.zip?uploadId=EBIqiIQBWZKNmhoNG6vTO8iFLaFa7IsXc34BRUv0IbEyL6dW7hKm1be3_PvoSDFerf8eWapSK04Gi8tyIYRCLLetP.kEoC0d6bswZuuwtz07Rnn3AN2wP1WNbdbzXbSd&partNumber=1&AWSAccessKeyId=AKIAY25OF7UJ6NPOUTRI&Signature=26Y5hPyHQFs
+[2026-07-17T07:29:43.505+00:00] [INFO] Successfully uploaded asset with response status: 200
+[2026-07-17T07:29:44.267+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3-accelerate.amazonaws.com/
+[2026-07-17T07:29:44.386+00:00] [INFO] Successfully uploaded asset with response status: 204
+[2026-07-17T07:29:44.387+00:00] [INFO] Successfully computed visualization graph for mqep08oym
+[2026-07-17T07:29:44.408+00:00] [INFO] =================================== Run compile_to_qnn_dlc =================================== 
+[2026-07-17T07:29:44.408+00:00] [INFO] Applying ONNX IR rewriter with rules
+[2026-07-17T07:29:44.610+00:00] [INFO] Ran 150 passes, 48 triggered
+[2026-07-17T07:29:44.610+00:00] [INFO] Passes triggered:
+[2026-07-17T07:29:44.611+00:00] [INFO] +---------------------------------+----------+
+[2026-07-17T07:29:44.611+00:00] [INFO] | Pass Name                       | Triggers |
+[2026-07-17T07:29:44.611+00:00] [INFO] +---------------------------------+----------+
+[2026-07-17T07:29:44.611+00:00] [INFO] | RewriteSplit2ToSlices           |       12 |
+[2026-07-17T07:29:44.611+00:00] [INFO] | FuseSiblingSlicesToSplitPass    |       11 |
+[2026-07-17T07:29:44.611+00:00] [INFO] | RemoveUnusedNodesPass           |       12 |
+[2026-07-17T07:29:44.611+00:00] [INFO] | ShapeInferencePass              |       11 |
+[2026-07-17T07:29:44.611+00:00] [INFO] | LiftConstantsToInitializersPass |        1 |
+[2026-07-17T07:29:44.611+00:00] [INFO] | DeduplicateInitializersPass     |        1 |
+[2026-07-17T07:29:44.611+00:00] [INFO] +---------------------------------+----------+
+[2026-07-17T07:29:44.611+00:00] [INFO] Model metrics comparison:
+[2026-07-17T07:29:44.612+00:00] [INFO] +------------+----------+----------+---------+
+[2026-07-17T07:29:44.612+00:00] [INFO] | Metric     |   Before |    After |   Delta |
+[2026-07-17T07:29:44.612+00:00] [INFO] +------------+----------+----------+---------+
+[2026-07-17T07:29:44.612+00:00] [INFO] | Op count   |       72 |       74 |      +2 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Model size | 232.0MiB | 232.0MiB | +216.0B |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Add        |        9 |        9 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Concat     |        2 |        2 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Expand     |        2 |        2 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | MatMul     |        9 |        9 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Mul        |       19 |       19 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Neg        |        2 |        2 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Reciprocal |        4 |        4 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | ReduceMean |        4 |        4 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Reshape    |        6 |        6 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Sigmoid    |        1 |        1 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Slice      |        0 |        4 |      +4 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Softmax    |        1 |        1 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Split      |        2 |        0 |      -2 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Sqrt       |        4 |        4 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Transpose  |        5 |        5 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] | Unsqueeze  |        2 |        2 |      +0 |
+[2026-07-17T07:29:44.612+00:00] [INFO] +------------+----------+----------+---------+
+[2026-07-17T07:29:44.612+00:00] [INFO] ONNX IR rewriter with rules applied
+[2026-07-17T07:29:45.295+00:00] [INFO] -=- ONNX to QNN DLC (qairt-converter) -=-
+[2026-07-17T07:29:45.295+00:00] [INFO] Running /tetra/qairt_env/default/2.45.0/bin/python3 /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qairt-converter --input_network /tmp/tmpyfh2mc5g/tmph4ymxa0c.onnx --output_path /tmp/tmpyfh2mc5g/graph_3ugu8d7s.dlc --preserve_io_datatype hidden_states output_0 --preserve_io_datatype hidden_states output_0 --preserve_onnx_output_order --onnx_skip_simplification
+[2026-07-17T07:29:45.958+00:00] [INFO] 2026-07-17 07:29:45,957 - 278 - INFO - INFO_INITIALIZATION_SUCCESS: 
+[2026-07-17T07:29:46.136+00:00] [INFO] 2026-07-17 07:29:46,136 - 283 - WARNING - Unable to register converter supported Operation [Inverse:Version 1] with your Onnx installation. Converter will bail if Model contains this Op.
+[2026-07-17T07:29:46.142+00:00] [INFO] 2026-07-17 07:29:46,142 - 283 - WARNING - Unable to register converter supported Operation [RMSNormalization:Version 23] with your Onnx installation. Converter will bail if Model contains this Op.
+[2026-07-17T07:29:46.148+00:00] [INFO] 2026-07-17 07:29:46,148 - 283 - WARNING - Unable to register converter supported Operation [RotaryEmbedding:Version 23] with your Onnx installation. Converter will bail if Model contains this Op.
+[2026-07-17T07:29:46.311+00:00] [INFO] 2026-07-17 07:29:46,311 - 283 - WARNING - --desired_input_shape and -d are deprecated. Use --source_model_input_shape or -s for achieving this functionality
+[2026-07-17T07:29:46.312+00:00] [INFO] 2026-07-17 07:29:46,311 - 278 - INFO - Input shape info 
+[2026-07-17T07:29:46.313+00:00] [INFO] 2026-07-17 07:29:46,313 - 283 - WARNING - Skipping Native checker in Defer Loading and ONNX Simplification not invoked
+[2026-07-17T07:29:46.318+00:00] [INFO] 2026-07-17 07:29:46,318 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:29:46.329+00:00] [INFO] 2026-07-17 07:29:46,328 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:29:46.338+00:00] [INFO] 2026-07-17 07:29:46,338 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:29:46.377+00:00] [INFO] 2026-07-17 07:29:46,377 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:29:46.395+00:00] [INFO] 2026-07-17 07:29:46,395 - 283 - WARNING - Unused Input nodes found: []
+[2026-07-17T07:29:47.446+00:00] [INFO] 2026-07-17 07:29:47,446 - 278 - INFO - INFO_INITIALIZATION_SUCCESS: 
+[2026-07-17T07:29:47.466+00:00] [INFO] handleReshapeOp: Squash Reshape Op: node_add_8_identity due to IdentityOp. Input shape: IrTensorShape(dims = [1,16,2048] , dy_axes=[]), shape after IrTensorShape(dims = [1,16,2048] , dy_axes=[])
+[2026-07-17T07:29:47.467+00:00] [INFO] reEvalMacsParams: Re-evaluated graph statistics after IrOptimizer optimization passes:
+[2026-07-17T07:29:47.467+00:00] [INFO] reEvalMacsParams: Total MACs: 61505536
+[2026-07-17T07:29:47.467+00:00] [INFO] reEvalMacsParams: Total Params Count: 60817408
+[2026-07-17T07:29:47.903+00:00] [INFO] 2026-07-17 07:29:47,902 - 278 - INFO - INFO_CONVERSION_SUCCESS: Conversion completed successfully
+[2026-07-17T07:29:48.603+00:00] [INFO] 2026-07-17 07:29:48,603 - 278 - INFO - INFO_WRITE_SUCCESS: 
+[2026-07-17T07:29:48.695+00:00] [INFO] -=- Generating .json file from .dlc model (qairt-dlc-to-json) -=-
+[2026-07-17T07:29:48.695+00:00] [INFO] Running /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qairt-dlc-to-json -i /tmp/tmp67c988kf.dlc -o /tmp/tmprvmxd5fa.json
+[2026-07-17T07:29:48.833+00:00] [INFO] Model Json saved at: /tmp/tmprvmxd5fa.json
+[2026-07-17T07:29:48.861+00:00] [INFO] -=- Generating .json file from .dlc model (qairt-dlc-to-json) -=-
+[2026-07-17T07:29:48.861+00:00] [INFO] Running /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qairt-dlc-to-json -i /tmp/tmp67c988kf.dlc -o /tmp/tmpe3ea_tq_.json
+[2026-07-17T07:29:49.000+00:00] [INFO] Model Json saved at: /tmp/tmpe3ea_tq_.json
+[2026-07-17T07:29:49.016+00:00] [INFO] Saving model
+[2026-07-17T07:29:49.265+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3.amazonaws.com/models/mn7kz4l4m_5Ao4L52LftADPLwt.dlc?uploadId=9RK95kxBcVVnC7KdUAVjez1ZhMmhO3ooLP33IhM2fxo88gfOXvrFlgoBVpRQc2TqRhMAyP_gwS9OeL1G.SawCaVDFhpxp4N90Z_q3yUuh5NRGPdcrrNiXBhhOq4W7EtK&partNumber=1&AWSAccessKeyId=AKIAY25OF7UJ6NPOUTRI&Signature=ovb23vHeSuuU6pav
+[2026-07-17T07:29:51.516+00:00] [INFO] Successfully uploaded asset with response status: 200
+[2026-07-17T07:29:51.860+00:00] [INFO] -=- Generating .json file from .dlc model (qairt-dlc-to-json) -=-
+[2026-07-17T07:29:51.860+00:00] [INFO] Running /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qairt-dlc-to-json -i /tmp/tmp67c988kf.dlc -o /tmp/tmpoavg8tfi.json
+[2026-07-17T07:29:51.999+00:00] [INFO] Model Json saved at: /tmp/tmpoavg8tfi.json
+[2026-07-17T07:29:52.184+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3-accelerate.amazonaws.com/
+[2026-07-17T07:29:52.306+00:00] [INFO] Successfully uploaded asset with response status: 204
+[2026-07-17T07:29:52.307+00:00] [INFO] Successfully computed visualization graph for mn7kz4l4m
+[2026-07-17T07:29:52.307+00:00] [INFO] Graph name: graph_3ugu8d7s
+[2026-07-17T07:29:52.307+00:00] [INFO] -=- QNN DLC models to QNN Context Binary (qnn-context-binary-generator) -=-
+[2026-07-17T07:29:52.308+00:00] [INFO] Contents of HTP Settings: {'context': {'weight_sharing_enabled': False}, 'devices': [{'device_id': 0, 'dsp_arch': 'v81', 'soc_model': 87}], 'graphs': [{'fp16_relaxed_precision': 1, 'vtcm_mb': 0, 'O': 3.0, 'graph_names': ['graph_3ugu8d7s']}]}
+[2026-07-17T07:29:52.308+00:00] [INFO] Contents of HTP Config file used: {'context_configs': {'enable_graphs': ['graph_3ugu8d7s']}, 'graph_configs': [{'graph_name': 'graph_3ugu8d7s'}], 'backend_extensions': {'shared_library_path': 'libQnnHtpNetRunExtensions.so', 'config_file_path': '/tmp/tmpn0_hwdry/htp_setting.json'}}
+[2026-07-17T07:29:52.308+00:00] [INFO] -=- Generating .json file from .dlc model (qairt-dlc-to-json) -=-
+[2026-07-17T07:29:52.308+00:00] [INFO] Running /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qairt-dlc-to-json -i /tmp/tmp67c988kf.dlc -o /tmp/tmp1r8uli45.json
+[2026-07-17T07:29:52.435+00:00] [INFO] Model Json saved at: /tmp/tmp1r8uli45.json
+[2026-07-17T07:29:52.456+00:00] [INFO] Running /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qnn-context-binary-generator --backend /qairt_sdk/default/2.45.0/lib/x86_64-linux-clang/libQnnHtp.so --dlc_path /tmp/tmp67c988kf.dlc --output_dir /tmp/tmpn0_hwdry --binary_file qnn_model --config_file /tmp/tmpn0_hwdry/htp_context.json --profiling_level detailed --profiling_option optrace
+[2026-07-17T07:29:52.458+00:00] [INFO] qnn-context-binary-generator pid:33
+[2026-07-17T07:29:52.676+00:00] [INFO]  <W> Initializing HtpProvider
+[2026-07-17T07:29:52.676+00:00] [INFO] Starting stage: Graph Preparation Initializing
+[2026-07-17T07:29:52.676+00:00] [INFO] Completed stage: Graph Preparation Initializing (210 us)
+[2026-07-17T07:29:52.676+00:00] [INFO] Starting stage: Graph Optimizations
+[2026-07-17T07:29:53.477+00:00] [INFO] Completed stage: Graph Optimizations (801005 us)
+[2026-07-17T07:29:53.477+00:00] [INFO] Starting stage: Post Graph Optimization
+[2026-07-17T07:29:53.484+00:00] [INFO] Completed stage: Post Graph Optimization (6908 us)
+[2026-07-17T07:29:53.524+00:00] [INFO] Starting stage: Graph Sequencing for Target
+[2026-07-17T07:29:54.167+00:00] [INFO] Completed stage: Graph Sequencing for Target (642935 us)
+[2026-07-17T07:29:54.167+00:00] [INFO] Starting stage: VTCM Allocation
+[2026-07-17T07:29:54.176+00:00] [INFO] Completed stage: VTCM Allocation (9368 us)
+[2026-07-17T07:29:54.176+00:00] [INFO] Starting stage: Parallelization Optimization
+[2026-07-17T07:29:55.109+00:00] [INFO] Completed stage: Parallelization Optimization (933200 us)
+[2026-07-17T07:29:55.110+00:00] [INFO] Starting stage: Finalizing Graph Sequence
+[2026-07-17T07:29:55.112+00:00] [INFO] ====== DDR bandwidth summary ======
+[2026-07-17T07:29:55.112+00:00] [INFO] spill_bytes=0
+[2026-07-17T07:29:55.112+00:00] [INFO] fill_bytes=0
+[2026-07-17T07:29:55.112+00:00] [INFO] write_total_bytes=131072
+[2026-07-17T07:29:55.112+00:00] [INFO] read_total_bytes=121798656
+[2026-07-17T07:29:55.138+00:00] [INFO] Completed stage: Finalizing Graph Sequence (28262 us)
+[2026-07-17T07:29:55.139+00:00] [INFO] Starting stage: Completion
+[2026-07-17T07:29:55.139+00:00] [INFO] Completed stage: Completion (333 us)
+[2026-07-17T07:29:55.499+00:00] [INFO] -=- Getting JSON file for context binary model (qnn-context-binary-utility) -=-
+[2026-07-17T07:29:55.499+00:00] [INFO] Running /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qnn-context-binary-utility --context_binary /tmp/tmpf0rg5otz/model.bin --json_file /tmp/tmpgt3dkkh_.json
+[2026-07-17T07:29:55.567+00:00] [INFO] Saving model
+[2026-07-17T07:29:55.811+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3.amazonaws.com/models/mn184kzpm_fTBV2fOm4gUC5r22.bin?uploadId=67DaRUzUDVKquHU269lF.iSOoLki.skJa6D6S83oud278WnMgY8o30_mHEZNNLPut6Ij9RwUhXJd24wlEeg5I6mINoJMPSk_GBbZ80mP2eX4BlHRShr9AKY__wbCjCia&partNumber=1&AWSAccessKeyId=AKIAY25OF7UJ6NPOUTRI&Signature=j403TrVfXGrfGsZ%
+[2026-07-17T07:29:56.972+00:00] [INFO] Successfully uploaded asset with response status: 200
+[2026-07-17T07:29:57.294+00:00] [INFO] Uploading qnn schematic: default
+[2026-07-17T07:29:57.968+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3-accelerate.amazonaws.com/
+[2026-07-17T07:29:58.083+00:00] [INFO] Successfully uploaded asset with response status: 204
+[2026-07-17T07:29:58.083+00:00] [INFO] Successfully computed visualization graph for mn184kzpm
+[2026-07-17T07:29:58.095+00:00] [INFO] -=- Compilation completed -=-
+[2026-07-17T07:29:58.095+00:00] [INFO] [compile-post-compile] Memory: 2.2GiB / 40.0GiB (6%) | working_set: 2.1GiB | peak: 3.2GiB

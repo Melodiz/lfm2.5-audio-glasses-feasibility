@@ -1,0 +1,299 @@
+{
+  "execution_summary": {
+    "estimated_inference_time": 1831,
+    "estimated_inference_peak_memory": 123228160,
+    "first_load_time": 110350,
+    "first_load_peak_memory": 142094336,
+    "warm_load_time": 105328,
+    "warm_load_peak_memory": 84856832,
+    "compile_time": 0,
+    "compile_peak_memory": 0,
+    "compile_memory_increase_range": [
+      0,
+      0
+    ],
+    "compile_memory_peak_range": [
+      0,
+      0
+    ],
+    "first_load_memory_increase_range": [
+      0,
+      1470160
+    ],
+    "first_load_memory_peak_range": [
+      1003520,
+      8125984
+    ],
+    "warm_load_memory_increase_range": [
+      0,
+      2035824
+    ],
+    "warm_load_memory_peak_range": [
+      978944,
+      12382432
+    ],
+    "inference_memory_increase_range": [
+      0,
+      61488
+    ],
+    "inference_memory_peak_range": [
+      53248,
+      9775616
+    ],
+    "all_compile_times": [],
+    "all_first_load_times": [
+      110350
+    ],
+    "all_warm_load_times": [
+      105328
+    ],
+    "all_inference_times": [
+      2926,
+      1962,
+      1857,
+      2960,
+      1839,
+      1867,
+      1853,
+      1837,
+      1835,
+      1833,
+      1831,
+      2313,
+      2254,
+      2114,
+      2148,
+      1932,
+      2064,
+      1938,
+      1944,
+      1963
+    ]
+  },
+  "execution_detail": [
+    {
+      "name": "Input",
+      "type": "Input",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 52571
+    },
+    {
+      "name": "rms_norm_node_",
+      "type": "rms",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 42355
+    },
+    {
+      "name": "node_linear",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 715073
+    },
+    {
+      "name": "node_linear_post_reshape",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "node_Reshape_20",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "node_Slice_195",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 43940
+    },
+    {
+      "name": "node_Slice_198",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 6341
+    },
+    {
+      "name": "node_Slice_201",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 6758
+    },
+    {
+      "name": "node_mul_2",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 28920
+    },
+    {
+      "name": "node_slice_3",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 131182
+    },
+    {
+      "name": "node_cat",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 21565
+    },
+    {
+      "name": "node_mul_3",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 112482
+    },
+    {
+      "name": "node_sum_1",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "node_unsqueeze",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "node_mul_4",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 11452
+    },
+    {
+      "name": "node_Reshape_22",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 8321
+    },
+    {
+      "name": "node_linear_1",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 94917
+    },
+    {
+      "name": "node_linear_1_post_reshape",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "node_add_1",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 57543
+    },
+    {
+      "name": "rms_norm_node___632507",
+      "type": "rms",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 4880
+    },
+    {
+      "name": "node_linear_2",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "node_linear_2_post_reshape",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "node_Sigmoid_50",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "node_silu",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 851712
+    },
+    {
+      "name": "node_linear_3",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 849931
+    },
+    {
+      "name": "node_linear_3_post_reshape",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "node_mul_7",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 34923
+    },
+    {
+      "name": "node_linear_4",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 964574
+    },
+    {
+      "name": "node_linear_4_post_reshape",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "node_add_3",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 7436
+    },
+    {
+      "name": "node_cat_identity",
+      "type": "node",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 0
+    },
+    {
+      "name": "Output",
+      "type": "Output",
+      "compute_unit": "NPU",
+      "execution_time": 0,
+      "execution_cycles": 39268
+    }
+  ]
+}

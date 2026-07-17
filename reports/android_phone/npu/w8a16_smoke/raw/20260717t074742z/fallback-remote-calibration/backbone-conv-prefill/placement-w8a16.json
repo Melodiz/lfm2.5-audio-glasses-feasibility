@@ -1,0 +1,365 @@
+{
+  "unit_counts": {
+    "NPU": 50
+  },
+  "npu_runtime_layers": 50,
+  "cpu_fallback_runtime_layers": 0,
+  "other_runtime_layers": 0,
+  "layers": {
+    "hexagon_npu": [
+      {
+        "name": "Input",
+        "type": "Input",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 5056
+      },
+      {
+        "name": "QcQuantizeOp_hidden_states_q",
+        "type": "QcQuantizeOp",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 83068
+      },
+      {
+        "name": "node_Mul_18",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 43286
+      },
+      {
+        "name": "node_mean",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 8053
+      },
+      {
+        "name": "node_add",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 20084
+      },
+      {
+        "name": "node_Sqrt_5",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 2299
+      },
+      {
+        "name": "OpId_28",
+        "type": "",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 241
+      },
+      {
+        "name": "node_rsqrt",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 10879
+      },
+      {
+        "name": "node_mul",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 108320
+      },
+      {
+        "name": "node_mul_1",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 100811
+      },
+      {
+        "name": "mul_1_q_reshapeReshape",
+        "type": "mul",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_linear",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "linear_qReshape",
+        "type": "linear",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "QcQuantizeOp_linear_dq_2",
+        "type": "QcQuantizeOp",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_Slice_162",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 129845
+      },
+      {
+        "name": "node_Slice_165",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 90963
+      },
+      {
+        "name": "node_Slice_159",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 85569
+      },
+      {
+        "name": "node_mul_2",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 119527
+      },
+      {
+        "name": "QcQuantizeOp_mul_2_q_reshapeReshape",
+        "type": "QcQuantizeOp",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_Conv_17_token_20",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 49837
+      },
+      {
+        "name": "QcQuantizeOp_conv1d_qReshape",
+        "type": "QcQuantizeOp",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_slice_1",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_mul_3",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 24258
+      },
+      {
+        "name": "QcQuantizeOp_mul_3_q_reshapeReshape",
+        "type": "QcQuantizeOp",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_linear_1",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 126049
+      },
+      {
+        "name": "linear_1_qReshape",
+        "type": "linear",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_add_1",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 26221
+      },
+      {
+        "name": "node_Mul_19",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 13662
+      },
+      {
+        "name": "node_mean_1",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 3780
+      },
+      {
+        "name": "node_add_2",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 257
+      },
+      {
+        "name": "node_Sqrt_32",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 247
+      },
+      {
+        "name": "OpId_102",
+        "type": "",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 266
+      },
+      {
+        "name": "node_rsqrt_1",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 7284
+      },
+      {
+        "name": "node_mul_4",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 34024
+      },
+      {
+        "name": "node_mul_5",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 16559
+      },
+      {
+        "name": "mul_5_q_reshapeReshape",
+        "type": "mul",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_linear_2",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 495954
+      },
+      {
+        "name": "linear_2_qReshape",
+        "type": "linear",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_Sigmoid_34",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_silu",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 119472
+      },
+      {
+        "name": "mul_5_q_reshape_2Reshape",
+        "type": "mul",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_linear_3",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 497048
+      },
+      {
+        "name": "linear_3_qReshape",
+        "type": "linear",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_mul_6",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 73131
+      },
+      {
+        "name": "mul_6_q_reshapeReshape",
+        "type": "mul",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_linear_4",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 509766
+      },
+      {
+        "name": "linear_4_qReshape",
+        "type": "linear",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 0
+      },
+      {
+        "name": "node_add_3",
+        "type": "node",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 16789
+      },
+      {
+        "name": "QcQuantizeOp_output_0_dq",
+        "type": "QcQuantizeOp",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 21355
+      },
+      {
+        "name": "Output",
+        "type": "Output",
+        "compute_unit": "NPU",
+        "execution_time": 0,
+        "execution_cycles": 5385
+      }
+    ],
+    "cpu_fallback": [],
+    "other_or_unspecified": []
+  },
+  "counting_note": "AI Hub execution_detail reports compiled runtime layers; compiler fusion means counts may differ from torch.export operation counts."
+}

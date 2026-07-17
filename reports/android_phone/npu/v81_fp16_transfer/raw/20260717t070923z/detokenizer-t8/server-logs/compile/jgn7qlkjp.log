@@ -1,0 +1,229 @@
+[2026-07-17T07:31:33.987+00:00] [INFO] Compiling model ID mm5wrk1km
+[2026-07-17T07:31:33.987+00:00] [INFO] [compile-pre-compile] Memory: 1.1GiB / 40.0GiB (3%) | working_set: 636.0MiB | peak: 1.1GiB
+[2026-07-17T07:31:39.396+00:00] [INFO] 
+| /usr/lib/python3.12/copyreg.py:99: FutureWarning: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+|   return cls.__new__(cls, *args)
+| [torch.onnx] Run decompositions...
+| [torch.onnx] Run decompositions... ✅
+| [torch.onnx] Translate the graph into ONNX...
+| [torch.onnx] Translate the graph into ONNX... ✅
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:07:31:39.269675 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "No unused functions to remove"}
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:07:31:39.290010 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "Removed 25 unused nodes"}
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:07:31:39.291505 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "No unused functions to remove"}
+
+[2026-07-17T07:31:40.289+00:00] [INFO] -=- Converting ONNX graph: decompose GeLU layers -=-
+[2026-07-17T07:31:40.317+00:00] [INFO] Applying ONNX IR shape inference
+[2026-07-17T07:31:40.482+00:00] [INFO] Applying ONNX IR rewriter with rules
+[2026-07-17T07:31:42.210+00:00] [INFO] Ran 47 passes, 16 triggered
+[2026-07-17T07:31:42.210+00:00] [INFO] Passes triggered:
+[2026-07-17T07:31:42.251+00:00] [INFO] +----------------------------------------+----------+
+[2026-07-17T07:31:42.251+00:00] [INFO] | Pass Name                              | Triggers |
+[2026-07-17T07:31:42.251+00:00] [INFO] +----------------------------------------+----------+
+[2026-07-17T07:31:42.251+00:00] [INFO] | OverrideFoldConstantsPass              |        2 |
+[2026-07-17T07:31:42.251+00:00] [INFO] | RewriteRule                            |        2 |
+[2026-07-17T07:31:42.251+00:00] [INFO] | ReshapeReshape                         |        1 |
+[2026-07-17T07:31:42.251+00:00] [INFO] | TransposeTranspose                     |        1 |
+[2026-07-17T07:31:42.251+00:00] [INFO] | RemoveOptionalBiasFromConv             |        1 |
+[2026-07-17T07:31:42.251+00:00] [INFO] | DistributeMulOverMatMulConstantScalars |        1 |
+[2026-07-17T07:31:42.251+00:00] [INFO] | ConvertTransposeToReshape              |        1 |
+[2026-07-17T07:31:42.251+00:00] [INFO] | ReshapeTransposeReshapeTail            |        1 |
+[2026-07-17T07:31:42.252+00:00] [INFO] | FuseSiblingSlicesToSplitPass           |        1 |
+[2026-07-17T07:31:42.252+00:00] [INFO] | RemoveUnusedNodesPass                  |        1 |
+[2026-07-17T07:31:42.252+00:00] [INFO] | ShapeInferencePass                     |        1 |
+[2026-07-17T07:31:42.252+00:00] [INFO] | ReshapeUnsqueeze                       |        1 |
+[2026-07-17T07:31:42.252+00:00] [INFO] | LiftConstantsToInitializersPass        |        1 |
+[2026-07-17T07:31:42.252+00:00] [INFO] | DeduplicateInitializersPass            |        1 |
+[2026-07-17T07:31:42.252+00:00] [INFO] +----------------------------------------+----------+
+[2026-07-17T07:31:42.252+00:00] [INFO] Model metrics comparison:
+[2026-07-17T07:31:42.253+00:00] [INFO] +-----------------+----------+----------+----------+
+[2026-07-17T07:31:42.253+00:00] [INFO] | Metric          |   Before |    After |    Delta |
+[2026-07-17T07:31:42.253+00:00] [INFO] +-----------------+----------+----------+----------+
+[2026-07-17T07:31:42.253+00:00] [INFO] | Op count        |     1410 |      394 |    -1016 |
+[2026-07-17T07:31:42.253+00:00] [INFO] | Model size      | 171.7MiB | 171.7MiB | -35.6KiB |
+[2026-07-17T07:31:42.253+00:00] [INFO] | Add             |       51 |       50 |       -1 |
+[2026-07-17T07:31:42.253+00:00] [INFO] | And             |        1 |        0 |       -1 |
+[2026-07-17T07:31:42.253+00:00] [INFO] | Cast            |      170 |        0 |     -170 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | CastLike        |       13 |        0 |      -13 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Concat          |       39 |        6 |      -33 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Constant        |      413 |        0 |     -413 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Conv            |        5 |        5 |       +0 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Cos             |        1 |        0 |       -1 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Expand          |       18 |        6 |      -12 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Gather          |        1 |        1 |       +0 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | GatherND        |        1 |        1 |       +0 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Greater         |        1 |        0 |       -1 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Identity        |        7 |        0 |       -7 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | IsNaN           |        3 |        3 |       +0 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | LessOrEqual     |        1 |        0 |       -1 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | MatMul          |       54 |       53 |       -1 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Max             |        1 |        0 |       -1 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Mul             |       94 |      110 |      +16 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Neg             |        6 |        6 |       +0 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Pow             |       23 |        0 |      -23 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Range           |        4 |        0 |       -4 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Reciprocal      |       23 |       23 |       +0 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | ReduceMean      |       24 |       24 |       +0 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Reshape         |      213 |       20 |     -193 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | SequenceAt      |       17 |        0 |      -17 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Shape           |        9 |        0 |       -9 |
+[2026-07-17T07:31:42.254+00:00] [INFO] | Sigmoid         |        8 |        8 |       +0 |
+[2026-07-17T07:31:42.255+00:00] [INFO] | Sin             |        1 |        0 |       -1 |
+[2026-07-17T07:31:42.255+00:00] [INFO] | Slice           |       64 |        5 |      -59 |
+[2026-07-17T07:31:42.255+00:00] [INFO] | Softmax         |        3 |        3 |       +0 |
+[2026-07-17T07:31:42.255+00:00] [INFO] | Split           |        0 |       12 |      +12 |
+[2026-07-17T07:31:42.255+00:00] [INFO] | SplitToSequence |        6 |        0 |       -6 |
+[2026-07-17T07:31:42.255+00:00] [INFO] | Sqrt            |       29 |       23 |       -6 |
+[2026-07-17T07:31:42.255+00:00] [INFO] | Sub             |        1 |        0 |       -1 |
+[2026-07-17T07:31:42.255+00:00] [INFO] | Transpose       |       78 |       26 |      -52 |
+[2026-07-17T07:31:42.255+00:00] [INFO] | Unsqueeze       |       21 |        6 |      -15 |
+[2026-07-17T07:31:42.255+00:00] [INFO] | Where           |        6 |        3 |       -3 |
+[2026-07-17T07:31:42.255+00:00] [INFO] +-----------------+----------+----------+----------+
+[2026-07-17T07:31:42.255+00:00] [INFO] ONNX IR rewriter with rules applied
+[2026-07-17T07:31:49.521+00:00] [INFO] Saving model
+[2026-07-17T07:31:49.785+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3.amazonaws.com/models/mmxzv3ern_OB4bAg5YUtcSUe2s.onnx.zip?uploadId=JCkCID4schN8LjLXoMW28ngAfhgXRTJfMKf79hSmAUl3pHxnCuDxsIQ9VU6u7fDaZuCFqY9NwwbxRpu3H.hQ1vHneXKtVO8zS4gduK1hX2xWYRLIJJvTtue8lJwECgo6&partNumber=1&AWSAccessKeyId=AKIAY25OF7UJ6NPOUTRI&Signature=WhxkBOFrUFF
+[2026-07-17T07:31:51.370+00:00] [INFO] Successfully uploaded asset with response status: 200
+[2026-07-17T07:31:52.025+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3-accelerate.amazonaws.com/
+[2026-07-17T07:31:52.164+00:00] [INFO] Successfully uploaded asset with response status: 204
+[2026-07-17T07:31:52.164+00:00] [INFO] Successfully computed visualization graph for mmxzv3ern
+[2026-07-17T07:31:52.180+00:00] [INFO] =================================== Run compile_to_qnn_dlc =================================== 
+[2026-07-17T07:31:52.180+00:00] [INFO] Applying ONNX IR rewriter with rules
+[2026-07-17T07:31:57.302+00:00] [INFO] Ran 663 passes, 267 triggered
+[2026-07-17T07:31:57.302+00:00] [INFO] Passes triggered:
+[2026-07-17T07:31:57.304+00:00] [INFO] +---------------------------------+----------+
+[2026-07-17T07:31:57.304+00:00] [INFO] | Pass Name                       | Triggers |
+[2026-07-17T07:31:57.304+00:00] [INFO] +---------------------------------+----------+
+[2026-07-17T07:31:57.304+00:00] [INFO] | RewriteSplit2ToSlices           |       54 |
+[2026-07-17T07:31:57.304+00:00] [INFO] | RewriteSplit3ToSlices           |       51 |
+[2026-07-17T07:31:57.304+00:00] [INFO] | FuseSiblingSlicesToSplitPass    |       53 |
+[2026-07-17T07:31:57.304+00:00] [INFO] | RemoveUnusedNodesPass           |       54 |
+[2026-07-17T07:31:57.304+00:00] [INFO] | ShapeInferencePass              |       53 |
+[2026-07-17T07:31:57.304+00:00] [INFO] | LiftConstantsToInitializersPass |        1 |
+[2026-07-17T07:31:57.304+00:00] [INFO] | DeduplicateInitializersPass     |        1 |
+[2026-07-17T07:31:57.304+00:00] [INFO] +---------------------------------+----------+
+[2026-07-17T07:31:57.305+00:00] [INFO] Model metrics comparison:
+[2026-07-17T07:31:57.306+00:00] [INFO] +------------+----------+----------+---------+
+[2026-07-17T07:31:57.306+00:00] [INFO] | Metric     |   Before |    After |   Delta |
+[2026-07-17T07:31:57.306+00:00] [INFO] +------------+----------+----------+---------+
+[2026-07-17T07:31:57.306+00:00] [INFO] | Op count   |      394 |      411 |     +17 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Model size | 171.7MiB | 171.7MiB | +1.7KiB |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Add        |       50 |       50 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Concat     |        6 |        6 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Conv       |        5 |        5 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Expand     |        6 |        6 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Gather     |        1 |        1 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | GatherND   |        1 |        1 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | IsNaN      |        3 |        3 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | MatMul     |       53 |       53 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Mul        |      110 |      110 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Neg        |        6 |        6 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Reciprocal |       23 |       23 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | ReduceMean |       24 |       24 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Reshape    |       20 |       20 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Sigmoid    |        8 |        8 |      +0 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Slice      |        5 |       34 |     +29 |
+[2026-07-17T07:31:57.306+00:00] [INFO] | Softmax    |        3 |        3 |      +0 |
+[2026-07-17T07:31:57.307+00:00] [INFO] | Split      |       12 |        0 |     -12 |
+[2026-07-17T07:31:57.307+00:00] [INFO] | Sqrt       |       23 |       23 |      +0 |
+[2026-07-17T07:31:57.307+00:00] [INFO] | Transpose  |       26 |       26 |      +0 |
+[2026-07-17T07:31:57.307+00:00] [INFO] | Unsqueeze  |        6 |        6 |      +0 |
+[2026-07-17T07:31:57.307+00:00] [INFO] | Where      |        3 |        3 |      +0 |
+[2026-07-17T07:31:57.307+00:00] [INFO] +------------+----------+----------+---------+
+[2026-07-17T07:31:57.307+00:00] [INFO] ONNX IR rewriter with rules applied
+[2026-07-17T07:31:57.684+00:00] [INFO] -=- ONNX to QNN DLC (qairt-converter) -=-
+[2026-07-17T07:31:57.684+00:00] [INFO] Running /tetra/qairt_env/default/2.45.0/bin/python3 /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qairt-converter --input_network /tmp/tmp7bfs80f1/tmpxe8tnbtd.onnx --output_path /tmp/tmp7bfs80f1/graph_1k7a9mrf.dlc --preserve_io_datatype output_0 output_1 --preserve_io_datatype output_0 output_1 --preserve_onnx_output_order --onnx_skip_simplification
+[2026-07-17T07:31:58.343+00:00] [INFO] 2026-07-17 07:31:58,342 - 278 - INFO - INFO_INITIALIZATION_SUCCESS: 
+[2026-07-17T07:31:58.518+00:00] [INFO] 2026-07-17 07:31:58,518 - 283 - WARNING - Unable to register converter supported Operation [Inverse:Version 1] with your Onnx installation. Converter will bail if Model contains this Op.
+[2026-07-17T07:31:58.524+00:00] [INFO] 2026-07-17 07:31:58,524 - 283 - WARNING - Unable to register converter supported Operation [RMSNormalization:Version 23] with your Onnx installation. Converter will bail if Model contains this Op.
+[2026-07-17T07:31:58.530+00:00] [INFO] 2026-07-17 07:31:58,530 - 283 - WARNING - Unable to register converter supported Operation [RotaryEmbedding:Version 23] with your Onnx installation. Converter will bail if Model contains this Op.
+[2026-07-17T07:31:58.691+00:00] [INFO] 2026-07-17 07:31:58,691 - 283 - WARNING - --desired_input_shape and -d are deprecated. Use --source_model_input_shape or -s for achieving this functionality
+[2026-07-17T07:31:58.692+00:00] [INFO] 2026-07-17 07:31:58,691 - 278 - INFO - Input shape info 
+[2026-07-17T07:31:58.697+00:00] [INFO] 2026-07-17 07:31:58,697 - 283 - WARNING - Skipping Native checker in Defer Loading and ONNX Simplification not invoked
+[2026-07-17T07:31:58.729+00:00] [INFO] 2026-07-17 07:31:58,729 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.748+00:00] [INFO] 2026-07-17 07:31:58,748 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.759+00:00] [INFO] 2026-07-17 07:31:58,759 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.778+00:00] [INFO] 2026-07-17 07:31:58,777 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.788+00:00] [INFO] 2026-07-17 07:31:58,788 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.796+00:00] [INFO] 2026-07-17 07:31:58,796 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.805+00:00] [INFO] 2026-07-17 07:31:58,805 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.847+00:00] [INFO] 2026-07-17 07:31:58,847 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.857+00:00] [INFO] 2026-07-17 07:31:58,857 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.876+00:00] [INFO] 2026-07-17 07:31:58,876 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.887+00:00] [INFO] 2026-07-17 07:31:58,887 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.895+00:00] [INFO] 2026-07-17 07:31:58,895 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.904+00:00] [INFO] 2026-07-17 07:31:58,904 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.944+00:00] [INFO] 2026-07-17 07:31:58,944 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.955+00:00] [INFO] 2026-07-17 07:31:58,955 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.974+00:00] [INFO] 2026-07-17 07:31:58,974 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.984+00:00] [INFO] 2026-07-17 07:31:58,984 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:58.992+00:00] [INFO] 2026-07-17 07:31:58,992 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:59.001+00:00] [INFO] 2026-07-17 07:31:59,001 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:59.042+00:00] [INFO] 2026-07-17 07:31:59,042 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:59.052+00:00] [INFO] 2026-07-17 07:31:59,052 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:59.071+00:00] [INFO] 2026-07-17 07:31:59,071 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:59.082+00:00] [INFO] 2026-07-17 07:31:59,082 - 283 - WARNING - WARNING_OP_VERSION_NOT_SUPPORTED: Operation Reciprocal Not Supported. Expected operator version: [1, 6], instead got version: [13]
+[2026-07-17T07:31:59.146+00:00] [INFO] 2026-07-17 07:31:59,146 - 283 - WARNING - Unused Input nodes found: []
+[2026-07-17T07:32:01.926+00:00] [INFO] 2026-07-17 07:32:01,925 - 278 - INFO - INFO_INITIALIZATION_SUCCESS: 
+[2026-07-17T07:32:02.041+00:00] [INFO] handleReshapeOp: Squash Reshape Op: node_Slice_4974_identity due to IdentityOp. Input shape: IrTensorShape(dims = [1,641,48] , dy_axes=[]), shape after IrTensorShape(dims = [1,641,48] , dy_axes=[])
+[2026-07-17T07:32:02.041+00:00] [INFO] handleReshapeOp: Squash Reshape Op: node_Slice_4971_identity due to IdentityOp. Input shape: IrTensorShape(dims = [1,641,48] , dy_axes=[]), shape after IrTensorShape(dims = [1,641,48] , dy_axes=[])
+[2026-07-17T07:32:02.044+00:00] [INFO] reEvalMacsParams: Re-evaluated graph statistics after IrOptimizer optimization passes:
+[2026-07-17T07:32:02.044+00:00] [INFO] reEvalMacsParams: Total MACs: 40631360
+[2026-07-17T07:32:02.044+00:00] [INFO] reEvalMacsParams: Total Params Count: 36571394
+[2026-07-17T07:32:02.368+00:00] [INFO] 2026-07-17 07:32:02,368 - 278 - INFO - INFO_CONVERSION_SUCCESS: Conversion completed successfully
+[2026-07-17T07:32:02.697+00:00] [INFO] 2026-07-17 07:32:02,696 - 278 - INFO - INFO_WRITE_SUCCESS: 
+[2026-07-17T07:32:02.788+00:00] [INFO] -=- Generating .json file from .dlc model (qairt-dlc-to-json) -=-
+[2026-07-17T07:32:02.789+00:00] [INFO] Running /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qairt-dlc-to-json -i /tmp/tmpnjkg5yxq.dlc -o /tmp/tmpq4fo10uc.json
+[2026-07-17T07:32:02.941+00:00] [INFO] Model Json saved at: /tmp/tmpq4fo10uc.json
+[2026-07-17T07:32:02.977+00:00] [INFO] -=- Generating .json file from .dlc model (qairt-dlc-to-json) -=-
+[2026-07-17T07:32:02.977+00:00] [INFO] Running /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qairt-dlc-to-json -i /tmp/tmpnjkg5yxq.dlc -o /tmp/tmp6ya0h7zf.json
+[2026-07-17T07:32:03.110+00:00] [INFO] Model Json saved at: /tmp/tmp6ya0h7zf.json
+[2026-07-17T07:32:03.135+00:00] [INFO] Saving model
+[2026-07-17T07:32:03.382+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3.amazonaws.com/models/mnlgpx6km_algE4SAzVCvWd60z.dlc?uploadId=CBHz2xYJL.mJBvkfHF_kONj_vkp8GfBbWVfd0F5HLHx35RFtvXygnMBmTu83OJWAZvr3CLkfLCgX.1K2OZvHZYfZ6mw4CNalV7K1H3jJVNxicCpK7qrrRTewaAvzADm0&partNumber=1&AWSAccessKeyId=AKIAY25OF7UJ6NPOUTRI&Signature=0Cw0Mhd94RqAiboS
+[2026-07-17T07:32:05.021+00:00] [INFO] Successfully uploaded asset with response status: 200
+[2026-07-17T07:32:05.356+00:00] [INFO] -=- Generating .json file from .dlc model (qairt-dlc-to-json) -=-
+[2026-07-17T07:32:05.356+00:00] [INFO] Running /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qairt-dlc-to-json -i /tmp/tmpnjkg5yxq.dlc -o /tmp/tmpyu_k_j5s.json
+[2026-07-17T07:32:05.501+00:00] [INFO] Model Json saved at: /tmp/tmpyu_k_j5s.json
+[2026-07-17T07:32:05.701+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3-accelerate.amazonaws.com/
+[2026-07-17T07:32:05.873+00:00] [INFO] Successfully uploaded asset with response status: 204
+[2026-07-17T07:32:05.874+00:00] [INFO] Successfully computed visualization graph for mnlgpx6km
+[2026-07-17T07:32:05.874+00:00] [INFO] Graph name: graph_1k7a9mrf
+[2026-07-17T07:32:05.874+00:00] [INFO] -=- QNN DLC models to QNN Context Binary (qnn-context-binary-generator) -=-
+[2026-07-17T07:32:05.875+00:00] [INFO] Contents of HTP Settings: {'context': {'weight_sharing_enabled': False}, 'devices': [{'device_id': 0, 'dsp_arch': 'v81', 'soc_model': 87}], 'graphs': [{'fp16_relaxed_precision': 1, 'vtcm_mb': 0, 'O': 3.0, 'graph_names': ['graph_1k7a9mrf']}]}
+[2026-07-17T07:32:05.875+00:00] [INFO] Contents of HTP Config file used: {'context_configs': {'enable_graphs': ['graph_1k7a9mrf']}, 'graph_configs': [{'graph_name': 'graph_1k7a9mrf'}], 'backend_extensions': {'shared_library_path': 'libQnnHtpNetRunExtensions.so', 'config_file_path': '/tmp/tmp3xie4dmx/htp_setting.json'}}
+[2026-07-17T07:32:05.875+00:00] [INFO] -=- Generating .json file from .dlc model (qairt-dlc-to-json) -=-
+[2026-07-17T07:32:05.875+00:00] [INFO] Running /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qairt-dlc-to-json -i /tmp/tmpnjkg5yxq.dlc -o /tmp/tmp5zdgf_7e.json
+[2026-07-17T07:32:06.008+00:00] [INFO] Model Json saved at: /tmp/tmp5zdgf_7e.json
+[2026-07-17T07:32:06.033+00:00] [INFO] Running /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qnn-context-binary-generator --backend /qairt_sdk/default/2.45.0/lib/x86_64-linux-clang/libQnnHtp.so --dlc_path /tmp/tmpnjkg5yxq.dlc --output_dir /tmp/tmp3xie4dmx --binary_file qnn_model --config_file /tmp/tmp3xie4dmx/htp_context.json --profiling_level detailed --profiling_option optrace
+[2026-07-17T07:32:06.034+00:00] [INFO] qnn-context-binary-generator pid:33
+[2026-07-17T07:32:06.224+00:00] [INFO]  <W> Initializing HtpProvider
+[2026-07-17T07:32:06.224+00:00] [INFO] Starting stage: Graph Preparation Initializing
+[2026-07-17T07:32:06.224+00:00] [INFO] Completed stage: Graph Preparation Initializing (204 us)
+[2026-07-17T07:32:06.224+00:00] [INFO] Starting stage: Graph Optimizations
+[2026-07-17T07:32:07.166+00:00] [INFO] Completed stage: Graph Optimizations (941285 us)
+[2026-07-17T07:32:07.166+00:00] [INFO] Starting stage: Post Graph Optimization
+[2026-07-17T07:32:07.178+00:00] [INFO] Completed stage: Post Graph Optimization (12315 us)
+[2026-07-17T07:32:07.265+00:00] [INFO] Starting stage: Graph Sequencing for Target
+[2026-07-17T07:32:08.478+00:00] [INFO] Completed stage: Graph Sequencing for Target (1213239 us)
+[2026-07-17T07:32:08.479+00:00] [INFO] Starting stage: VTCM Allocation
+[2026-07-17T07:32:08.497+00:00] [INFO] Completed stage: VTCM Allocation (18948 us)
+[2026-07-17T07:32:08.498+00:00] [INFO] Starting stage: Parallelization Optimization
+[2026-07-17T07:32:08.794+00:00] [INFO] Completed stage: Parallelization Optimization (296460 us)
+[2026-07-17T07:32:08.797+00:00] [INFO] Starting stage: Finalizing Graph Sequence
+[2026-07-17T07:32:08.799+00:00] [INFO] ====== DDR bandwidth summary ======
+[2026-07-17T07:32:08.799+00:00] [INFO] spill_bytes=0
+[2026-07-17T07:32:08.799+00:00] [INFO] fill_bytes=0
+[2026-07-17T07:32:08.799+00:00] [INFO] write_total_bytes=143616
+[2026-07-17T07:32:08.799+00:00] [INFO] read_total_bytes=90144768
+[2026-07-17T07:32:08.829+00:00] [INFO] Completed stage: Finalizing Graph Sequence (32041 us)
+[2026-07-17T07:32:08.829+00:00] [INFO] Starting stage: Completion
+[2026-07-17T07:32:08.829+00:00] [INFO] Completed stage: Completion (322 us)
+[2026-07-17T07:32:09.084+00:00] [INFO] -=- Getting JSON file for context binary model (qnn-context-binary-utility) -=-
+[2026-07-17T07:32:09.084+00:00] [INFO] Running /qairt_sdk/default/2.45.0/bin/x86_64-linux-clang/qnn-context-binary-utility --context_binary /tmp/tmpvegq9apc/model.bin --json_file /tmp/tmp_y1_b8_z.json
+[2026-07-17T07:32:09.141+00:00] [INFO] Saving model
+[2026-07-17T07:32:09.384+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3.amazonaws.com/models/mqvp3z6jq_v9p5tCKatRak5eTw.bin?uploadId=TaDd3IRXutr2NC_WrGtd9y5zCHQrZgXy4lR1teew7.cmkBqNQChiNJNQmhIiCKS_bFV.hnhABR075qKrHoyiEaruyuqkdLLXBZPi.cQXUJbrfuwzpy.NhdpX81Nh_9CU&partNumber=1&AWSAccessKeyId=AKIAY25OF7UJ6NPOUTRI&Signature=FFuqmsivpRQRlpHs
+[2026-07-17T07:32:10.290+00:00] [INFO] Successfully uploaded asset with response status: 200
+[2026-07-17T07:32:10.619+00:00] [INFO] Uploading qnn schematic: default
+[2026-07-17T07:32:11.224+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3-accelerate.amazonaws.com/
+[2026-07-17T07:32:11.345+00:00] [INFO] Successfully uploaded asset with response status: 204
+[2026-07-17T07:32:11.346+00:00] [INFO] Successfully computed visualization graph for mqvp3z6jq
+[2026-07-17T07:32:11.355+00:00] [INFO] -=- Compilation completed -=-
+[2026-07-17T07:32:11.356+00:00] [INFO] [compile-post-compile] Memory: 1.7GiB / 40.0GiB (4%) | working_set: 1.5GiB | peak: 2.5GiB

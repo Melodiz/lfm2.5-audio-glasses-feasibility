@@ -1,0 +1,93 @@
+[2026-07-17T08:04:45.588+00:00] [INFO] Compiling model ID mqkxyyzxn
+[2026-07-17T08:04:45.588+00:00] [INFO] [compile-pre-compile] Memory: 1.5GiB / 40.0GiB (4%) | working_set: 647.9MiB | peak: 1.5GiB
+[2026-07-17T08:05:05.710+00:00] [INFO] 
+| /usr/lib/python3.12/copyreg.py:99: FutureWarning: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+|   return cls.__new__(cls, *args)
+| [torch.onnx] Run decompositions...
+| [torch.onnx] Run decompositions... ✅
+| [torch.onnx] Translate the graph into ONNX...
+| [torch.onnx] Translate the graph into ONNX... ✅
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:08:05:05.083645 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "No unused functions to remove"}
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:08:05:05.235200 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "Removed 443 unused nodes"}
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:08:05:05.244728 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "No unused functions to remove"}
+
+[2026-07-17T08:05:09.366+00:00] [INFO] -=- Converting ONNX graph: decompose GeLU layers -=-
+[2026-07-17T08:05:09.561+00:00] [INFO] Applying ONNX IR shape inference
+[2026-07-17T08:05:11.400+00:00] [INFO] Applying ONNX IR rewriter with rules
+[2026-07-17T08:05:17.656+00:00] [INFO] Memory: 5.6GiB / 40.0GiB (14%) | working_set: 5.5GiB | peak: 5.6GiB
+[2026-07-17T08:05:34.305+00:00] [INFO] Ran 65 passes, 27 triggered
+[2026-07-17T08:05:34.306+00:00] [INFO] Passes triggered:
+[2026-07-17T08:05:34.349+00:00] [INFO] +----------------------------------------+----------+
+[2026-07-17T08:05:34.349+00:00] [INFO] | Pass Name                              | Triggers |
+[2026-07-17T08:05:34.349+00:00] [INFO] +----------------------------------------+----------+
+[2026-07-17T08:05:34.349+00:00] [INFO] | OverrideFoldConstantsPass              |        3 |
+[2026-07-17T08:05:34.349+00:00] [INFO] | RewriteRule                            |        2 |
+[2026-07-17T08:05:34.349+00:00] [INFO] | ReshapeReshape                         |        2 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | _MulIdentity                           |        1 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | _AddIdentity                           |        2 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | _ExpandIdentity                        |        2 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | _MulBy0                                |        1 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | DistributeMulOverMatMulConstantScalars |        1 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | ConvertTransposeToReshape              |        1 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | ReshapeUnsqueeze                       |        2 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | ReshapeTransposeReshapeTail            |        1 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | FuseSiblingSlicesToSplitPass           |        1 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | FuseConsecutiveConcatsPass             |        1 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | RemoveUnusedNodesPass                  |        1 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | ShapeInferencePass                     |        2 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | _SubIdentity                           |        1 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | RewriteGatherUnsqueezeScalarIndex      |        1 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | LiftConstantsToInitializersPass        |        1 |
+[2026-07-17T08:05:34.350+00:00] [INFO] | DeduplicateInitializersPass            |        1 |
+[2026-07-17T08:05:34.350+00:00] [INFO] +----------------------------------------+----------+
+[2026-07-17T08:05:34.352+00:00] [INFO] Model metrics comparison:
+[2026-07-17T08:05:34.353+00:00] [INFO] +-----------------+----------+--------+---------+
+[2026-07-17T08:05:34.353+00:00] [INFO] | Metric          |   Before |  After |   Delta |
+[2026-07-17T08:05:34.353+00:00] [INFO] +-----------------+----------+--------+---------+
+[2026-07-17T08:05:34.353+00:00] [INFO] | Op count        |    10345 |   3765 |   -6580 |
+[2026-07-17T08:05:34.353+00:00] [INFO] | Model size      | 608.9MiB | 2.3GiB | +1.7GiB |
+[2026-07-17T08:05:34.353+00:00] [INFO] | Add             |      407 |    388 |     -19 |
+[2026-07-17T08:05:34.353+00:00] [INFO] | ArgMax          |        8 |      8 |      +0 |
+[2026-07-17T08:05:34.353+00:00] [INFO] | Cast            |      172 |      0 |    -172 |
+[2026-07-17T08:05:34.353+00:00] [INFO] | CastLike        |      193 |      0 |    -193 |
+[2026-07-17T08:05:34.353+00:00] [INFO] | Concat          |      908 |    181 |    -727 |
+[2026-07-17T08:05:34.353+00:00] [INFO] | Constant        |     2916 |      0 |   -2916 |
+[2026-07-17T08:05:34.353+00:00] [INFO] | Div             |       96 |      0 |     -96 |
+[2026-07-17T08:05:34.353+00:00] [INFO] | Equal           |        6 |      0 |      -6 |
+[2026-07-17T08:05:34.353+00:00] [INFO] | Expand          |      103 |     96 |      -7 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Gather          |       73 |     24 |     -49 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Gemm            |        9 |      9 |      +0 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Identity        |      192 |      0 |    -192 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | MatMul          |      336 |    336 |      +0 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Mul             |      976 |   1080 |    +104 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Pow             |      200 |      0 |    -200 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Reciprocal      |      200 |    200 |      +0 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | ReduceMean      |      200 |    200 |      +0 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | ReduceSum       |        1 |      1 |      +0 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Reshape         |      997 |    493 |    -504 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | SequenceAt      |      144 |      0 |    -144 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Shape           |      397 |      0 |    -397 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Sigmoid         |       48 |     48 |      +0 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Slice           |      622 |      0 |    -622 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Softmax         |       48 |     48 |      +0 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Split           |        0 |    144 |    +144 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | SplitToSequence |       48 |      0 |     -48 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Sqrt            |      344 |    200 |    -144 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Sub             |       96 |     84 |     -12 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Transpose       |      480 |    126 |    -354 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Trilu           |        6 |      0 |      -6 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Unsqueeze       |      113 |     99 |     -14 |
+[2026-07-17T08:05:34.354+00:00] [INFO] | Where           |        6 |      0 |      -6 |
+[2026-07-17T08:05:34.354+00:00] [INFO] +-----------------+----------+--------+---------+
+[2026-07-17T08:05:34.354+00:00] [INFO] ONNX IR rewriter with rules applied
+[2026-07-17T08:06:17.662+00:00] [INFO] Memory: 8.3GiB / 40.0GiB (21%) | working_set: 5.0GiB | peak: 9.7GiB
+[2026-07-17T08:06:37.281+00:00] [INFO] Saving model
+[2026-07-17T08:06:37.634+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3.amazonaws.com/models/mnjk913ym_M9nfDTrIwQh8WiDU.onnx.zip?uploadId=Mwdk0aoRFk_.9HV0RJC9Dp3rMQukJIDIIiK9BOFnvX1Z0gJ35XjsCjq90jKAkMPvnjct_EbnvsofW5umzQDYWW7HHjj76dI1Ocj4Im8Dj_Iithb_cF1Bs2yITyLnCEml&partNumber=1&AWSAccessKeyId=AKIAY25OF7UJ6NPOUTRI&Signature=DwcbRu7%2Bi
+[2026-07-17T08:06:47.034+00:00] [INFO] Successfully uploaded asset with response status: 200
+[2026-07-17T08:06:47.036+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3.amazonaws.com/models/mnjk913ym_M9nfDTrIwQh8WiDU.onnx.zip?uploadId=Mwdk0aoRFk_.9HV0RJC9Dp3rMQukJIDIIiK9BOFnvX1Z0gJ35XjsCjq90jKAkMPvnjct_EbnvsofW5umzQDYWW7HHjj76dI1Ocj4Im8Dj_Iithb_cF1Bs2yITyLnCEml&partNumber=2&AWSAccessKeyId=AKIAY25OF7UJ6NPOUTRI&Signature=yYl0%2BLjHr
+[2026-07-17T08:06:48.816+00:00] [INFO] Successfully uploaded asset with response status: 200
+[2026-07-17T08:06:51.349+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3-accelerate.amazonaws.com/
+[2026-07-17T08:06:51.526+00:00] [INFO] Successfully uploaded asset with response status: 204
+[2026-07-17T08:06:51.527+00:00] [INFO] Successfully computed visualization graph for mnjk913ym
+[2026-07-17T08:06:51.734+00:00] [INFO] -=- Compilation completed -=-
+[2026-07-17T08:06:51.734+00:00] [INFO] [compile-post-compile] Memory: 7.4GiB / 40.0GiB (18%) | working_set: 7.2GiB | peak: 12.0GiB

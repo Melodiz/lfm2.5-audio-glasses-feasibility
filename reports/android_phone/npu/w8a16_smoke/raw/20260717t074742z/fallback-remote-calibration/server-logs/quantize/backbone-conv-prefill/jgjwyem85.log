@@ -1,0 +1,21 @@
+[2026-07-17T08:20:31.111+00:00] [INFO] [quantize-post-download] Memory: 979.9MiB | working_set: 901.8MiB | peak: 1.3GiB
+[2026-07-17T08:20:33.442+00:00] [INFO] AIMET version: 2.34.0
+[2026-07-17T08:20:33.481+00:00] [INFO] Using quant scheme: QuantScheme.post_training_tf_enhanced
+[2026-07-17T08:20:33.725+00:00] [INFO] Creating Quantization Simulator...
+[2026-07-17T08:20:36.328+00:00] [INFO] Finished Creating Quantization Simulator
+[2026-07-17T08:20:36.329+00:00] [INFO] Computing Encodings...
+[2026-07-17T08:20:47.285+00:00] [INFO] Finished Computing Encodings
+[2026-07-17T08:20:47.285+00:00] [INFO] Exporting QDQ ONNX graph from AIMET quantsim...
+[2026-07-17T08:20:48.787+00:00] [INFO] Completed export
+| ---AIMET LOGS---
+| 2026-07-17 08:20:34,527 - Quant - INFO - Selecting DefaultOpInstanceConfigGenerator to compute the specialized config. hw_version:None
+| ---END AIMET LOGS---
+[2026-07-17T08:20:49.146+00:00] [INFO] ONNX graph successfully converted to QDQ format
+[2026-07-17T08:20:49.146+00:00] [INFO] Computing PSNR between FP32 and INT8 model output...
+[2026-07-17T08:20:51.102+00:00] [INFO] PSNR: {'output_0': 80.6621404674828}
+[2026-07-17T08:20:51.144+00:00] [INFO] [quantize-post-quantize] Memory: 3.5GiB | working_set: 3.2GiB | peak: 4.5GiB
+[2026-07-17T08:21:00.791+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3.amazonaws.com/models/mn7kz943m_bag746Z6E8fCjiXA.onnx.zip?uploadId=8VDynxoM7cSsICY9CtSbDwYWKY8r07DPDELBniEAEBXY.Yi.QYx5VNEYcvM8kXLto_32uqPOYlK3fDaLKhE922igXyCr9WM37JcyqV4P5sfMkyPyi0uXf3dUSva22U8J&partNumber=1&AWSAccessKeyId=AKIAY25OF7UJ6NPOUTRI&Signature=e%2FFg1U48A
+[2026-07-17T08:21:03.013+00:00] [INFO] Successfully uploaded asset with response status: 200
+[2026-07-17T08:21:03.615+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3-accelerate.amazonaws.com/
+[2026-07-17T08:21:03.732+00:00] [INFO] Successfully uploaded asset with response status: 204
+[2026-07-17T08:21:03.733+00:00] [INFO] Successfully computed visualization graph for mn7kz943m

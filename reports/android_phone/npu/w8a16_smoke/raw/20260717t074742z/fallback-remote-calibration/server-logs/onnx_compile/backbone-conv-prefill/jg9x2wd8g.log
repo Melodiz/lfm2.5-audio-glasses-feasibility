@@ -1,0 +1,63 @@
+[2026-07-17T08:14:43.929+00:00] [INFO] Compiling model ID mmr28090n
+[2026-07-17T08:14:43.930+00:00] [INFO] [compile-pre-compile] Memory: 1.0GiB / 40.0GiB (3%) | working_set: 635.7MiB | peak: 1.0GiB
+[2026-07-17T08:14:47.081+00:00] [INFO] 
+| /usr/lib/python3.12/copyreg.py:99: FutureWarning: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+|   return cls.__new__(cls, *args)
+| [torch.onnx] Run decompositions...
+| [torch.onnx] Run decompositions... ✅
+| [torch.onnx] Translate the graph into ONNX...
+| [torch.onnx] Translate the graph into ONNX... ✅
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:08:14:46.975018 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "No unused functions to remove"}
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:08:14:46.976286 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "Removed 5 unused nodes"}
+| {"task_name": null, "celery_task_id": null, "handler_name": null, "job_id": null, "attempt_number": null, "asctime": "17/Jul/2026:08:14:46.976586 +0000", "name": "onnx_ir.passes.common.unused_removal", "process": 1, "levelname": "INFO", "message": "No unused functions to remove"}
+
+[2026-07-17T08:14:48.585+00:00] [INFO] -=- Converting ONNX graph: decompose GeLU layers -=-
+[2026-07-17T08:14:48.587+00:00] [INFO] Applying ONNX IR shape inference
+[2026-07-17T08:14:48.737+00:00] [INFO] Applying ONNX IR rewriter with rules
+[2026-07-17T08:14:48.980+00:00] [INFO] Ran 30 passes, 5 triggered
+[2026-07-17T08:14:48.980+00:00] [INFO] Passes triggered:
+[2026-07-17T08:14:49.027+00:00] [INFO] +---------------------------------+----------+
+[2026-07-17T08:14:49.027+00:00] [INFO] | Pass Name                       | Triggers |
+[2026-07-17T08:14:49.027+00:00] [INFO] +---------------------------------+----------+
+[2026-07-17T08:14:49.027+00:00] [INFO] | OverrideFoldConstantsPass       |        1 |
+[2026-07-17T08:14:49.027+00:00] [INFO] | RemoveOptionalBiasFromConv      |        1 |
+[2026-07-17T08:14:49.028+00:00] [INFO] | RewriteRule                     |        1 |
+[2026-07-17T08:14:49.028+00:00] [INFO] | LiftConstantsToInitializersPass |        1 |
+[2026-07-17T08:14:49.028+00:00] [INFO] | DeduplicateInitializersPass     |        1 |
+[2026-07-17T08:14:49.028+00:00] [INFO] +---------------------------------+----------+
+[2026-07-17T08:14:49.028+00:00] [INFO] Model metrics comparison:
+[2026-07-17T08:14:49.028+00:00] [INFO] +-----------------+----------+----------+---------+
+[2026-07-17T08:14:49.028+00:00] [INFO] | Metric          |   Before |    After |   Delta |
+[2026-07-17T08:14:49.029+00:00] [INFO] +-----------------+----------+----------+---------+
+[2026-07-17T08:14:49.029+00:00] [INFO] | Op count        |       68 |       31 |     -37 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Model size      | 256.0MiB | 256.0MiB | -3.5KiB |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Add             |        4 |        4 |      +0 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Cast            |        3 |        0 |      -3 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | CastLike        |        1 |        0 |      -1 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Constant        |       17 |        0 |     -17 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Conv            |        1 |        1 |      +0 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Expand          |        2 |        0 |      -2 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | MatMul          |        5 |        5 |      +0 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Mul             |        8 |       10 |      +2 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Pow             |        2 |        0 |      -2 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Reciprocal      |        2 |        2 |      +0 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | ReduceMean      |        2 |        2 |      +0 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Reshape         |        5 |        0 |      -5 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | SequenceAt      |        3 |        0 |      -3 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Shape           |        1 |        0 |      -1 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Sigmoid         |        1 |        1 |      +0 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Slice           |        1 |        1 |      +0 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Split           |        0 |        1 |      +1 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | SplitToSequence |        1 |        0 |      -1 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Sqrt            |        2 |        2 |      +0 |
+[2026-07-17T08:14:49.029+00:00] [INFO] | Transpose       |        7 |        2 |      -5 |
+[2026-07-17T08:14:49.030+00:00] [INFO] +-----------------+----------+----------+---------+
+[2026-07-17T08:14:49.030+00:00] [INFO] ONNX IR rewriter with rules applied
+[2026-07-17T08:14:56.563+00:00] [INFO] Saving model
+[2026-07-17T08:14:56.900+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3.amazonaws.com/models/mqywegv5n_s2o8nUe9Rgc10V7F.onnx.zip?uploadId=okCp_8aZ424VRAJqaSax5TLCmJqMyIEveIafSujxheAx2DUqCVjeQMQ4P47lFn8OWa8I5aHzn3DL5Zt50FkLK01dxiukHJgwVReFE5S50xVWJAKofKAuGMfrCExN57YG&partNumber=1&AWSAccessKeyId=AKIAY25OF7UJ6NPOUTRI&Signature=LmSwMOVbKZh
+[2026-07-17T08:14:58.197+00:00] [INFO] Successfully uploaded asset with response status: 200
+[2026-07-17T08:14:59.109+00:00] [INFO] Uploading asset to https://tetrahub-qprod-userdata.s3-accelerate.amazonaws.com/
+[2026-07-17T08:14:59.225+00:00] [INFO] Successfully uploaded asset with response status: 204
+[2026-07-17T08:14:59.226+00:00] [INFO] Successfully computed visualization graph for mqywegv5n
+[2026-07-17T08:14:59.255+00:00] [INFO] -=- Compilation completed -=-
+[2026-07-17T08:14:59.255+00:00] [INFO] [compile-post-compile] Memory: 2.1GiB / 40.0GiB (5%) | working_set: 1.9GiB | peak: 2.7GiB

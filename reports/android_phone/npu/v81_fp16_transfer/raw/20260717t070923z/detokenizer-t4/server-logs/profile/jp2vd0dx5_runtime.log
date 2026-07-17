@@ -1,0 +1,1196 @@
+[17/Jul/2026:07:45:02 +00:00: profiler/info] -=- Tungsten Initializing -=-
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.board.platform = canoe
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.boot.hardware = qcom
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.boot.hardware.platform = 
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.system.build.id = BQ2A.251217.002-BP2A.250705.008
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.system.build.version.release = 16
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.hardware = qcom
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.hardware.chipname = 
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.product.board = canoe
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.product.brand = qti
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.product.device = canoe
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.product.build.fingerprint = qti/qssi_64/qssi_64:16/BQ2A.251217.002-BP2A.250705.008/eng.lnxbui:userdebug/test-keys
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.product.manufacturer = QUALCOMM
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.product.model = Canoe for arm64
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.product.name = canoe
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.soc.manufacturer = QTI
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Android system property: ro.soc.model = SM8850
+[17/Jul/2026:07:45:02 +00:00: profiler/info] [tflite] Loaded OpenCL library with dlopen.
+[17/Jul/2026:07:45:02 +00:00: profiler/info] OpenCL Version: OpenCL C 3.0 Adreno(TM) 840
+[17/Jul/2026:07:45:02 +00:00: profiler/info] Detected Qualcomm SOC=SM8850. SOC Model=87, Hexagon arch=81, supports QNN=true, unsigned PDs=true, fp16=true, QNN flavor=default.
+[17/Jul/2026:07:45:02 +00:00: profiler/info] This device type has up to 1 HTP cores but this may not reflect the current device's configuration.
+[17/Jul/2026:07:45:02 +00:00: profiler/info] -=- Tungsten running task: compiling -=-
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Status Successfully Compiled with t = 0 us and usage: before = 0.0 kB; peakBefore = 0.0 kB; mallocUnusedBefore = 0.0 kB; after = 0.0 kB; peakAfter = 0.0 kB; mallocUnusedAfter = 0.0 kB; increase = 0.0-0.0 kB; peak = 0.0-0.0 kB
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Saving results to /data/local/tmp/tungsten/files/Results/job_jp2vd0dx5/job_jp2vd0dx5_results.bin
+[17/Jul/2026:07:45:02 +00:00: profiler/info] -=- Tungsten running task: loading -=-
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loading previously saved results in /data/local/tmp/tungsten/files/Results/job_jp2vd0dx5/job_jp2vd0dx5_results.bin
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loading QNN model Models/model.bin.
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Malloc VM size before: 44964.0 kB, allocated: 37701.5 kB, slack: 7262.5 kB.
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Current memory baseline range: 130861.5-138124.0 kB.
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Found QNN interface provider with API version 2.34.
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] QnnDsp <W> Initializing HtpProvider
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded QNN backend from /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/libQnnHtp.so (version 5.45.0; core API 2.34.0; build ID v2.45.0.260326154327)
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Asset model.bin not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.bin.
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Found asset Models/model.bin in /data/local/tmp/tungsten/files/Models/model.bin.
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Asset model.bin not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.bin.
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Found asset Models/model.bin in /data/local/tmp/tungsten/files/Models/model.bin.
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/libQnnSystem.so, with version 1.9.0.
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded QNN context binary with build id=v2.45.0.260326154327, for soc '' with 1 cores.
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_context.c:370: fastrpc_context_table_init done
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_domains.c:256: fastrpc_sysfs_watcher_init done watcher thread tid 492103013632
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:211: set up allocator 0xb4000073e5258fd0 for DMA buf heap system, ION heap system, heap mask 0x2000000, flags 0x1, legacy flags 0x1
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_config.c:437: Reading configuration file: ai.tetra.tungsten.debugconfig
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_domains.c:164: fastrpc_sysfs_watcher_thread starting
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_config.c:468: fastrpc_config_init: Couldn't find file ai.tetra.tungsten.debugconfig, errno (No such file or directory) at /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android, /vendor/lib64/rfs/dsp, /vendor/lib/rfsa/adsp, /vendor/dsp
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7618: fastrpc_apps_user_init done  with default domain:3 and &fastrpc_trace:0x7293a996b4
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7752: multidsplib_env_init: libcdsprpc.so loaded
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4386: Error 0xe: remote_handle_control_domain failed for request ID 2 on domain 100000 (errno No such file or directory)
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 152 on domain 3
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4410: Error 0xe: remote_handle_control failed for request ID 2 (errno Success) (user err 0xe)
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 152 on domain 3
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4875: remote_session_control Unsigned PD enable 1 request for domain 100000
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4850: remote_session_control DSP info request for domain 100000, thread priority -1, stack size 17408
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 152 on domain 3
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3385: WARNING: get_handle_priority_from_uri: libQnnHtpV81Skel.so lib opened handle without priority token
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 152 on domain 3
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6185: Successfully opened /vendor/dsp/cdsp/fastrpc_shell_unsigned_3, domain 3
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1451100, flags 0x80000000, fd:154, time 21 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x1, fd:155, time 12 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x1, fd:156, time 8 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6298: Created user PD on domain 100000, dbg_trace 0x0, enabled attr=> RPC timeout:10000, Dbg Mode:Y, CRC:N, Unsigned:Y, Signed:N, Adapt QOS:N, PD dump: (Config:N, Dbg:N), Perf: (Kernel:N, DSP:N), Iregion:N, QTF:N, UAF:N userPD initmem len:0x500000, Log pkt: N
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1935: Successfully set remote user thread priority to 192 and stack size to 17408 for domain 100000
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/listener_android.c:121: listener thread starting
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1048576, flags 0x1, fd:153, time 25 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7188: persist_buf_init allocation done for persist_buf 0x7291700000 size 1048576
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7198: persist_buf_init mapping done for persist_buf 0x7291700000 fd 153 of size 1048576 on domain 100000
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7260: open_dev : panic error codes sent successfully
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_perf.c:292: fastrpc_perf_init: enabled systrace 0x0 and RPC traces (kernel 0, dsp 0) with frequency 1000
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:429: file_watcher_thread starting for domain 100000
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x0, fd:157, time 10 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x0, fd:161, time 10 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:696: open_mod_table_open_from_static: reverse module apps_mem opened with handle 0x93a9af98 (idx 0)
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:696: open_mod_table_open_from_static: reverse module apps_std opened with handle 0x93a9b098 (idx 1)
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 262144, flags 0x80000000, fd:162, time 11 us
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:377: Error 0x2: apps_std_fopen_fd failed for /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/cdsp/./libQnnHtpV81Skel.so (No such file or directory)
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 11788496, flags 0x80000000, fd:164, time 20 us
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:223:Enabled adspmsgd with mask 8
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:449:file_watcher_thread: Couldn't find file ai.tetra.tungsten.farf, errno (No such file or directory) at ;/vendor/lib64/rfs/dsp;/vendor/lib/rfsa/adsp;/vendor/lib/rfsa/dsp;/vendor/dsp;
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:369: apps_std_fopen_fd done for /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/./libQnnHtpV81Skel.so with fsize:11788496       fopen:6us, fstat:1us, read:1186us,       rpc_alloc:49us, mmap:275us fd 0xa4 error_code 0x0
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1236: Successfully opened file /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/./libQnnHtpV81Skel.so
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 11796480, flags 0xa0000000, fd:165, time 15 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1048576, flags 0xa0000000, fd:164, time 31 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3491: remote_handle64_open: opened handle 0xb4000074052e9080 (remote 0x2ccbf0) for file:///libQnnHtpV81Skel.so?qnn_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 100000 (spawn time 18718 us, load time 34046 us), refs 1
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 8, flags 0x1, fd:163, time 23 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 136, flags 0x1, fd:166, time 15 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 16, flags 0x1, fd:163, time 17 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 8, flags 0x1, fd:166, time 11 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 56, flags 0x1, fd:163, time 20 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3385: WARNING: get_handle_priority_from_uri: libdspqueue_rpc_skel.so lib opened handle without priority token
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3491: remote_handle64_open: opened handle 0xb4000074052e8fe0 (remote 0x2cd860) for file:///libdspqueue_rpc_skel.so?dspqueue_rpc_skel_handle_invoke&_modver=1.0&_dom=nsp1000&_session=0 on domain 100000 (spawn time 0 us, load time 266 us), refs 2
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:138: fastrpc_notif_domain_init: FastRPC notification worker thread launched
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:5077: remote_session_control Register PD status notification request for domain 100000
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1024, flags 0x40000001, fd:166, time 11 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3955: get_remote_notif_response: received status notification 0 for domain 1000, session 0 (effec dom 100000)
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1792, flags 0x40000001, fd:167, time 11 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/dspqueue/dspqueue_cpu.c:683: dspqueue is using version: -1818167718, flags: 2, driver signalling: 3, wait count: 1
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/dspqueue/dspqueue_cpu.c:715: dspqueue_create: created Queue 0, 0xb400007425248620, DSP 0x00000000 for domain 100000
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Creating context from binary with 0 configurations set.
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 384, flags 0x1, fd:168, time 12 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 123360, flags 0x1, fd:169, time 14 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 134226032, flags 0x1, fd:170, time 25 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 72, flags 0x1, fd:171, time 11 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 90177536, flags 0x1, fd:172, time 19 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 291184, flags 0x1, fd:173, time 23 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 40, flags 0x1, fd:174, time 10 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 33554432, flags 0xa0000000, fd:175, time 12 us
+[17/Jul/2026:00:45:02 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 48, flags 0x1, fd:173, time 11 us
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded graph graph_fr2s9hwt.
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Malloc VM size after: 45476.0 kB, allocated: 38574.0 kB, slack: 6902.0 kB.
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Status Successfully Loaded Cold with t = 94455 us and usage: before = 138124.0 kB; peakBefore = 138124.0 kB; mallocUnusedBefore = 7262.5 kB; after = 139248.0 kB; peakAfter = 139008.0 kB; mallocUnusedAfter = 6902.0 kB; increase = 0.0-1484.5 kB; peak = 884.0-8146.5 kB
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Saving results to /data/local/tmp/tungsten/files/Results/job_jp2vd0dx5/job_jp2vd0dx5_results.bin
+[17/Jul/2026:00:45:02 -07:00: profiler/info] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/adspmsgd.c:104::error: 0x8000040d: AEE_SUCCESS == (nErr = adspmsgd_adsp1_wait(handle, &bytesToRead))
+[17/Jul/2026:00:45:02 -07:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/adspmsgd.c:114:Error 0x8000040d: adspmsgd_reader thread of domain 100000 for handle 0x52e8400 exiting (errno Success)
+[17/Jul/2026:07:45:03 +00:00: profiler/info] -=- Tungsten running task: loading -=-
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loading previously saved results in /data/local/tmp/tungsten/files/Results/job_jp2vd0dx5/job_jp2vd0dx5_results.bin
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loading QNN model Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Malloc VM size before: 27464.0 kB, allocated: 16520.7 kB, slack: 10943.3 kB.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Current memory baseline range: 71596.7-82540.0 kB.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Found QNN interface provider with API version 2.34.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] QnnDsp <W> Initializing HtpProvider
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded QNN backend from /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/libQnnHtp.so (version 5.45.0; core API 2.34.0; build ID v2.45.0.260326154327)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Asset model.bin not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Found asset Models/model.bin in /data/local/tmp/tungsten/files/Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Asset model.bin not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Found asset Models/model.bin in /data/local/tmp/tungsten/files/Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/libQnnSystem.so, with version 1.9.0.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded QNN context binary with build id=v2.45.0.260326154327, for soc '' with 1 cores.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_context.c:370: fastrpc_context_table_init done
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_domains.c:256: fastrpc_sysfs_watcher_init done watcher thread tid 494935602432
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:211: set up allocator 0xb4000073e525e3d0 for DMA buf heap system, ION heap system, heap mask 0x2000000, flags 0x1, legacy flags 0x1
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_config.c:437: Reading configuration file: ai.tetra.tungsten.debugconfig
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_domains.c:164: fastrpc_sysfs_watcher_thread starting
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_config.c:468: fastrpc_config_init: Couldn't find file ai.tetra.tungsten.debugconfig, errno (No such file or directory) at /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android, /vendor/lib64/rfs/dsp, /vendor/lib/rfsa/adsp, /vendor/dsp
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7618: fastrpc_apps_user_init done  with default domain:3 and &fastrpc_trace:0x733c7f76b4
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7752: multidsplib_env_init: libcdsprpc.so loaded
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4386: Error 0xe: remote_handle_control_domain failed for request ID 2 on domain 100000 (errno No such file or directory)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 145 on domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4410: Error 0xe: remote_handle_control failed for request ID 2 (errno Success) (user err 0xe)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 145 on domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4875: remote_session_control Unsigned PD enable 1 request for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4850: remote_session_control DSP info request for domain 100000, thread priority -1, stack size 17408
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 145 on domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3385: WARNING: get_handle_priority_from_uri: libQnnHtpV81Skel.so lib opened handle without priority token
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 145 on domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6185: Successfully opened /vendor/dsp/cdsp/fastrpc_shell_unsigned_3, domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1451100, flags 0x80000000, fd:147, time 20 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x1, fd:150, time 10 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x1, fd:151, time 9 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6298: Created user PD on domain 100000, dbg_trace 0x0, enabled attr=> RPC timeout:10000, Dbg Mode:Y, CRC:N, Unsigned:Y, Signed:N, Adapt QOS:N, PD dump: (Config:N, Dbg:N), Perf: (Kernel:N, DSP:N), Iregion:N, QTF:N, UAF:N userPD initmem len:0x500000, Log pkt: N
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1935: Successfully set remote user thread priority to 192 and stack size to 17408 for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/listener_android.c:121: listener thread starting
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1048576, flags 0x1, fd:147, time 58 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7188: persist_buf_init allocation done for persist_buf 0x733b100000 size 1048576
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7198: persist_buf_init mapping done for persist_buf 0x733b100000 fd 147 of size 1048576 on domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7260: open_dev : panic error codes sent successfully
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_perf.c:292: fastrpc_perf_init: enabled systrace 0x0 and RPC traces (kernel 0, dsp 0) with frequency 1000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:429: file_watcher_thread starting for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x0, fd:154, time 14 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x0, fd:158, time 52 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:696: open_mod_table_open_from_static: reverse module apps_mem opened with handle 0x3c7f8f98 (idx 0)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:696: open_mod_table_open_from_static: reverse module apps_std opened with handle 0x3c7f9098 (idx 1)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 262144, flags 0x80000000, fd:159, time 12 us
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:377: Error 0x2: apps_std_fopen_fd failed for /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/cdsp/./libQnnHtpV81Skel.so (No such file or directory)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 11788496, flags 0x80000000, fd:161, time 16 us
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:223:Enabled adspmsgd with mask 8
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:449:file_watcher_thread: Couldn't find file ai.tetra.tungsten.farf, errno (No such file or directory) at ;/vendor/lib64/rfs/dsp;/vendor/lib/rfsa/adsp;/vendor/lib/rfsa/dsp;/vendor/dsp;
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:369: apps_std_fopen_fd done for /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/./libQnnHtpV81Skel.so with fsize:11788496       fopen:6us, fstat:1us, read:1266us,       rpc_alloc:180us, mmap:299us fd 0xa1 error_code 0x0
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1236: Successfully opened file /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/./libQnnHtpV81Skel.so
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 11796480, flags 0xa0000000, fd:162, time 15 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1048576, flags 0xa0000000, fd:160, time 14 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3491: remote_handle64_open: opened handle 0xb40000740522a590 (remote 0x2ccbf0) for file:///libQnnHtpV81Skel.so?qnn_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 100000 (spawn time 19637 us, load time 38705 us), refs 1
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 8, flags 0x1, fd:161, time 11 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 136, flags 0x1, fd:163, time 4 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 16, flags 0x1, fd:161, time 7 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 8, flags 0x1, fd:163, time 13 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 56, flags 0x1, fd:161, time 11 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3385: WARNING: get_handle_priority_from_uri: libdspqueue_rpc_skel.so lib opened handle without priority token
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3491: remote_handle64_open: opened handle 0xb40000740522a450 (remote 0x2cd860) for file:///libdspqueue_rpc_skel.so?dspqueue_rpc_skel_handle_invoke&_modver=1.0&_dom=nsp1000&_session=0 on domain 100000 (spawn time 0 us, load time 303 us), refs 2
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:138: fastrpc_notif_domain_init: FastRPC notification worker thread launched
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:5077: remote_session_control Register PD status notification request for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1024, flags 0x40000001, fd:163, time 13 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3955: get_remote_notif_response: received status notification 0 for domain 1000, session 0 (effec dom 100000)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1792, flags 0x40000001, fd:164, time 11 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/dspqueue/dspqueue_cpu.c:683: dspqueue is using version: 1014421082, flags: 2, driver signalling: 3, wait count: 1
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/dspqueue/dspqueue_cpu.c:715: dspqueue_create: created Queue 0, 0xb40000742524afc0, DSP 0x00000000 for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Creating context from binary with 0 configurations set.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 384, flags 0x1, fd:165, time 12 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 123360, flags 0x1, fd:166, time 19 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 8280, flags 0x1, fd:167, time 6 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 72, flags 0x1, fd:168, time 12 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 90177536, flags 0x1, fd:169, time 19 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 291184, flags 0x1, fd:170, time 11 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 40, flags 0x1, fd:171, time 12 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 33554432, flags 0xa0000000, fd:172, time 24 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 48, flags 0x1, fd:170, time 8 us
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded graph graph_fr2s9hwt.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Malloc VM size after: 27720.0 kB, allocated: 17391.5 kB, slack: 10328.5 kB.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Status Successfully Loaded Warm with t = 100244 us and usage: before = 82540.0 kB; peakBefore = 82540.0 kB; mallocUnusedBefore = 10943.3 kB; after = 83396.0 kB; peakAfter = 83336.0 kB; mallocUnusedAfter = 10328.5 kB; increase = 0.0-1470.8 kB; peak = 796.0-11739.3 kB
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Saving results to /data/local/tmp/tungsten/files/Results/job_jp2vd0dx5/job_jp2vd0dx5_results.bin
+[17/Jul/2026:00:45:03 -07:00: profiler/info] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/adspmsgd.c:104::error: 0x8000040d: AEE_SUCCESS == (nErr = adspmsgd_adsp1_wait(handle, &bytesToRead))
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/adspmsgd.c:114:Error 0x8000040d: adspmsgd_reader thread of domain 100000 for handle 0x5229eb0 exiting (errno Success)
+[17/Jul/2026:07:45:03 +00:00: profiler/info] -=- Tungsten running task: performing inference -=-
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loading previously saved results in /data/local/tmp/tungsten/files/Results/job_jp2vd0dx5/job_jp2vd0dx5_results.bin
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Starting profiler
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loading QNN model Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Malloc VM size before: 45732.0 kB, allocated: 35169.2 kB, slack: 10562.8 kB.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Current memory baseline range: 109285.2-119848.0 kB.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Found QNN interface provider with API version 2.34.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] QnnDsp <W> Initializing HtpProvider
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded QNN backend from /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/libQnnHtp.so (version 5.45.0; core API 2.34.0; build ID v2.45.0.260326154327)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Asset model.bin not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Found asset Models/model.bin in /data/local/tmp/tungsten/files/Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Asset model.bin not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Found asset Models/model.bin in /data/local/tmp/tungsten/files/Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/libQnnSystem.so, with version 1.9.0.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded QNN context binary with build id=v2.45.0.260326154327, for soc '' with 1 cores.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_context.c:370: fastrpc_context_table_init done
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_domains.c:256: fastrpc_sysfs_watcher_init done watcher thread tid 494935577856
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:211: set up allocator 0xb4000073e5261150 for DMA buf heap system, ION heap system, heap mask 0x2000000, flags 0x1, legacy flags 0x1
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_config.c:437: Reading configuration file: ai.tetra.tungsten.debugconfig
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_domains.c:164: fastrpc_sysfs_watcher_thread starting
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_config.c:468: fastrpc_config_init: Couldn't find file ai.tetra.tungsten.debugconfig, errno (No such file or directory) at /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android, /vendor/lib64/rfs/dsp, /vendor/lib/rfsa/adsp, /vendor/dsp
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7618: fastrpc_apps_user_init done  with default domain:3 and &fastrpc_trace:0x733c7f16b4
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7752: multidsplib_env_init: libcdsprpc.so loaded
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4386: Error 0xe: remote_handle_control_domain failed for request ID 2 on domain 100000 (errno No such file or directory)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 145 on domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4410: Error 0xe: remote_handle_control failed for request ID 2 (errno Success) (user err 0xe)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 145 on domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4875: remote_session_control Unsigned PD enable 1 request for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4850: remote_session_control DSP info request for domain 100000, thread priority -1, stack size 17408
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 145 on domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3385: WARNING: get_handle_priority_from_uri: libQnnHtpV81Skel.so lib opened handle without priority token
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 145 on domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6185: Successfully opened /vendor/dsp/cdsp/fastrpc_shell_unsigned_3, domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1451100, flags 0x80000000, fd:147, time 18 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x1, fd:150, time 10 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x1, fd:151, time 7 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6298: Created user PD on domain 100000, dbg_trace 0x0, enabled attr=> RPC timeout:10000, Dbg Mode:Y, CRC:N, Unsigned:Y, Signed:N, Adapt QOS:N, PD dump: (Config:N, Dbg:N), Perf: (Kernel:N, DSP:N), Iregion:N, QTF:N, UAF:N userPD initmem len:0x500000, Log pkt: N
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1935: Successfully set remote user thread priority to 192 and stack size to 17408 for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/listener_android.c:121: listener thread starting
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1048576, flags 0x1, fd:147, time 19 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7188: persist_buf_init allocation done for persist_buf 0x7339eef000 size 1048576
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7198: persist_buf_init mapping done for persist_buf 0x7339eef000 fd 147 of size 1048576 on domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7260: open_dev : panic error codes sent successfully
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_perf.c:292: fastrpc_perf_init: enabled systrace 0x0 and RPC traces (kernel 0, dsp 0) with frequency 1000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:429: file_watcher_thread starting for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x0, fd:154, time 36 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x0, fd:158, time 18 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:696: open_mod_table_open_from_static: reverse module apps_mem opened with handle 0x3c7f2f98 (idx 0)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:696: open_mod_table_open_from_static: reverse module apps_std opened with handle 0x3c7f3098 (idx 1)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 262144, flags 0x80000000, fd:159, time 19 us
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:377: Error 0x2: apps_std_fopen_fd failed for /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/cdsp/./libQnnHtpV81Skel.so (No such file or directory)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 11788496, flags 0x80000000, fd:161, time 22 us
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:223:Enabled adspmsgd with mask 8
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:449:file_watcher_thread: Couldn't find file ai.tetra.tungsten.farf, errno (No such file or directory) at ;/vendor/lib64/rfs/dsp;/vendor/lib/rfsa/adsp;/vendor/lib/rfsa/dsp;/vendor/dsp;
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:369: apps_std_fopen_fd done for /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/./libQnnHtpV81Skel.so with fsize:11788496       fopen:11us, fstat:1us, read:1312us,       rpc_alloc:45us, mmap:297us fd 0xa1 error_code 0x0
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1236: Successfully opened file /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/./libQnnHtpV81Skel.so
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 11796480, flags 0xa0000000, fd:162, time 20 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1048576, flags 0xa0000000, fd:160, time 27 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3491: remote_handle64_open: opened handle 0xb40000740522e7d0 (remote 0x2ccdc0) for file:///libQnnHtpV81Skel.so?qnn_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 100000 (spawn time 19454 us, load time 37566 us), refs 1
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 8, flags 0x1, fd:161, time 17 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 136, flags 0x1, fd:163, time 11 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 16, flags 0x1, fd:161, time 7 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 8, flags 0x1, fd:163, time 5 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 56, flags 0x1, fd:161, time 12 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3385: WARNING: get_handle_priority_from_uri: libdspqueue_rpc_skel.so lib opened handle without priority token
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3491: remote_handle64_open: opened handle 0xb40000740522ce80 (remote 0x2cd860) for file:///libdspqueue_rpc_skel.so?dspqueue_rpc_skel_handle_invoke&_modver=1.0&_dom=nsp1000&_session=0 on domain 100000 (spawn time 0 us, load time 302 us), refs 2
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:138: fastrpc_notif_domain_init: FastRPC notification worker thread launched
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:5077: remote_session_control Register PD status notification request for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1024, flags 0x40000001, fd:163, time 14 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3955: get_remote_notif_response: received status notification 0 for domain 1000, session 0 (effec dom 100000)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1792, flags 0x40000001, fd:164, time 12 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/dspqueue/dspqueue_cpu.c:683: dspqueue is using version: 1014396506, flags: 2, driver signalling: 3, wait count: 1
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/dspqueue/dspqueue_cpu.c:715: dspqueue_create: created Queue 0, 0xb40000742524f080, DSP 0x00000000 for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Creating context from binary with 0 configurations set.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 384, flags 0x1, fd:165, time 10 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 123360, flags 0x1, fd:166, time 13 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 8280, flags 0x1, fd:167, time 13 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 72, flags 0x1, fd:168, time 10 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 90177536, flags 0x1, fd:169, time 20 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 291184, flags 0x1, fd:170, time 47 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 40, flags 0x1, fd:171, time 11 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 33554432, flags 0xa0000000, fd:172, time 24 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 48, flags 0x1, fd:170, time 9 us
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded graph graph_fr2s9hwt.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Malloc VM size after: 45988.0 kB, allocated: 36040.0 kB, slack: 9948.0 kB.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Status Successfully Loaded Warm with t = 100968 us and usage: before = 119848.0 kB; peakBefore = 119848.0 kB; mallocUnusedBefore = 10562.8 kB; after = 120644.0 kB; peakAfter = 120572.0 kB; mallocUnusedAfter = 9948.0 kB; increase = 0.0-1410.8 kB; peak = 724.0-11286.8 kB
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Applying performance mode Burst to device 0, core 0.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_latency.c:98: fastrpc_latency_thread_handler started for QoS with activity window 100 ms
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4325: remote_handle_control_domain: requested QOS 1, latency 100 for domain 100000 handle 0xb40000740522e7d0
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3753: manage_poll_qos: poll mode updated to 3 for domain 100000, handle 0xb40000740522e7d0 for timeout 9999
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4325: remote_handle_control_domain: requested QOS 3, latency 9999 for domain 100000 handle 0xb40000740522e7d0
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Malloc VM size before: 45988.0 kB, allocated: 36049.2 kB, slack: 9938.8 kB.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Current memory baseline range: 110733.2-120672.0 kB.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Malloc VM size after: 45988.0 kB, allocated: 36053.3 kB, slack: 9934.7 kB.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Successfully ran model for 20 iterations across 1 batches in 0.029 sec.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Status Successfully Performed Inference with t = 1284 us and usage: before = 120672.0 kB; peakBefore = 120672.0 kB; mallocUnusedBefore = 9938.8 kB; after = 120688.0 kB; peakAfter = 120684.0 kB; mallocUnusedAfter = 9934.7 kB; increase = 0.0-20.0 kB; peak = 12.0-9950.8 kB
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Saving results to /data/local/tmp/tungsten/files/Results/job_jp2vd0dx5/job_jp2vd0dx5_results.bin
+[17/Jul/2026:00:45:03 -07:00: profiler/info] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/adspmsgd.c:104::error: 0x8000040d: AEE_SUCCESS == (nErr = adspmsgd_adsp1_wait(handle, &bytesToRead))
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/adspmsgd.c:114:Error 0x8000040d: adspmsgd_reader thread of domain 100000 for handle 0x522da60 exiting (errno Success)
+[17/Jul/2026:07:45:03 +00:00: profiler/info] -=- Tungsten running task: performing inference by layer -=-
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loading previously saved results in /data/local/tmp/tungsten/files/Results/job_jp2vd0dx5/job_jp2vd0dx5_results.bin
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Starting profiler
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loading QNN model Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Malloc VM size before: 64256.0 kB, allocated: 53340.1 kB, slack: 10915.9 kB.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Current memory baseline range: 127812.1-138728.0 kB.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Found QNN interface provider with API version 2.34.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] QnnDsp <W> Initializing HtpProvider
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded QNN backend from /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/libQnnHtp.so (version 5.45.0; core API 2.34.0; build ID v2.45.0.260326154327)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Asset model.bin not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Found asset Models/model.bin in /data/local/tmp/tungsten/files/Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Asset model.bin not found in /data/user/0/ai.tetra.tungsten/cache/tungsten.assets/Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Found asset Models/model.bin in /data/local/tmp/tungsten/files/Models/model.bin.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/libQnnSystem.so, with version 1.9.0.
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded QNN context binary with build id=v2.45.0.260326154327, for soc '' with 1 cores.
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_context.c:370: fastrpc_context_table_init done
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_domains.c:256: fastrpc_sysfs_watcher_init done watcher thread tid 494935258368
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_domains.c:164: fastrpc_sysfs_watcher_thread starting
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:211: set up allocator 0xb4000073e526a0d0 for DMA buf heap system, ION heap system, heap mask 0x2000000, flags 0x1, legacy flags 0x1
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_config.c:437: Reading configuration file: ai.tetra.tungsten.debugconfig
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_config.c:468: fastrpc_config_init: Couldn't find file ai.tetra.tungsten.debugconfig, errno (No such file or directory) at /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android, /vendor/lib64/rfs/dsp, /vendor/lib/rfsa/adsp, /vendor/dsp
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7618: fastrpc_apps_user_init done  with default domain:3 and &fastrpc_trace:0x733cd766b4
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7752: multidsplib_env_init: libcdsprpc.so loaded
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4386: Error 0xe: remote_handle_control_domain failed for request ID 2 on domain 100000 (errno No such file or directory)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 143 on domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4410: Error 0xe: remote_handle_control failed for request ID 2 (errno Success) (user err 0xe)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 143 on domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4875: remote_session_control Unsigned PD enable 1 request for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4850: remote_session_control DSP info request for domain 100000, thread priority -1, stack size 17408
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 143 on domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3385: WARNING: get_handle_priority_from_uri: libQnnHtpV81Skel.so lib opened handle without priority token
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6015: close_device_node: closed dev 143 on domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6185: Successfully opened /vendor/dsp/cdsp/fastrpc_shell_unsigned_3, domain 3
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1451100, flags 0x80000000, fd:145, time 44 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x1, fd:150, time 9 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x1, fd:151, time 24 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:6298: Created user PD on domain 100000, dbg_trace 0x0, enabled attr=> RPC timeout:10000, Dbg Mode:Y, CRC:N, Unsigned:Y, Signed:N, Adapt QOS:N, PD dump: (Config:N, Dbg:N), Perf: (Kernel:N, DSP:N), Iregion:N, QTF:N, UAF:N userPD initmem len:0x500000, Log pkt: N
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:1935: Successfully set remote user thread priority to 192 and stack size to 17408 for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/listener_android.c:121: listener thread starting
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1048576, flags 0x1, fd:145, time 29 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7188: persist_buf_init allocation done for persist_buf 0x732feef000 size 1048576
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7198: persist_buf_init mapping done for persist_buf 0x732feef000 fd 145 of size 1048576 on domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:7260: open_dev : panic error codes sent successfully
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_perf.c:292: fastrpc_perf_init: enabled systrace 0x0 and RPC traces (kernel 0, dsp 0) with frequency 1000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:429: file_watcher_thread starting for domain 100000
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x0, fd:154, time 9 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 4096, flags 0x0, fd:158, time 11 us
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:696: open_mod_table_open_from_static: reverse module apps_mem opened with handle 0x3cd77f98 (idx 0)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/mod_table.c:696: open_mod_table_open_from_static: reverse module apps_std opened with handle 0x3cd78098 (idx 1)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 262144, flags 0x80000000, fd:159, time 21 us
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:377: Error 0x2: apps_std_fopen_fd failed for /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/cdsp/./libQnnHtpV81Skel.so (No such file or directory)
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 11788496, flags 0x80000000, fd:161, time 19 us
+[17/Jul/2026:00:45:03 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:223:Enabled adspmsgd with mask 8
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/log_config.c:449:file_watcher_thread: Couldn't find file ai.tetra.tungsten.farf, errno (No such file or directory) at ;/vendor/lib64/rfs/dsp;/vendor/lib/rfsa/adsp;/vendor/lib/rfsa/dsp;/vendor/dsp;
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:369: apps_std_fopen_fd done for /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/./libQnnHtpV81Skel.so with fsize:11788496       fopen:11us, fstat:1us, read:1482us,       rpc_alloc:43us, mmap:290us fd 0xa1 error_code 0x0
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/apps_std_imp.c:1236: Successfully opened file /data/user/0/ai.tetra.tungsten/cache/tungsten.lib/qnn_sdk/default/2.45.0/aarch64-android/./libQnnHtpV81Skel.so
+[17/Jul/2026:00:45:03 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 11796480, flags 0xa0000000, fd:162, time 26 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1048576, flags 0xa0000000, fd:160, time 17 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3491: remote_handle64_open: opened handle 0xb4000074052349f0 (remote 0x2ccbf0) for file:///libQnnHtpV81Skel.so?qnn_skel_handle_invoke&_modver=1.0&_dom=cdsp on domain 100000 (spawn time 18852 us, load time 36918 us), refs 1
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 8, flags 0x1, fd:161, time 11 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 136, flags 0x1, fd:163, time 13 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 16, flags 0x1, fd:161, time 16 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 8, flags 0x1, fd:163, time 13 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 56, flags 0x1, fd:161, time 5 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3385: WARNING: get_handle_priority_from_uri: libdspqueue_rpc_skel.so lib opened handle without priority token
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3491: remote_handle64_open: opened handle 0xb400007405233730 (remote 0x2cd860) for file:///libdspqueue_rpc_skel.so?dspqueue_rpc_skel_handle_invoke&_modver=1.0&_dom=nsp1000&_session=0 on domain 100000 (spawn time 0 us, load time 302 us), refs 2
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_notif.c:138: fastrpc_notif_domain_init: FastRPC notification worker thread launched
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:5077: remote_session_control Register PD status notification request for domain 100000
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1024, flags 0x40000001, fd:163, time 20 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3955: get_remote_notif_response: received status notification 0 for domain 1000, session 0 (effec dom 100000)
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 1792, flags 0x40000001, fd:164, time 11 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/dspqueue/dspqueue_cpu.c:683: dspqueue is using version: 1020184154, flags: 2, driver signalling: 3, wait count: 1
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/dspqueue/dspqueue_cpu.c:715: dspqueue_create: created Queue 0, 0xb400007425248620, DSP 0x00000000 for domain 100000
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] Creating context from binary with 0 configurations set.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 384, flags 0x1, fd:165, time 11 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 123360, flags 0x1, fd:166, time 18 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 134226032, flags 0x1, fd:167, time 22 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 72, flags 0x1, fd:168, time 13 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 90177536, flags 0x1, fd:169, time 21 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 291184, flags 0x1, fd:170, time 49 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 40, flags 0x1, fd:171, time 9 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4393:Warning: remote_handle_control: Non-domain usage of FastRPC will be deprecated, use domains to offload to DSP using FastRPC
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 33554432, flags 0xa0000000, fd:172, time 31 us
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/rpcmem_android.c:651: rpcmem_dma_alloc: DMA buffer allocation completed for heap system, size 48, flags 0x1, fd:170, time 12 us
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Loaded graph graph_fr2s9hwt.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Malloc VM size after: 64768.0 kB, allocated: 54674.9 kB, slack: 10093.1 kB.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Status Successfully Loaded Warm with t = 101305 us and usage: before = 138728.0 kB; peakBefore = 138728.0 kB; mallocUnusedBefore = 10915.9 kB; after = 139424.0 kB; peakAfter = 139380.0 kB; mallocUnusedAfter = 10093.1 kB; increase = 0.0-1518.8 kB; peak = 652.0-11567.9 kB
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Applying performance mode Burst to device 0, core 0.
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_latency.c:98: fastrpc_latency_thread_handler started for QoS with activity window 100 ms
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4325: remote_handle_control_domain: requested QOS 1, latency 100 for domain 100000 handle 0xb4000074052349f0
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:3753: manage_poll_qos: poll mode updated to 3 for domain 100000, handle 0xb4000074052349f0 for timeout 9999
+[17/Jul/2026:00:45:04 -07:00: profiler/debug] [job_id: jp2vd0dx5] [model.bin] [adsprpc] vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:4325: remote_handle_control_domain: requested QOS 3, latency 9999 for domain 100000 handle 0xb4000074052349f0
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Malloc VM size before: 64768.0 kB, allocated: 54684.1 kB, slack: 10083.9 kB.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Current memory baseline range: 129360.1-139444.0 kB.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 11 profiler events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 371 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 11 profiler events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 371 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Got 0 profiler sub-events.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Malloc VM size after: 64932.0 kB, allocated: 55100.9 kB, slack: 9831.1 kB.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Successfully ran model for 2 iterations across 1 batches in 0.028 sec.
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Status Successfully Performed Inference By Layer with t = 10927 us and usage: before = 139444.0 kB; peakBefore = 139444.0 kB; mallocUnusedBefore = 10083.9 kB; after = 140244.0 kB; peakAfter = 139460.0 kB; mallocUnusedAfter = 9831.1 kB; increase = 0.0-1052.9 kB; peak = 16.0-10099.9 kB
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [job_id: jp2vd0dx5] [model.bin] Saving results to /data/local/tmp/tungsten/files/Results/job_jp2vd0dx5/job_jp2vd0dx5_results.bin
+[17/Jul/2026:00:45:04 -07:00: profiler/info] QnnDsp <W> m_CFBCallbackInfoObj is not initialized, return emptyList
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/adspmsgd.c:104::error: 0x8000040d: AEE_SUCCESS == (nErr = adspmsgd_adsp1_wait(handle, &bytesToRead))
+[17/Jul/2026:00:45:04 -07:00: profiler/info] [adsprpc] vendor/qcom/proprietary/adsprpc/src/adspmsgd.c:114:Error 0x8000040d: adspmsgd_reader thread of domain 100000 for handle 0x5233f50 exiting (errno Success)

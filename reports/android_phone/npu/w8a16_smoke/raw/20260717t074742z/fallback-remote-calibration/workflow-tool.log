@@ -1,0 +1,55 @@
+Scheduled compile job (j5mdk6ly5) successfully. To see the status and results:
+    https://workbench.aihub.qualcomm.com/jobs/j5mdk6ly5/
+
+submitted depth-decoder ONNX compile: j5mdk6ly5
+{
+  "stage": "depth-decoder:onnx_compile",
+  "time_utc": "2026-07-17T08:08:47Z",
+  "jobs": {
+    "depth-decoder": {
+      "job_id": "j5mdk6ly5",
+      "url": "https://workbench.aihub.qualcomm.com/jobs/j5mdk6ly5/",
+      "status": "SUCCESS",
+      "message": ""
+    }
+  }
+}
+j5mdk6ly5.log:   0%|[34m          [0m| 0.00/8.95k [00:00<?, ?B/s]j5mdk6ly5.log: 100%|[34m██████████[0m| 8.95k/8.95k [00:00<00:00, 5.53MB/s]
+Scheduled quantize job (jgjwyevx5) successfully. To see the status and results:
+    https://workbench.aihub.qualcomm.com/jobs/jgjwyevx5/
+
+submitted depth-decoder quantize: jgjwyevx5
+{
+  "stage": "depth-decoder:quantize",
+  "time_utc": "2026-07-17T08:13:57Z",
+  "jobs": {
+    "depth-decoder": {
+      "job_id": "jgjwyevx5",
+      "url": "https://workbench.aihub.qualcomm.com/jobs/jgjwyevx5/",
+      "status": "FAILED",
+      "message": "RuntimeError: Found shared parameter(s) with conflicting consumer types:\n\n  - input name: depth_embeddings.0.to_logits.weight\n    - consumer 0: node_linear_31 (Gemm)\n    - consumer 1: node_embedding (Gather)\n  - input name: depth_embeddings.1.to_logits.weight\n    - consumer 0: node_linear_62 (Gemm)\n    - consumer 1: node_embedding_1 (Gather)\n  - input name: depth_embeddings.2.to_logits.weight\n    - consumer 0: node_linear_93 (Gemm)\n    - consumer 1: node_embedding_2 (Gather)\n  - input name: depth_embeddings.3.to_logits.weight\n    - consumer 0: node_linear_124 (Gemm)\n    - consumer 1: node_embedding_3 (Gather)\n  - input name: depth_embeddings.4.to_logits.weight\n    - consumer 0: node_linear_155 (Gemm)\n    - consumer 1: node_embedding_4 (Gather)\n  - input name: depth_embeddings.5.to_logits.weight\n    - consumer 0: node_linear_186 (Gemm)\n    - consumer 1: node_embedding_5 (Gather)\n  - input name: depth_embeddings.6.to_logits.weight\n    - consumer 0: node_linear_217 (Gemm)\n    - consumer 1: node_embedding_6 (Gather)\n\nPlease call ``aimet_onnx.utils.duplicate_shared_initializers(onnx_model.graph)`` before creating QuantizationSimModel to ensure each consumer takes a unique copy of the initializer as input. - Check the quantize logs for detailed error information."
+    }
+  }
+}
+jgjwyevx5.log:   0%|[34m          [0m| 0.00/3.02k [00:00<?, ?B/s]jgjwyevx5.log: 100%|[34m██████████[0m| 3.02k/3.02k [00:00<00:00, 921kB/s]
+Scheduled compile job (jg9x2wd8g) successfully. To see the status and results:
+    https://workbench.aihub.qualcomm.com/jobs/jg9x2wd8g/
+
+submitted backbone-conv-prefill ONNX compile: jg9x2wd8g
+{
+  "stage": "backbone-conv-prefill:onnx_compile",
+  "time_utc": "2026-07-17T08:19:08Z",
+  "jobs": {
+    "backbone-conv-prefill": {
+      "job_id": "jg9x2wd8g",
+      "url": "https://workbench.aihub.qualcomm.com/jobs/jg9x2wd8g/",
+      "status": "SUCCESS",
+      "message": ""
+    }
+  }
+}
+jg9x2wd8g.log:   0%|[34m          [0m| 0.00/5.97k [00:00<?, ?B/s]jg9x2wd8g.log: 100%|[34m██████████[0m| 5.97k/5.97k [00:00<00:00, 3.68MB/s]
+Scheduled quantize job (jgjwyem85) successfully. To see the status and results:
+    https://workbench.aihub.qualcomm.com/jobs/jgjwyem85/
+
+submitted backbone-conv-prefill quantize: jgjwyem85

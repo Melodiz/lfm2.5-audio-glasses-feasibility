@@ -1,0 +1,8 @@
+fastconformer jprnx6re5 mq2zyg87q d7jg8zyw7 SUCCESS
+backbone-conv-prefill jpxdl1vjg mno028jvn d7lvvjgn2 SUCCESS
+backbone-attention-prefill jp84e3eo5 mnlg0y4jm d9155mxe7 SUCCESS
+backbone-conv-cached-decode jpel74o0g mmd8wpxwq d9kvvjj52 SUCCESS
+backbone-attention-cached-decode jgn71lqvp mqepggwkm d9pnlndd7 SUCCESS
+depth-decoder jpxd06k1g mn4d2zlzn d9emwmov2 SUCCESS
+detokenizer-t4 j5qmlm4ng mn09kkvzn d26qq6zg7 SUCCESS
+detokenizer-t8 jgdz6qqe5 mm5wrkpkm d26qmqeg7 SUCCESS

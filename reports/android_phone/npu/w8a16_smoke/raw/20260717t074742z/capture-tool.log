@@ -1,0 +1,511 @@
+W0717 15:50:32.975000 99649 torch/distributed/elastic/multiprocessing/redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+{
+  "status": "passed",
+  "capture_method": "CPU replay of the pinned real Colab BF16 turn",
+  "sample_count": 80,
+  "sample_shape": [
+    1,
+    2048
+  ],
+  "sample_inputs": [
+    {
+      "sample_index": 0,
+      "turn": 1,
+      "generation_step": 6,
+      "audio_frame_index": 0
+    },
+    {
+      "sample_index": 1,
+      "turn": 1,
+      "generation_step": 7,
+      "audio_frame_index": 1
+    },
+    {
+      "sample_index": 2,
+      "turn": 1,
+      "generation_step": 8,
+      "audio_frame_index": 2
+    },
+    {
+      "sample_index": 3,
+      "turn": 1,
+      "generation_step": 9,
+      "audio_frame_index": 3
+    },
+    {
+      "sample_index": 4,
+      "turn": 1,
+      "generation_step": 10,
+      "audio_frame_index": 4
+    },
+    {
+      "sample_index": 5,
+      "turn": 1,
+      "generation_step": 11,
+      "audio_frame_index": 5
+    },
+    {
+      "sample_index": 6,
+      "turn": 1,
+      "generation_step": 12,
+      "audio_frame_index": 6
+    },
+    {
+      "sample_index": 7,
+      "turn": 1,
+      "generation_step": 13,
+      "audio_frame_index": 7
+    },
+    {
+      "sample_index": 8,
+      "turn": 1,
+      "generation_step": 14,
+      "audio_frame_index": 8
+    },
+    {
+      "sample_index": 9,
+      "turn": 1,
+      "generation_step": 15,
+      "audio_frame_index": 9
+    },
+    {
+      "sample_index": 10,
+      "turn": 1,
+      "generation_step": 16,
+      "audio_frame_index": 10
+    },
+    {
+      "sample_index": 11,
+      "turn": 1,
+      "generation_step": 17,
+      "audio_frame_index": 11
+    },
+    {
+      "sample_index": 12,
+      "turn": 1,
+      "generation_step": 24,
+      "audio_frame_index": 12
+    },
+    {
+      "sample_index": 13,
+      "turn": 1,
+      "generation_step": 25,
+      "audio_frame_index": 13
+    },
+    {
+      "sample_index": 14,
+      "turn": 1,
+      "generation_step": 26,
+      "audio_frame_index": 14
+    },
+    {
+      "sample_index": 15,
+      "turn": 1,
+      "generation_step": 27,
+      "audio_frame_index": 15
+    },
+    {
+      "sample_index": 16,
+      "turn": 1,
+      "generation_step": 28,
+      "audio_frame_index": 16
+    },
+    {
+      "sample_index": 17,
+      "turn": 1,
+      "generation_step": 29,
+      "audio_frame_index": 17
+    },
+    {
+      "sample_index": 18,
+      "turn": 1,
+      "generation_step": 30,
+      "audio_frame_index": 18
+    },
+    {
+      "sample_index": 19,
+      "turn": 1,
+      "generation_step": 31,
+      "audio_frame_index": 19
+    },
+    {
+      "sample_index": 20,
+      "turn": 1,
+      "generation_step": 32,
+      "audio_frame_index": 20
+    },
+    {
+      "sample_index": 21,
+      "turn": 1,
+      "generation_step": 33,
+      "audio_frame_index": 21
+    },
+    {
+      "sample_index": 22,
+      "turn": 1,
+      "generation_step": 34,
+      "audio_frame_index": 22
+    },
+    {
+      "sample_index": 23,
+      "turn": 1,
+      "generation_step": 35,
+      "audio_frame_index": 23
+    },
+    {
+      "sample_index": 24,
+      "turn": 1,
+      "generation_step": 42,
+      "audio_frame_index": 24
+    },
+    {
+      "sample_index": 25,
+      "turn": 1,
+      "generation_step": 43,
+      "audio_frame_index": 25
+    },
+    {
+      "sample_index": 26,
+      "turn": 1,
+      "generation_step": 44,
+      "audio_frame_index": 26
+    },
+    {
+      "sample_index": 27,
+      "turn": 1,
+      "generation_step": 45,
+      "audio_frame_index": 27
+    },
+    {
+      "sample_index": 28,
+      "turn": 1,
+      "generation_step": 46,
+      "audio_frame_index": 28
+    },
+    {
+      "sample_index": 29,
+      "turn": 1,
+      "generation_step": 47,
+      "audio_frame_index": 29
+    },
+    {
+      "sample_index": 30,
+      "turn": 1,
+      "generation_step": 48,
+      "audio_frame_index": 30
+    },
+    {
+      "sample_index": 31,
+      "turn": 1,
+      "generation_step": 49,
+      "audio_frame_index": 31
+    },
+    {
+      "sample_index": 32,
+      "turn": 1,
+      "generation_step": 50,
+      "audio_frame_index": 32
+    },
+    {
+      "sample_index": 33,
+      "turn": 1,
+      "generation_step": 51,
+      "audio_frame_index": 33
+    },
+    {
+      "sample_index": 34,
+      "turn": 1,
+      "generation_step": 52,
+      "audio_frame_index": 34
+    },
+    {
+      "sample_index": 35,
+      "turn": 1,
+      "generation_step": 53,
+      "audio_frame_index": 35
+    },
+    {
+      "sample_index": 36,
+      "turn": 1,
+      "generation_step": 60,
+      "audio_frame_index": 36
+    },
+    {
+      "sample_index": 37,
+      "turn": 1,
+      "generation_step": 61,
+      "audio_frame_index": 37
+    },
+    {
+      "sample_index": 38,
+      "turn": 1,
+      "generation_step": 62,
+      "audio_frame_index": 38
+    },
+    {
+      "sample_index": 39,
+      "turn": 1,
+      "generation_step": 63,
+      "audio_frame_index": 39
+    },
+    {
+      "sample_index": 40,
+      "turn": 1,
+      "generation_step": 64,
+      "audio_frame_index": 40
+    },
+    {
+      "sample_index": 41,
+      "turn": 1,
+      "generation_step": 65,
+      "audio_frame_index": 41
+    },
+    {
+      "sample_index": 42,
+      "turn": 1,
+      "generation_step": 66,
+      "audio_frame_index": 42
+    },
+    {
+      "sample_index": 43,
+      "turn": 1,
+      "generation_step": 67,
+      "audio_frame_index": 43
+    },
+    {
+      "sample_index": 44,
+      "turn": 1,
+      "generation_step": 68,
+      "audio_frame_index": 44
+    },
+    {
+      "sample_index": 45,
+      "turn": 1,
+      "generation_step": 69,
+      "audio_frame_index": 45
+    },
+    {
+      "sample_index": 46,
+      "turn": 1,
+      "generation_step": 70,
+      "audio_frame_index": 46
+    },
+    {
+      "sample_index": 47,
+      "turn": 1,
+      "generation_step": 71,
+      "audio_frame_index": 47
+    },
+    {
+      "sample_index": 48,
+      "turn": 1,
+      "generation_step": 78,
+      "audio_frame_index": 48
+    },
+    {
+      "sample_index": 49,
+      "turn": 1,
+      "generation_step": 79,
+      "audio_frame_index": 49
+    },
+    {
+      "sample_index": 50,
+      "turn": 1,
+      "generation_step": 80,
+      "audio_frame_index": 50
+    },
+    {
+      "sample_index": 51,
+      "turn": 1,
+      "generation_step": 81,
+      "audio_frame_index": 51
+    },
+    {
+      "sample_index": 52,
+      "turn": 1,
+      "generation_step": 82,
+      "audio_frame_index": 52
+    },
+    {
+      "sample_index": 53,
+      "turn": 1,
+      "generation_step": 83,
+      "audio_frame_index": 53
+    },
+    {
+      "sample_index": 54,
+      "turn": 1,
+      "generation_step": 84,
+      "audio_frame_index": 54
+    },
+    {
+      "sample_index": 55,
+      "turn": 1,
+      "generation_step": 85,
+      "audio_frame_index": 55
+    },
+    {
+      "sample_index": 56,
+      "turn": 1,
+      "generation_step": 86,
+      "audio_frame_index": 56
+    },
+    {
+      "sample_index": 57,
+      "turn": 1,
+      "generation_step": 87,
+      "audio_frame_index": 57
+    },
+    {
+      "sample_index": 58,
+      "turn": 1,
+      "generation_step": 88,
+      "audio_frame_index": 58
+    },
+    {
+      "sample_index": 59,
+      "turn": 1,
+      "generation_step": 89,
+      "audio_frame_index": 59
+    },
+    {
+      "sample_index": 60,
+      "turn": 1,
+      "generation_step": 96,
+      "audio_frame_index": 60
+    },
+    {
+      "sample_index": 61,
+      "turn": 1,
+      "generation_step": 97,
+      "audio_frame_index": 61
+    },
+    {
+      "sample_index": 62,
+      "turn": 1,
+      "generation_step": 98,
+      "audio_frame_index": 62
+    },
+    {
+      "sample_index": 63,
+      "turn": 1,
+      "generation_step": 99,
+      "audio_frame_index": 63
+    },
+    {
+      "sample_index": 64,
+      "turn": 1,
+      "generation_step": 100,
+      "audio_frame_index": 64
+    },
+    {
+      "sample_index": 65,
+      "turn": 1,
+      "generation_step": 101,
+      "audio_frame_index": 65
+    },
+    {
+      "sample_index": 66,
+      "turn": 1,
+      "generation_step": 102,
+      "audio_frame_index": 66
+    },
+    {
+      "sample_index": 67,
+      "turn": 1,
+      "generation_step": 103,
+      "audio_frame_index": 67
+    },
+    {
+      "sample_index": 68,
+      "turn": 1,
+      "generation_step": 104,
+      "audio_frame_index": 68
+    },
+    {
+      "sample_index": 69,
+      "turn": 1,
+      "generation_step": 105,
+      "audio_frame_index": 69
+    },
+    {
+      "sample_index": 70,
+      "turn": 1,
+      "generation_step": 106,
+      "audio_frame_index": 70
+    },
+    {
+      "sample_index": 71,
+      "turn": 1,
+      "generation_step": 107,
+      "audio_frame_index": 71
+    },
+    {
+      "sample_index": 72,
+      "turn": 1,
+      "generation_step": 113,
+      "audio_frame_index": 72
+    },
+    {
+      "sample_index": 73,
+      "turn": 1,
+      "generation_step": 114,
+      "audio_frame_index": 73
+    },
+    {
+      "sample_index": 74,
+      "turn": 1,
+      "generation_step": 115,
+      "audio_frame_index": 74
+    },
+    {
+      "sample_index": 75,
+      "turn": 1,
+      "generation_step": 116,
+      "audio_frame_index": 75
+    },
+    {
+      "sample_index": 76,
+      "turn": 1,
+      "generation_step": 117,
+      "audio_frame_index": 76
+    },
+    {
+      "sample_index": 77,
+      "turn": 1,
+      "generation_step": 118,
+      "audio_frame_index": 77
+    },
+    {
+      "sample_index": 78,
+      "turn": 1,
+      "generation_step": 119,
+      "audio_frame_index": 78
+    },
+    {
+      "sample_index": 79,
+      "turn": 1,
+      "generation_step": 120,
+      "audio_frame_index": 79
+    }
+  ],
+  "source": {
+    "model_revision": "c362a0625dfe45aa588dce5f0ada28a7e5707628",
+    "liquid_audio_commit": "19e65845923a7f136442c95137884ec61eb386aa",
+    "question_wav_sha256": "c904eda981f41dd49fe3bb75e961ec48cdba9b45ff3381812adaec04f3b17930",
+    "golden_tokens_sha256": "6199330432763a51ece627c48df99796d6752c1a97d555402cc4663407195253",
+    "system_prompt": "Respond with interleaved text and audio."
+  },
+  "runtime": {
+    "device": "cpu",
+    "dtype": "torch.bfloat16",
+    "torch": "2.8.0",
+    "elapsed_seconds": 91.83404470793903
+  },
+  "artifact": {
+    "file": "depth_real_embeddings.npz",
+    "sha256": "2e3e4e282385339c1f09574107a64cde31457b40c80c55ea064a2911bb8b35e2",
+    "bytes": 619613
+  },
+  "reference_note": "The NPZ tokens are the recorded BF16 turn tokens used for deterministic replay. FP32 depth-probe reference tokens are computed separately before quantization acceptance."
+}
